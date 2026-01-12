@@ -4,6 +4,7 @@
 #include <string.h>
 #include <time.h>
 #include "function/file_manipulation.h"
+#include "function/gamef.h"
 
 typedef struct
 {
