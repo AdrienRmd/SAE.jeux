@@ -28,6 +28,7 @@ int value_line(const char *filename, int line, char *buffer_destination, int len
     return 0;
 }
 
+
 void print_line(const char *filename, int line){
     char buffer[256];
     value_line(filename, line, buffer, sizeof(buffer));
@@ -35,12 +36,20 @@ void print_line(const char *filename, int line){
 }
 
 
-void intro(){
+int intro(){
     FILE *intro = fopen('intro.txt', "r");
 
     print_line(intro, 1);
-
-    fclose(intro);
+    char language;
+    scanf("%c", &language);
+    if (language == "f" || language == "F"){
+        fclose(intro);
+        return 0;
+    }
+    else{
+        fclose(intro);
+        return 1;
+    }
 }
 
 
