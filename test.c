@@ -11,7 +11,7 @@ int value_line(const char *filename, int line, char *buffer_destination, int len
     }
 
     int i = 1;
-    
+
     while (fgets(buffer_destination, length, file) != NULL) {
         if (i == line) {
             size_t len = strlen(buffer_destination);
@@ -28,6 +28,24 @@ int value_line(const char *filename, int line, char *buffer_destination, int len
     return 0;
 }
 
+void print_line(const char *filename, int line, char *buffer_destination){
+    print(filename, line, buffer_destination, sizeof(buffer_destination));
+}
+
+void print(const char *filename, int line, char *buffer_destination, int length){
+    char buffer[256];
+    value_line(filename, line, buffer_destination, length);
+    printf("%s", buffer);
+}
+
+
+void intro(){
+    FILE *intro = fopen('intro.txt', "r");
+
+    char buffer[256];
+    value_line(intro, 1, buffer, sizeof(buffer));
+    printf("%s", buffer)
+}
 
 
 int main()
@@ -55,5 +73,6 @@ int main()
     char buffer[256];
 
     value_line("fr/intro-FR.txt", 3, buffer, sizeof(buffer));
-    printf("%s", buffer);
+
+
 }

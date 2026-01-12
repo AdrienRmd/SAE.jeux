@@ -1,9 +1,6 @@
-__________________START INTRO EN__________________
-
 Welcome to the post-apocalyptic world of Neo-Terra
 
 # Class messages
-language_prompt=Choose language (fr) / Select language (gb) : 
 What is your name in the game, survivor? : 
 What is your gender (M/F/Non-binary)?
 In this new world, what do you want to be?

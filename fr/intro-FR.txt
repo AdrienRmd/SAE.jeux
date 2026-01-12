@@ -1,7 +1,6 @@
 Bienvenue dans le monde post-apocalyptique de Neo-Terra
 
 # Messages de classe
-Choisir la langue (fr) / Select language (gb) : 
 Quel est votre nom dans le jeu, survivant ? : 
 Quel est votre genre (H/F/Non-binaire) ?
 Dans ce nouveau monde, que souhaitez-vous être ? 
