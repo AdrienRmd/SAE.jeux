@@ -1,19 +1,29 @@
 potion de trésor
+6 3 3 3 6 3
 
 énergie du coffre
+6 3 3 3 6 3
 
 élixir de chance
+4 2 2 2 8 2
 
 bénédiction du trésor
+6 3 3 3 6 3
 
 pierre précieuse comestible
+5 2 2 2 4 2
 
 nectar d'or
+5 2 2 2 4 2
 
 soupe de richesse
+6 3 3 3 6 3
 
 thé de fortune
+4 2 2 2 6 2
 
 potion de découverte
+5 3 3 3 6 3
 
 cœur de trésor
+8 5 5 5 8 5

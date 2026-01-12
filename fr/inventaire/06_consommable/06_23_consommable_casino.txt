@@ -1,19 +1,29 @@
 cocktail de chance
+4 2 2 2 6 2
 
 breuvage de fortune
+4 2 2 2 6 2
 
 vin du casino
+4 1 1 1 4 2
 
 champagne du risque
+4 1 1 1 4 2
 
 énergie du jeu
+5 3 3 3 6 3
 
 potion de chance extrême
+4 2 2 2 8 2
 
 breuvage du risque
+4 2 2 2 6 2
 
 thé du joueur
+3 1 1 1 5 2
 
 soupe du casino
+5 3 3 3 6 3
 
 cœur du hasard
+6 3 3 3 8 4

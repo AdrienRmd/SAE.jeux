@@ -1,19 +1,29 @@
 champignon de grotte
+4 2 2 2 3 2
 
 eau souterraine
+3 1 1 1 5 1
 
 mousse comestible
+3 1 1 1 3 1
 
 insecte cavernicole
+4 2 2 2 3 2
 
 racine de roche
+4 2 2 2 3 2
 
 crystal énergétique
+5 2 2 2 3 2
 
 soupe de grotte
+5 2 2 2 3 2
 
 thé de cristal
+3 1 1 1 5 2
 
 énergie souterraine
+5 3 3 3 6 3
 
 potion de vision dans le noir
+4 2 4 2 3 3

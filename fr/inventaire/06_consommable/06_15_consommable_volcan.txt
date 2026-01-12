@@ -1,19 +1,29 @@
 pierre de lave
+3 2 2 2 3 2
 
 eau bouillante
+3 1 1 1 5 1
 
 champignon de feu
+4 2 2 2 3 2
 
 racine de volcan
+4 2 2 2 3 2
 
 insecte de feu
+4 2 2 2 3 2
 
 soupe de lave
+5 2 2 2 3 2
 
 thé de cendre
+3 1 1 1 5 2
 
 énergie volcanique
+5 3 3 3 6 3
 
 potion de résistance extrême au feu
+4 2 4 2 3 3
 
 cœur de dragon
+8 5 5 5 8 5

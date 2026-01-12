@@ -1,19 +1,29 @@
 baie de montagne
+4 1 1 1 3 1
 
 racine alpine
+4 2 2 2 3 2
 
 eau de source
+3 1 1 1 5 1
 
 champignon de roche
+4 2 2 2 3 2
 
 insecte de montagne
+4 2 2 2 3 2
 
 viande de chèvre
+6 2 2 1 3 1
 
 soupe de montagne
+5 2 2 2 3 2
 
 thé alpin
+3 1 1 1 5 2
 
 énergie de montagne
+5 3 3 3 6 3
 
 potion d'endurance
+4 2 4 2 3 3

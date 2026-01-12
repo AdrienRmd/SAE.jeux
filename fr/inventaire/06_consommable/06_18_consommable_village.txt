@@ -1,19 +1,29 @@
 pain du village
+6 1 1 1 3 1
 
 lait frais
+5 1 2 1 3 1
 
 fromage local
+6 1 2 1 3 1
 
 viande préparée
+7 2 2 1 3 1
 
 soupe du village
+6 2 2 2 3 2
 
 thé communal
+3 1 1 1 5 2
 
 bière locale
+4 1 1 1 4 2
 
 confiture maison
+5 1 1 1 3 2
 
 énergie communautaire
+6 3 3 3 6 3
 
 potion de chance communautaire
+4 2 2 2 6 4

@@ -1,19 +1,29 @@
 herbe médicinale
+6 1 2 1 3 1
 
 baie sauvage
+5 1 1 1 3 1
 
 lait de vache
+5 1 2 1 3 1
 
 pain frais
+6 1 1 1 3 1
 
 racine nourrissante
+5 2 2 2 3 2
 
 eau de source
+3 1 1 1 5 1
 
 miel sauvage
+5 1 1 1 4 2
 
 grillades de champignon
+6 2 2 2 3 2
 
 soupe d'herbes
+6 2 2 2 3 2
 
 thé de plaine
+3 1 1 1 5 2

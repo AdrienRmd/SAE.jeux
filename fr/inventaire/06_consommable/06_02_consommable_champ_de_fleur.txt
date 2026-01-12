@@ -1,19 +1,29 @@
 nectar de fleur
+4 1 1 1 4 2
 
 pétale comestible
+3 1 1 1 3 2
 
 pollen énergisant
+3 2 1 1 5 2
 
 miel floral
+5 1 1 1 4 2
 
 thé de pissenlit
+3 1 1 1 5 2
 
 baie de fleur
+4 1 1 1 3 2
 
 eau de rosée
+3 1 1 1 5 2
 
 confiture de fleur
+5 1 1 1 3 2
 
 salade de pétales
+4 1 1 1 3 2
 
 elixir de beauté
+4 2 2 2 4 4
