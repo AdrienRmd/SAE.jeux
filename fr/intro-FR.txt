@@ -1,8 +1,8 @@
 Bienvenue dans le monde post-apocalyptique de Neo-Terra\n
 
 Quel est votre nom dans le jeu, survivant ? : 
-Quel est votre genre (H/F/Non-binaire) ?
-Dans ce nouveau monde, que souhaitez-vous être ? 
+Quelle est votre race (1 - humain, 2 - nain, 3 - elfe) ?
+Quelle classe choisissez-vous (1 - combattant, 2 - voleur, 3 - archer) ? 
 difficulté du jeu (1 - facile, 2 - moyen, 3 - difficile) :
 
 Bienvenue, %s. Votre aventure dans Neo-Terra commence maintenant.\n

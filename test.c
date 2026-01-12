@@ -5,6 +5,7 @@
 
 typedef struct{
     char name[20];
+    char race[10];
     int pv;
     int att;
     int def;
@@ -15,7 +16,6 @@ typedef struct{
     char job[10];
     int money;
     float difficulty;
-    
 } player;
 
 int value_line(const char *filename, int line, char *buffer_destination, int length){

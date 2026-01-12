@@ -1,8 +1,8 @@
 Welcome to the post-apocalyptic world of Neo-Terra\n
 
 What is your name in the game, survivor? : 
-What is your gender (M/F/Non-binary)?
-In this new world, what do you want to be?
+What's your race (1 - human, 2 - dwarf, 3 - elf) ?
+What class do you choose (1 - fighter, 2 - rogue, 3 - archer) ?
 game difficulty (1 - easy, 2 - medium, 3 - hard) :
 
 Welcome, %name. Your adventure in Neo-Terra begins now.\n
