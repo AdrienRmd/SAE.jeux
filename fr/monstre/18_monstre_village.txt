@@ -1,0 +1,19 @@
+gardien du village
+42 19 12 5 2 2
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+marchand corrompu
+40 20 11 6 3 2
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+chef de garde
+44 19 12 5 3 2
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+assassin des ombres
+38 21 11 7 3 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+seigneur du village
+48 21 14 6 4 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)

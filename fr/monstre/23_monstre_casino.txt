@@ -1,0 +1,23 @@
+gardien du casino
+56 28 18 6 4 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+croupier démoniaque
+62 26 20 5 2 2
+// loot: objet_unique_casino (rareté: unique)
+
+joueur maudit
+58 30 19 6 3 2
+// loot: objet_unique_casino (rareté: unique)
+
+maître des jeux
+54 32 18 7 3 3
+// loot: objet_unique_casino (rareté: unique)
+
+dieu du hasard
+66 34 21 8 4 4
+// loot: objet_legendaire_casino (rareté: légendaire)
+
+maître de la fortune
+74 36 24 8 5 4
+// loot: objet_legendaire_casino (rareté: légendaire)

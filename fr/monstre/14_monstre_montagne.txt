@@ -1,0 +1,19 @@
+aigle des sommets
+34 15 9 5 2 2
+// loot: 03_equipement_epique.txt (rareté: épique)
+
+goélier de pierre
+36 14 10 3 2 2
+// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+
+chasseur de montagne
+32 16 8 5 3 2
+// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+
+dragon des cimes
+30 17 8 6 3 3
+// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+
+seigneur des montagnes
+40 17 11 5 4 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)

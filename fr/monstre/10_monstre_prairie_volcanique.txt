@@ -1,0 +1,19 @@
+loup de feu
+26 11 6 4 2 2
+// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+
+salamandre géante
+24 12 5 5 3 2
+// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+
+serpent de lave
+28 12 6 4 2 2
+// loot: 03_equipement_epique.txt (rareté: épique)
+
+aigle de feu
+22 13 4 5 3 3
+// loot: 03_equipement_epique.txt (rareté: épique)
+
+seigneur du volcan
+32 13 8 4 4 3
+// loot: 04_equipement_legendaire.txt (rareté: légendaire)

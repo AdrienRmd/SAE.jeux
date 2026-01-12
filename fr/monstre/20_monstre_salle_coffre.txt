@@ -1,0 +1,23 @@
+gardien des trésors
+50 22 15 6 4 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+golem d'or
+55 20 18 5 2 2
+// loot: objet_unique_coffre (rareté: unique)
+
+squelette ancien
+52 24 16 5 3 2
+// loot: objet_unique_coffre (rareté: unique)
+
+dragon des trésors
+48 26 15 7 3 3
+// loot: objet_unique_coffre (rareté: unique)
+
+esprit du coffre
+60 25 18 8 4 4
+// loot: objet_legendaire_coffre (rareté: légendaire)
+
+maître des richesses
+65 28 20 7 5 4
+// loot: objet_legendaire_coffre (rareté: légendaire)

@@ -1,0 +1,19 @@
+loup sylvestre
+38 17 10 5 2 2
+// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+
+treant
+40 16 12 4 2 2
+// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+
+dryade
+36 18 9 6 3 2
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+chasseur des bois
+34 19 9 6 3 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+esprit de la forêt
+44 19 13 5 4 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)

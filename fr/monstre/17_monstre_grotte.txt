@@ -1,0 +1,19 @@
+troll des cavernes
+40 18 11 5 2 2
+// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+
+gobelin des profondeurs
+38 19 10 6 3 2
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+squelette armurier
+42 18 11 5 3 2
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+dragon des souterrains
+36 20 10 7 3 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+seigneur des profondeurs
+46 20 13 6 4 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)

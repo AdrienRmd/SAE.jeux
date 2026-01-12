@@ -1,0 +1,19 @@
+tigre des jungles
+22 9 5 3 2 2
+// loot: 01_equipement_rare.txt (rareté: rare)
+
+serpent constricteur
+20 10 4 4 2 2
+// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+
+singe guerrier
+18 9 4 5 3 2
+// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+
+aigle tropical
+16 10 3 5 3 3
+// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+
+seigneur de la jungle
+26 11 6 4 4 3
+// loot: 03_equipement_epique.txt (rareté: épique)

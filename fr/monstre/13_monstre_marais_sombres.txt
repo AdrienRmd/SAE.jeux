@@ -1,0 +1,19 @@
+zombie des marais
+32 14 8 4 2 2
+// loot: 03_equipement_epique.txt (rareté: épique)
+
+squelette guerrier
+30 15 7 5 3 2
+// loot: 03_equipement_epique.txt (rareté: épique)
+
+spectre vénéneux
+34 14 8 4 3 2
+// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+
+liche des marais
+28 16 7 5 3 3
+// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+
+seigneur de la décomposition
+38 16 10 4 4 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)

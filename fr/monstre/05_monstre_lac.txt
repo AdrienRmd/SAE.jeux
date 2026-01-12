@@ -1,0 +1,19 @@
+poisson géant
+18 6 4 3 2 2
+// loot: 00_equipement_commun.txt (rareté: commune)
+
+crocodile du lac
+22 7 5 2 2 1
+// loot: 01_equipement_rare.txt (rareté: rare)
+
+serpent d'eau douce
+16 8 3 4 3 2
+// loot: 01_equipement_rare.txt (rareté: rare)
+
+aigle pêcheur
+12 8 2 5 3 3
+// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+
+esprit du lac
+20 9 4 4 4 3
+// loot: 02_equipement_tres_rare.txt (rareté: très rare)

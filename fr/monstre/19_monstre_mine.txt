@@ -1,0 +1,19 @@
+nain des profondeurs
+44 20 13 5 2 2
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+golem de minerai
+46 19 14 4 2 2
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+squelette minier
+48 20 13 5 3 2
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+dragon des mines
+40 22 12 7 3 3
+// loot: 05_equipement_mythique.txt (rareté: mythique)
+
+seigneur des mines
+50 22 15 6 4 3
+// loot: objet_unique_mine (rareté: unique)

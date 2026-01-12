@@ -1,6 +1,59 @@
 #ifndef GEN_BIOME_H
 #define GEN_BIOME_H
 
+#include <stdbool.h>
+
+// temperature
+typedef enum
+{
+    tres_froid = 1, // Coefficient 0.75 pour les stats
+    froid = 2,      // Coefficient 0.90 pour les stats
+    frais = 3,      // Coefficient 0.95 pour les stats
+    tempere = 4,    // Coefficient 1.00 pour les stats
+    chaud = 5,      // Coefficient 0.95 pour les stats
+    tres_chaud = 6, // Coefficient 0.90 pour les stats
+    brulant = 7     // Coefficient 0.75 pour les stats
+} Temperature;
+
+// Weather enum for biomes
+typedef enum
+{
+    ensoleille = 1,        // Coefficient 1.00 pour les stats
+    nuageux = 2,           // Coefficient 1.00 pour les stats
+    pluie = 3,             // Coefficient 0.95 pour les stats
+    brouillard = 4,        // Coefficient 0.90 pour les stats
+    orage = 5,             // Coefficient 0.85 pour les stats
+    vent_fort = 6,         // Coefficient 0.85 pour les stats
+    neige = 7,             // Coefficient 0.80 pour les stats
+    tempete = 8,           // Coefficient 0.75 pour les stats
+    tempete_sable = 9,     // Coefficient 0.75 pour les stats
+    tempete_de_neige = 10, // Coefficient 0.70 pour les stats
+    blizzard = 11          // Coefficient 0.70 pour les stats
+} Meteo;
+
+// Commerce structure for biomes
+typedef struct
+{
+    int nombre_consommable; // Nombre de consommables (aléatoire entre 3 et 10)
+    int nombre_objet;       // Nombre d'objets (aléatoire entre 5 et 20)
+    float coeff_vente;      // Coefficient de vente (aléatoire entre 0.80 et 1.20)
+} Commerce;
+
+// lieu générique
+
+typedef struct
+{
+    char *description;       // Description détaillée
+    Temperature temperature; // Type de température (affecte les stats)
+    Meteo meteo;             // Type de météo (joue sur les stats)
+    Commerce commerce;       // Pour commercer
+    char *consommable;       // Consommable unique pour chaque biome
+    bool peut_recolter;      // Peut récolter les ressources (pas obligatoire)
+    char **monstre_presence; // Liste de chaînes de caractères
+    int monstre_count;       // Nombre de monstres dans la liste
+    float difficulty_biome;  // Coefficient de difficulté (entre 0.80 et 3.00)
+} lieu;
+
 // biome facile
 
 // plaine
