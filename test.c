@@ -3,6 +3,21 @@
 #include <sys/stat.h>
 #include <string.h>
 
+typedef struct{
+    char name[20];
+    int pv;
+    int att;
+    int def;
+    int dodge;
+    int spe;
+    int exp;
+    int lvl;
+    char job[10];
+    int money;
+    float difficulty;
+    
+} player;
+
 int value_line(const char *filename, int line, char *buffer_destination, int length){
     FILE *file = fopen(filename, "r");
 
