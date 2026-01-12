@@ -1,9 +1,31 @@
-Bienvenue dans le monde post-apocalyptique de Neo-Terra\n
+# Contexte du monde
+L'année 2126. La Grande Catastrophe a ravagé la civilisation il y a 1 siècle.
+Les rares survivants se cachent dans les ruines de l'ancien monde, chassant
+les créatures mutantes et cherchant les technologies perdues de l'avant-catastrophe.
+Chaque jour est une lutte pour la survie. Chaque choix pourrait être votre dernier.
 
-Quel est votre nom dans le jeu, survivant ? : 
-Quel est votre genre (H/F/Non-binaire) ?
-Dans ce nouveau monde, que souhaitez-vous être ? 
-difficulté du jeu (1 - facile, 2 - moyen, 3 - difficile) :
+Bienvenue dans le monde post-apocalyptique de Neo-Terra
 
-Bienvenue, %s. Votre aventure dans Neo-Terra commence maintenant.\n
-Vous avez choisi d'être un %s. Que votre destin vous guide dans les ruines de l'ancien monde.\n
+# Messages de classe
+Identifiez-vous, survivant. Votre nom est votre seule véritable possession : 
+Quel est votre genre (H/F/Non-binaire) ? La nature ne fait plus de distinction.
+Dans ce monde hostile, quelle est votre spécialité de survie ? 
+Quel niveau de danger acceptez-vous (1 - précautionneux, 2 - risqué, 3 - suicidaire) :
+
+# Messages de confirmation
+%s, votre existence est maintenant enregistrée dans les archives des survivants.
+En tant que %s, chaque minute sera un combat. Les ruines de l'ancien monde n'offrent
+aucune pitié aux faibles. Survivez, ou disparaissez comme tant d'autres.
+
+# Situation initiale
+Vous vous réveillez dans un abri abandonné. L'air est lourd, l'odeur de rouille et de
+décomposition flotte autour de vous. Le bruit lointain d'une créature vous rappelle que
+le danger rôde. Votre première décision pourrait être la dernière...
+
+# Premier choix critique
+Devant vous, trois chemins s'offrent dans les ténèbres :
+(1) Les égouts - Sûrs mais sombres, peut-être des ressources cachées
+(2) Les toits - Exposés mais offrent une vue stratégique sur les menaces  
+(3) Les rues - Direct mais infesté, les créatures chassent en meute
+
+Votre choix, %s ? Chaque seconde compte...

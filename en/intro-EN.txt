@@ -1,9 +1,11 @@
-Welcome to the post-apocalyptic world of Neo-Terra\n
+Welcome to the post-apocalyptic world of Neo-Terra
 
+# Class messages
 What is your name in the game, survivor? : 
 What is your gender (M/F/Non-binary)?
 In this new world, what do you want to be?
 game difficulty (1 - easy, 2 - medium, 3 - hard) :
 
-Welcome, %name. Your adventure in Neo-Terra begins now.\n
-You have chosen to be a %race. May your destiny guide you through the ruins of the old world.\n
+# Confirmation messages
+Welcome, %name. Your adventure in Neo-Terra begins now.
+You have chosen to be a %race. May your destiny guide you through the ruins of the old world.
