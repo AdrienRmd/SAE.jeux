@@ -1,14 +1,12 @@
-__________________DEBUT INTRO FR__________________
-
 Bienvenue dans le monde post-apocalyptique de Neo-Terra
 
 # Messages de classe
-language_prompt=Choisir la langue (fr) / Select language (gb) : 
+Choisir la langue (fr) / Select language (gb) : 
 Quel est votre nom dans le jeu, survivant ? : 
 Quel est votre genre (H/F/Non-binaire) ?
 Dans ce nouveau monde, que souhaitez-vous être ? 
-dificulté du jeu (1 - facile, 2 - moyen, 3 - difficile) :
+difficulté du jeu (1 - facile, 2 - moyen, 3 - difficile) :
 
 # Messages de confirmation
-Bienvenue, %nom. Votre aventure dans Neo-Terra commence maintenant.
-Vous avez choisi d'être un %race. Que votre destin vous guide dans les ruines de l'ancien monde.
+Bienvenue, %s. Votre aventure dans Neo-Terra commence maintenant.
+Vous avez choisi d'être un %s. Que votre destin vous guide dans les ruines de l'ancien monde.
