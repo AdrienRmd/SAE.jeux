@@ -1,11 +1,9 @@
 Welcome to the post-apocalyptic world of Neo-Terra
 
-# Class messages
 What is your name in the game, survivor? : 
 What's your race (1 - human, 2 - dwarf, 3 - elf) ?
 What class do you choose (1 - fighter, 2 - rogue, 3 - archer) ?
 game difficulty (1 - easy, 2 - medium, 3 - hard) :
 
-# Confirmation messages
-Welcome, %name. Your adventure in Neo-Terra begins now.
-You have chosen to be a %race. May your destiny guide you through the ruins of the old world.
+Welcome, %s. Your adventure in Neo-Terra begins now.
+You have chosen to be a %s %s. May your destiny guide you through the ruins of the old world.
