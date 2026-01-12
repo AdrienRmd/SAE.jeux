@@ -28,13 +28,9 @@ int value_line(const char *filename, int line, char *buffer_destination, int len
     return 0;
 }
 
-void print_line(const char *filename, int line, char *buffer_destination){
-    print(filename, line, buffer_destination, sizeof(buffer_destination));
-}
-
-void print(const char *filename, int line, char *buffer_destination, int length){
+void print_line(const char *filename, int line){
     char buffer[256];
-    value_line(filename, line, buffer_destination, length);
+    value_line(filename, line, buffer, sizeof(buffer));
     printf("%s", buffer);
 }
 
@@ -42,37 +38,15 @@ void print(const char *filename, int line, char *buffer_destination, int length)
 void intro(){
     FILE *intro = fopen('intro.txt', "r");
 
-    char buffer[256];
-    value_line(intro, 1, buffer, sizeof(buffer));
-    printf("%s", buffer)
+    print_line(intro, 1);
+
+    fclose(intro);
 }
 
 
 int main()
 {
-    /*// open the file
-    FILE *file = fopen(file, "r");
+    intro();
 
-    // read the file size
-    struct stat sb;
-    stat(file, &sb);
-
-    // allocation of the character array
-    char *file_contents = malloc(sb.st_size);
-
-    // display line by line
-    while (fscanf(file, "%[^\n] ", file_contents) != EOF)
-    {
-        printf("> %s\n", file_contents);
-    }
-
-    // close file
-    fclose(file);
-    exit(EXIT_SUCCESS);*/
-
-    char buffer[256];
-
-    value_line("fr/intro-FR.txt", 3, buffer, sizeof(buffer));
-
-
+    return 0;
 }
