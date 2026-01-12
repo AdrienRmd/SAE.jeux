@@ -6,6 +6,7 @@
 // plaine
 typedef struct
 {
+
     int difficulty_biome;
 } plaine;
 
