@@ -1,5 +1,5 @@
-#ifndef GESTION_FICHIERS_H
-#define GESTION_FICHIERS_H
+#ifndef STRUCTURE_H
+#define STRUCTURE_H
 
 typedef struct
 {
@@ -10,12 +10,24 @@ typedef struct
     int def;
     int dodge;
     int spe;
+    int luck;
     int exp;
     int lvl;
     char job[10];
     int money;
     float difficulty;
+} Player;
 
-} player;
+typedef struct 
+{
+    char name[20];
+    int pv;
+    int att;
+    int def;
+    int dodge;
+    int spe;
+    int luck;
+    char *table_loot[];
+} Monster;
 
 #endif

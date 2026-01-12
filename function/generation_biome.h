@@ -1,4 +1,4 @@
-#ifndef GESTION_FICHIERS_H
-#define GESTION_FICHIERS_H
+#ifndef GEN_BIOME_H
+#define GEN_BIOME_H
 
 #endif

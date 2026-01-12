@@ -1,5 +1,5 @@
-#ifndef GESTION_FICHIERS_H
-#define GESTION_FICHIERS_H
+#ifndef MANIP_FILE_H
+#define MANIP_FILE_H
 
 int value_line(const char *filename, int line, char *buffer_destination, int length);
 

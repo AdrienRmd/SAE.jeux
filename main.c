@@ -10,13 +10,15 @@ int main()
 {
     int language = intro();
 
-    if (language == 0)
+    if (language == 'f' || language == 'F')
     {
         player_init("fr/intro-FR.txt");
+
     }
-    else
+    else if (language == 'e' || language == 'E')
     {
         player_init("en/intro-EN.txt");
     }
+
     return 0;
 }
