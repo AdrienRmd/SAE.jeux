@@ -1,0 +1,5 @@
+# Ignore PDF files
+SAE_jeu_mode_texte_anglais.pdf
+
+# Ignore all PDF files (optional)
+*.pdf
