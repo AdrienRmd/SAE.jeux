@@ -1,0 +1,55 @@
+Casque du Commandant Vaillant
+
+Plastron du Guerrier Courageux
+
+Jambières du Cavalier Rapide
+
+Bottes de l'Explorateur Intrépide
+
+Gants du Combattant Agile
+
+Amulette de la Vitesse Éclair
+
+Amulette de la Santé Robuste
+
+Amulette de la Force Puissante
+
+Amulette de l'Esquive Rapide
+
+Amulette de la Défense Solide
+
+Amulette de la Chance Exceptionnelle
+
+Épée du Chevalier Bravoure
+
+Épée Longue du Guerrier Noble
+
+Bouclier du Protecteur Vaillant
+
+Bouclier Moyen du Défenseur Courageux
+
+Bouclier Lourd du Gardien Robuste
+
+Arc de l'Archer Expert
+
+Arc Long du Chasseur Habile
+
+Arbalète du Tireur Précis
+
+Fronde du Lanceur Agile
+
+Dague du Voleur Rapide
+
+Hachette du Bûcheron Expérimenté
+
+Marteau du Soldat Puissant
+
+Épieu du Chasseur Talentueux
+
+Lance du Guerrier Vaillant
+
+Bâton du Mage Initié
+
+Couteau du Lanceur Adroit
+
+Javelot du Athlète Exceptionnel

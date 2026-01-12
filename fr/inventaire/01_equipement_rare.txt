@@ -1,0 +1,55 @@
+Casque du Gardien Novice
+
+Plastron du Lutteur Débutant
+
+Jambières du Marcheur Actif
+
+Bottes du Voyageur Ordinaire
+
+Gants du Combattant Débutant
+
+Amulette de la Vitesse Correcte
+
+Amulette de la Santé Moyenne
+
+Amulette de la Force Acceptable
+
+Amulette de l'Esquive Moyenne
+
+Amulette de la Défense Correcte
+
+Amulette de la Chance Favorable
+
+Épée du Soldat Débutant
+
+Épée Longue du Guerrier Novice
+
+Bouclier du Protecteur Apprenti
+
+Bouclier Moyen du Défenseur Débutant
+
+Bouclier Lourd du Gardien Novice
+
+Arc de l'Archer Apprenti
+
+Arc Long du Chasseur Débutant
+
+Arbalète du Tireur Novice
+
+Fronde du Lanceur Débutant
+
+Dague du Voleur Novice
+
+Hachette du Bûcheron Débutant
+
+Marteau du Combattant Novice
+
+Épieu du Chasseur Débutant
+
+Lance du Guerrier Novice
+
+Bâton du Mage Débutant
+
+Couteau du Lanceur Novice
+
+Javelot du Athlète Débutant

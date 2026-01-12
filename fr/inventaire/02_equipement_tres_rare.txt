@@ -1,0 +1,55 @@
+Casque du Soldat Expérimenté
+
+Plastron du Combattant Solide
+
+Jambières du Marcheur Endurant
+
+Bottes du Voyageur Rapide
+
+Gants du Lutteur Fort
+
+Amulette de la Vitesse Améliorée
+
+Amulette de la Santé Renforcée
+
+Amulette de la Force Supérieure
+
+Amulette de l'Esquive Efficace
+
+Amulette de la Défense Renforcée
+
+Amulette de la Chance Supérieure
+
+Épée du Guerrier Habile
+
+Épée Longue du Combattant Expérimenté
+
+Bouclier du Défenseur Compétent
+
+Bouclier Moyen du Protecteur Efficace
+
+Bouclier Lourd du Gardien Solide
+
+Arc de l'Archer Talentueux
+
+Arc Long du Chasseur Expérimenté
+
+Arbalète du Tireur Compétent
+
+Fronde du Lanceur Précis
+
+Dague du Voleur Adroit
+
+Hachette du Bûcheron Compétent
+
+Marteau du Combattant Robuste
+
+Épieu du Chasseur Habile
+
+Lance du Guerrier Expérimenté
+
+Bâton du Mage Apprenti
+
+Couteau du Lanceur Précis
+
+Javelot du Athlète Talentueux

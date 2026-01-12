@@ -1,18 +1,55 @@
-casque
+Casque Simple
 
-plastron
+Plastron Ordinaire
 
-jambières
+Jambières Standard
 
-bottes
+Bottes Basiques
 
-épée
+Gants Communs
 
-bouclier leger
+Amulette de Vitesse
 
-bouclier moyeb
+Amulette de Santé
 
-arc
+Amulette de Force
 
+Amulette d'Esquive
 
+Amulette de Défense
 
+Amulette de Chance
+
+Épée de Fer
+
+Épée Longue Standard
+
+Bouclier Léger
+
+Bouclier Moyen
+
+Bouclier Lourd
+
+Arc Simple
+
+Arc Long
+
+Arbalète de Base
+
+Fronde
+
+Dague
+
+Hachette
+
+Marteau
+
+Épieu
+
+Lance
+
+Bâton
+
+Couteau de Lancer
+
+Javelot
