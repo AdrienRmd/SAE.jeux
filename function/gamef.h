@@ -2,10 +2,10 @@
 #define GAME_H
 #include "../structure/structure.h"
 
-int intro();
+char intro();
 
-void player_init(char filename);
+void player_init(char *filename);
 
-void battle(Player player, Monster monster, int lang);
+/*void battle(Player player, Monster monster, int lang);*/
 
 #endif
