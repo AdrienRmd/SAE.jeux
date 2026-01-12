@@ -8,37 +8,29 @@
 
 char intro()
 {
-    FILE *intro = fopen('intro.txt', "r");
-
-    print_line(intro, 1);
+    print_line("intro.txt", 1);
     char language;
     scanf("%c", &language);
-    fclose(intro);
     return language;
 }
 
 
-void player_init(char filename)
+void player_init(char *filename)
 {
-    FILE *text = fopen(filename, "r");
-
-    print_line(text, 1);
+    print_line(filename, 1);
     char choice[20];
     for (int i = 1; i <= 4; i++)
     {
-        print_line(text, i + 2);
-        scanf("%s", &choice);
+        print_line(filename, i + 2);
+        scanf("%c", choice);
         change_line("player/base_info.txt", i, choice);
     }
-    free(&choice);
 
-    print_line(text, 8);
-    print_line(text, 9);
-
-    fclose(text);
+    print_line(filename, 8);
+    print_line(filename, 9);
 }
 
-void battle(Player player, Monster monster, int lang){
+/*void battle(Player player, Monster monster, int lang){
     while (player.pv > 0 && monster.pv > 0){
         if (player.spe > monster.spe){
             combat_action(player, monster, lang);
@@ -53,4 +45,4 @@ void battle(Player player, Monster monster, int lang){
             }
         }
     }
-}
+}*/
