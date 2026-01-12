@@ -52,10 +52,72 @@ int intro(){
     }
 }
 
+void player_init(char filename){
+    FILE *text = fopen(filename, "r");
+
+    print_line(text, 1);
+    char choice[20];
+    for (int i = 1 ; i <= 4 ; i++){
+        print_line(text, i + 2);
+        scanf("%s", &choice);
+        change_line("player/base_info.txt", i, choice);
+    }
+    free(&choice);
+
+    print_line(text, 8);
+    print_line(text, 9);
+
+    fclose(text);
+}
+
+void change_line(const char *filename, int line, const char *text) {
+    FILE *f_source, *f_temp;
+    char buffer[256];
+    int i = 1;
+    char temp_name[] = "temp____.tmp"; // Nom temporaire
+
+    f_source = fopen(filename, "r");
+    if (f_source == NULL) {
+        printf("Error : Can't open original file.\n");
+        return;
+    }
+
+    f_temp = fopen(temp_name, "w");
+    if (f_temp == NULL) {
+        printf("Erreur : Can't create temporary file.\n");
+        fclose(f_source);
+        return;
+    }
+
+
+    while (fgets(buffer, sizeof(buffer), f_source) != NULL) {
+        if (i == line) {
+            fprintf(f_temp, "%s\n", text);
+        } else {
+            fputs(buffer, f_temp);
+        }
+        i++;
+    }
+
+
+    fclose(f_source);
+    fclose(f_temp);
+
+
+    remove(filename);
+
+    rename(temp_name, filename);
+}
 
 int main()
 {
-    intro();
+    int language = intro();
 
+    if (language == 0){
+        player_init("fr/intro-FR.txt");
+    }
+    else{
+        player_init("en/intro-EN.txt");
+    }
     return 0;
 }
