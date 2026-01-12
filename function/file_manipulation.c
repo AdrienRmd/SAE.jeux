@@ -2,6 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include "file_manipulation.h"
+#include "../structure/structure.h"
+#include "other.h"
 #include <sys/stat.h>
 
 int value_line(const char *filename, int line, char *buffer_destination, int length)
