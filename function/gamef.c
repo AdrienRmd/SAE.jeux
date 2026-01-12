@@ -6,23 +6,15 @@
 #include <sys/stat.h>
 #include "gamef.h"
 
-int intro()
+char intro()
 {
     FILE *intro = fopen('intro.txt', "r");
 
     print_line(intro, 1);
     char language;
     scanf("%c", &language);
-    if (language == "f" || language == "F")
-    {
-        fclose(intro);
-        return 0;
-    }
-    else
-    {
-        fclose(intro);
-        return 1;
-    }
+    fclose(intro);
+    return language;
 }
 
 
