@@ -4,12 +4,20 @@
 #include <string.h>
 
 int value_line(const char *filename, int line, char *buffer_destination, int length){
-    FILE *file = fopen(filename, 'r');
+    FILE *file = fopen(filename, "r");
+
+    if (file == NULL){
+        return 0;
+    }
+
     int i = 1;
+    
     while (fgets(buffer_destination, length, file) != NULL) {
         if (i == line) {
-            buffer_destination[strcspn(buffer_destination, "\n")] = 0;
-
+            size_t len = strlen(buffer_destination);
+            if (len > 0 && buffer_destination[len - 1] == '\n') {
+                buffer_destination[len - 1] = '\0';
+            }
             fclose(file);
             return 1;
         }
