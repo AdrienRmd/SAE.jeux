@@ -4,6 +4,7 @@
 #include "file_manipulation.h"
 #include <time.h>
 #include <sys/stat.h>
+#include "gamef.h"
 
 int intro()
 {
@@ -43,4 +44,21 @@ void player_init(char filename)
     print_line(text, 9);
 
     fclose(text);
+}
+
+void battle(Player player, Monster monster, int lang){
+    while (player.pv > 0 && monster.pv > 0){
+        if (player.spe > monster.spe){
+            combat_action(player, monster, lang);
+            if (monster.pv > 0){
+                monster_attack(player, monster, lang);
+            }
+        }
+        else{
+            monster_attack(player, monster, lang);
+            if (player.pv > 0){
+                combat_action(player, monster, lang);
+            }
+        }
+    }
 }
