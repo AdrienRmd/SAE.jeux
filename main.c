@@ -3,25 +3,7 @@
 #include <sys/stat.h>
 #include <string.h>
 #include <time.h>
-#include "function/file_manipulation.h"
 #include "function/gamef.h"
-
-typedef struct
-{
-    char name[20];
-    char race[10];
-    int pv;
-    int att;
-    int def;
-    int dodge;
-    int spe;
-    int exp;
-    int lvl;
-    char job[10];
-    int money;
-    float difficulty;
-
-} player;
 
 
 /**
