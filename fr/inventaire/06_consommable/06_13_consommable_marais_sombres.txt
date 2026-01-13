@@ -1,29 +1,79 @@
 baie des ténèbres
-4 1 1 1 3 1
+4
+1
+1
+1
+3
+1
 
 champignon vénéneux
-3 1 1 1 3 1
+3
+1
+1
+1
+3
+1
 
 eau stagnante
-2 1 1 1 3 1
+2
+1
+1
+1
+3
+1
 
 racine corrompue
-3 1 1 1 3 1
+3
+1
+1
+1
+3
+1
 
 insecte des ombres
-3 2 2 2 3 2
+3
+2
+2
+2
+3
+2
 
 chair putride
-3 2 2 2 3 2
+3
+2
+2
+2
+3
+2
 
 soupe des marais sombres
-4 2 2 2 3 2
+4
+2
+2
+2
+3
+2
 
 thé de poison
-3 1 1 1 4 1
+3
+1
+1
+1
+4
+1
 
 énergie des ténèbres
-5 3 3 3 6 3
+5
+3
+3
+3
+6
+3
 
 potion de résistance au poison
-4 2 4 2 3 3
+4
+2
+4
+2
+3
+3

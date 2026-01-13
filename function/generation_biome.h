@@ -15,6 +15,14 @@ typedef enum
     brulant = 7     // Coefficient 0.75 pour les stats
 } Temperature;
 
+//
+typedef struct
+{
+    char *name;     // Nom des ressources
+    float quantite; // Taux de récolte (entre 1 et 4)
+    float purete;   // Rareté des ressources (coefficient entre 0.70 et 1.50) taux te recolte
+} Recolte;
+
 // Weather enum for biomes
 typedef enum
 {
@@ -46,13 +54,34 @@ typedef struct
     char *description;       // Description détaillée
     Temperature temperature; // Type de température (affecte les stats)
     Meteo meteo;             // Type de météo (joue sur les stats)
-    Commerce commerce;       // Pour commercer
-    char *consommable;       // Consommable unique pour chaque biome
-    bool peut_recolter;      // Peut récolter les ressources (pas obligatoire)
+    Recolte peut_recolter;   // Peut récolter les ressources (pas obligatoire)
     char **monstre_presence; // Liste de chaînes de caractères
     int monstre_count;       // Nombre de monstres dans la liste
     float difficulty_biome;  // Coefficient de difficulté (entre 0.80 et 3.00)
-} lieu;
+} Biome;
+
+typedef struct
+{
+    char *description;       // Description détaillée
+    Temperature temperature; // Type de température (affecte les stats)
+    Meteo meteo;             // Type de météo (joue sur les stats)
+    Commerce commerce;       // Pour commercer
+    float difficulty_biome;  // Coefficient de difficulté (entre 0.80 et 3.00)
+} Marchand;
+
+typedef struct
+{
+
+} Jeux_casino;
+
+typedef struct
+{
+    char *description;       // Description détaillée
+    Temperature temperature; // Type de température (affecte les stats)
+    Meteo meteo;             // Type de météo (joue sur les stats)
+    Jeux_casino casino;      // Pour le casino
+    float difficulty_biome;  // Coefficient de difficulté (entre 0.80 et 3.00)
+} Casino;
 
 // biome facile
 

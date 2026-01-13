@@ -1,83 +1,223 @@
 Casque du Gardien Novice
-7 3 15 3 3 3
+7
+3
+15
+3
+3
+3
 
 Plastron du Lutteur Débutant
-12 5 13 3 3 3
+12
+5
+13
+3
+3
+3
 
 Jambières du Marcheur Actif
-10 3 12 6 3 3
+10
+3
+12
+6
+3
+3
 
 Bottes du Voyageur Ordinaire
-8 3 11 8 6 3
+8
+3
+11
+8
+6
+3
 
 Gants du Combattant Débutant
-6 6 9 6 6 3
+6
+6
+9
+6
+6
+3
 
 Amulette de la Vitesse Correcte
-6 6 6 6 15 6
+6
+6
+6
+6
+15
+6
 
 Amulette de la Santé Moyenne
-15 3 6 3 3 6
+15
+3
+6
+3
+3
+6
 
 Amulette de la Force Acceptable
-6 15 3 3 3 6
+6
+15
+3
+3
+3
+6
 
 Amulette de l'Esquive Moyenne
-6 3 6 15 6 6
+6
+3
+6
+15
+6
+6
 
 Amulette de la Défense Correcte
-8 3 15 3 3 6
+8
+3
+15
+3
+3
+6
 
 Amulette de la Chance Favorable
-6 6 6 6 6 15
+6
+6
+6
+6
+6
+15
 
 Épée du Soldat Débutant
-6 15 3 3 6 3
+6
+15
+3
+3
+6
+3
 
 Épée Longue du Guerrier Novice
-6 17 3 3 6 3
+6
+17
+3
+3
+6
+3
 
 Bouclier du Protecteur Apprenti
-8 3 13 3 3 3
+8
+3
+13
+3
+3
+3
 
 Bouclier Moyen du Défenseur Débutant
-10 3 15 3 3 3
+10
+3
+15
+3
+3
+3
 
 Bouclier Lourd du Gardien Novice
-12 3 17 3 3 3
+12
+3
+17
+3
+3
+3
 
 Arc de l'Archer Apprenti
-6 13 3 6 9 3
+6
+13
+3
+6
+9
+3
 
 Arc Long du Chasseur Débutant
-6 15 3 6 9 3
+6
+15
+3
+6
+9
+3
 
 Arbalète du Tireur Novice
-6 13 3 3 6 3
+6
+13
+3
+3
+6
+3
 
 Fronde du Lanceur Débutant
-6 12 3 6 9 3
+6
+12
+3
+6
+9
+3
 
 Dague du Voleur Novice
-6 13 3 9 12 3
+6
+13
+3
+9
+12
+3
 
 Hachette du Bûcheron Débutant
-6 13 3 6 9 3
+6
+13
+3
+6
+9
+3
 
 Marteau du Combattant Novice
-6 15 3 3 6 3
+6
+15
+3
+3
+6
+3
 
 Épieu du Chasseur Débutant
-6 13 3 6 9 3
+6
+13
+3
+6
+9
+3
 
 Lance du Guerrier Novice
-6 15 3 6 9 3
+6
+15
+3
+6
+9
+3
 
 Bâton du Mage Débutant
-6 12 3 6 9 3
+6
+12
+3
+6
+9
+3
 
 Couteau du Lanceur Novice
-6 13 3 9 12 3
+6
+13
+3
+9
+12
+3
 
 Javelot du Athlète Débutant
-6 13 3 6 9 3
+6
+13
+3
+6
+9
+3

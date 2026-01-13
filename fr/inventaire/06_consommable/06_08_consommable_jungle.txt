@@ -1,29 +1,79 @@
 fruit exotique
-5 1 1 1 4 1
+5
+1
+1
+1
+4
+1
 
 feuille de jungle
-3 1 1 1 3 1
+3
+1
+1
+1
+3
+1
 
 eau de pluie
-3 1 1 1 5 1
+3
+1
+1
+1
+5
+1
 
 insecte tropical
-4 2 2 2 3 2
+4
+2
+2
+2
+3
+2
 
 baie sauvage
-5 1 1 1 3 1
+5
+1
+1
+1
+3
+1
 
 viande de bête
-7 2 2 1 3 1
+7
+2
+2
+1
+3
+1
 
 racine de jungle
-5 2 2 2 3 2
+5
+2
+2
+2
+3
+2
 
 soupe tropicale
-6 2 2 2 3 2
+6
+2
+2
+2
+3
+2
 
 thé de jungle
-3 1 1 1 5 2
+3
+1
+1
+1
+5
+2
 
 énergie tropicale
-6 3 3 3 6 3
+6
+3
+3
+3
+6
+3

@@ -12,7 +12,12 @@ Chaque objet possède 6 statistiques :
 ## Exemple de format
 ```
 Nom de l'objet
-PV ATT DEF DODGE SPEED CHANCE
+PV
+ATT
+DEF
+DODGE
+SPEED
+CHANCE
 ```
 
 ## Équipements par rareté
