@@ -1,3 +1,4 @@
+1
 loup solitaire
 10
 3
@@ -5,8 +6,9 @@ loup solitaire
 3
 2
 2
-// loot: 00_equipement_commun.txt (rareté: commune)
+0
 
+2
 aigle chasseur
 6
 6
@@ -14,13 +16,14 @@ aigle chasseur
 5
 3
 3
-// loot: 01_equipement_rare.txt (rareté: rare)
+1
 
+3
 loup alpha
-15
+20
 5
 4
 2
 3
 2
-// loot: 01_equipement_rare.txt (rareté: rare)
+2
