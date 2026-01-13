@@ -1,11 +1,3 @@
-zombie des marais
-32 14 8 4 2 2
-// loot: 03_equipement_epique.txt (rareté: épique)
-
-squelette guerrier
-30 15 7 5 3 2
-// loot: 03_equipement_epique.txt (rareté: épique)
-
 spectre vénéneux
 34 14 8 4 3 2
 // loot: 04_equipement_legendaire.txt (rareté: légendaire)

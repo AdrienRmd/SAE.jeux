@@ -2,18 +2,10 @@ bison sauvage
 16 6 4 2 2 1
 // loot: 00_equipement_commun.txt (rareté: commune)
 
-loup des prairies
-14 5 3 3 2 2
-// loot: 00_equipement_commun.txt (rareté: commune)
-
-serpent des herbes
-12 6 2 4 3 2
-// loot: 00_equipement_commun.txt (rareté: commune)
-
 aigle royal
 10 7 2 5 3 3
 // loot: 01_equipement_rare.txt (rareté: rare)
 
-chef de tribu
+griffon
 20 6 5 3 3 2
 // loot: 01_equipement_rare.txt (rareté: rare)

@@ -6,14 +6,6 @@ kraken des profondeurs
 28 11 7 2 2 2
 // loot: 02_equipement_tres_rare.txt (rareté: très rare)
 
-serpent de mer
-22 12 5 4 3 2
-// loot: 03_equipement_epique.txt (rareté: épique)
-
-aigle marin
-18 11 4 5 3 3
-// loot: 03_equipement_epique.txt (rareté: épique)
-
 seigneur des océans
 30 12 8 4 4 3
 // loot: 03_equipement_epique.txt (rareté: épique)

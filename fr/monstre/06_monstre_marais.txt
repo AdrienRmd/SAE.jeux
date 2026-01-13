@@ -1,7 +1,3 @@
-grenouille géante
-16 7 3 4 2 2
-// loot: 01_equipement_rare.txt (rareté: rare)
-
 serpent des marais
 20 8 4 3 2 2
 // loot: 01_equipement_rare.txt (rareté: rare)
@@ -9,10 +5,6 @@ serpent des marais
 chasseur des marais
 18 7 4 4 3 2
 // loot: 01_equipement_rare.txt (rareté: rare)
-
-aigle des marais
-14 9 3 5 3 3
-// loot: 02_equipement_tres_rare.txt (rareté: très rare)
 
 seigneur des marais
 24 9 6 3 4 3
