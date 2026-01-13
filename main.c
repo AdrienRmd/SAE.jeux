@@ -5,7 +5,7 @@
 #include <time.h>
 #include "function/gamef.h"
 
-const NB_ETAGE = 10;
+const NB_FLOOR = 10;
 
 int main()
 {
@@ -17,7 +17,7 @@ int main()
         language = 'fr';
         player_init("fr/intro-FR.txt");
 
-        for (int etage = 1 ; etage < NB_ETAGE ; etage++){
+        for (int floor = 1 ; floor < NB_FLOOR ; floor++){
 
         }
 
@@ -28,7 +28,7 @@ int main()
         language = 'en';
         player_init("en/intro-EN.txt");
 
-        for (int etage = 1 ; etage < NB_ETAGE ; etage++){
+        for (int floor = 1 ; floor < NB_FLOOR ; floor++){
 
         }
 
