@@ -8,6 +8,9 @@
 // lieu
 typedef struct
 {
+    description ==> Description détaillé
+    temperature ==> affect sur les stats
+    meteo ==> joue sur les stats
     commerce ==> pour commercer
     consommable ==> consommable unique pour chaque biome
     piller / recolter / fouiller ==> recolte les ressources
