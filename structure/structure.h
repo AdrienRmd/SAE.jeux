@@ -18,17 +18,4 @@ typedef struct
     float difficulty;
 } Player;
 
-typedef struct 
-{
-    int id;
-    char name[20];
-    int pv;
-    int att;
-    int def;
-    int dodge;
-    int spe;
-    int luck;
-    int *table_loot[][];
-} Monster;
-
 #endif

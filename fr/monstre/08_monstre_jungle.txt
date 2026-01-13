@@ -1,11 +1,29 @@
+25
 tigre des jungles
-22 9 5 3 2 2
-// loot: 01_equipement_rare.txt (rareté: rare)
+22
+9
+5
+3
+2
+2
+1
 
+26
 serpent constricteur
-20 10 4 4 2 2
-// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+20
+10
+4
+4
+2
+2
+2
 
+27
 seigneur de la jungle
-26 11 6 4 4 3
-// loot: 03_equipement_epique.txt (rareté: épique)
+26
+11
+6
+4
+4
+3
+3

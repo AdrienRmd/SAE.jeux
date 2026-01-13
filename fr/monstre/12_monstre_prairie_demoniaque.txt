@@ -1,11 +1,29 @@
+37
 démon inférieur
-30 13 8 4 2 2
-// loot: 03_equipement_epique.txt (rareté: épique)
+30
+13
+8
+4
+2
+2
+3
 
+38
 chien des enfers
-28 14 7 5 3 2
-// loot: 03_equipement_epique.txt (rareté: épique)
+32
+14
+7
+5
+3
+2
+3
 
+39
 sorcier des plaines
-32 13 8 4 3 2
-// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+32
+13
+8
+4
+3
+2
+4

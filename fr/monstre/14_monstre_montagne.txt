@@ -1,11 +1,24 @@
+43
 aigle des sommets
-34 15 9 5 2 2
-// loot: 03_equipement_epique.txt (rareté: épique)
+34
+15
+9
+5
+2
+2
+4
 
+44
 dragon des cimes
-30 17 8 6 3 3
-// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+30
+17
+8
+6
+3
+3
+4
 
+45
 seigneur des montagnes
 40 17 11 5 4 3
-// loot: 05_equipement_mythique.txt (rareté: mythique)
+5

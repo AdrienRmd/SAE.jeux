@@ -1,4 +1,4 @@
-1
+0
 loup solitaire
 10
 3
@@ -8,7 +8,7 @@ loup solitaire
 2
 0
 
-2
+1
 aigle chasseur
 6
 6
@@ -16,9 +16,9 @@ aigle chasseur
 5
 3
 3
-1
+0
 
-3
+2
 loup alpha
 20
 5
@@ -27,3 +27,4 @@ loup alpha
 3
 2
 2
+0

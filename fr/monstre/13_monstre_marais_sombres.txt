@@ -1,11 +1,31 @@
+40
 spectre vénéneux
-34 14 8 4 3 2
-// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+34
+14
+8
+4
+3
+2
+4
 
+41
 liche des marais
-28 16 7 5 3 3
-// loot: 04_equipement_legendaire.txt (rareté: légendaire)
+28
+16
+7
+5
+3
+3
+4
 
+4
+
+42
 seigneur de la décomposition
-38 16 10 4 4 3
-// loot: 05_equipement_mythique.txt (rareté: mythique)
+38
+16
+10
+4
+4
+3
+5

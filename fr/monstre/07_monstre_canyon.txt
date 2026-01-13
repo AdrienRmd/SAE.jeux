@@ -1,11 +1,24 @@
+22
 lézard des falaises
-18 8 4 4 2 2
-// loot: 01_equipement_rare.txt (rareté: rare)
+18
+8
+4
+4
+2
+2
+1
 
+23
 aigle des canyons
 16 9 3 5 3 3
-// loot: 01_equipement_rare.txt (rareté: rare)
+1
 
+24
 gardien du canyon
-20 9 5 4 3 3
-// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+20
+9
+5
+4
+3
+3
+2

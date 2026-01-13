@@ -1,11 +1,29 @@
+28
 requin géant
-24 10 6 3 2 2
-// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+24
+10
+6
+3
+2
+2
+2
 
+29
 kraken des profondeurs
-28 11 7 2 2 2
-// loot: 02_equipement_tres_rare.txt (rareté: très rare)
+28
+11
+7
+2
+2
+2
+2
 
+30
 seigneur des océans
-30 12 8 4 4 3
-// loot: 03_equipement_epique.txt (rareté: épique)
+30
+12
+8
+4
+4
+3
+3

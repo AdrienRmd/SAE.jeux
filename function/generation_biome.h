@@ -269,7 +269,7 @@ typedef enum
     marais_sombres = 14,
     montagne = 15,
 
-    // biomes marches spéciaux
+    // biomes minages spéciaux
     volcan = 16,
     foret = 17,
     grotte = 18,
