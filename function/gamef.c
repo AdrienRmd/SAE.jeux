@@ -30,6 +30,39 @@ void player_init(char *filename)
     print_line(filename, 9);
 }
 
+void choose_random_biome(int floor, int *biome){
+
+    int random;
+
+    for (int i = 0 ; i < 2 ; i++){
+        if (random_number(0, 9) == 0 && biome[0] < 21){
+            random = random_number(21, 25);
+        }
+
+        else if (floor == 1 || floor == 2){
+            random = random_number(1, 5);
+        }
+        else if (floor == 3 || floor == 4){
+            random = random_number(6, 10);
+        }
+        else if (floor == 5 || floor == 6){
+            random = random_number(11, 15);
+        }
+        else {
+            random = random_number(16, 20);
+        }
+        biome[i] = random;
+    }
+}
+
+int choose_biome(int *biome){
+
+    char *biome1 = 
+    printf("Quel biome voulez-vous explorer ?")
+
+    printf("")
+}
+
 /*void battle(Player player, Monster monster, int lang){
     while (player.pv > 0 && monster.pv > 0){
         if (player.spe > monster.spe){

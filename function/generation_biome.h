@@ -52,12 +52,9 @@ typedef struct
 typedef struct
 {
     char *description;       // Description détaillée
+    float difficulty_biome;  // Coefficient de difficulté (entre 0.80 et 3.00)
     Temperature temperature; // Type de température (affecte les stats)
     Meteo meteo;             // Type de météo (joue sur les stats)
-    Recolte peut_recolter;   // Peut récolter les ressources (pas obligatoire)
-    char **monstre_presence; // Liste de chaînes de caractères
-    int monstre_count;       // Nombre de monstres dans la liste
-    float difficulty_biome;  // Coefficient de difficulté (entre 0.80 et 3.00)
 } Biome;
 
 typedef struct
