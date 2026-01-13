@@ -23,7 +23,7 @@ int main()
         for (floor = 1 ; floor < NB_FLOOR ; floor++){
             ongoing_floor(language, biome_chosen, floor);
             choose_random_biome(floor, biome);
-            choose_biome(biome);
+            choose_biome(biome, language);
         }
 
         final_floor(language);
@@ -35,6 +35,8 @@ int main()
 
         for (floor = 1 ; floor < NB_FLOOR ; floor++){
             ongoing_floor(language, biome_chosen, floor);
+            choose_random_biome(floor, biome);
+            choose_biome(biome, language);
         }
 
         final_floor(language);

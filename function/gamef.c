@@ -55,12 +55,13 @@ void choose_random_biome(int floor, int *biome){
     }
 }
 
-int choose_biome(int *biome){
+int choose_biome(int *biome, char lang){
 
     int choice;
-    char *biome1 = 10 * (biome[0] - 1) + 2;
-    char *biome2 = 10 * (biome[1] - 1) + 2;
-    printf("Quel biome voulez-vous explorer ?");
+    char *biome1, *biome2;
+    value_line(lang + "/biome.txt", 10 * (biome[0] - 1) + 2, biome1, sizeof(biome1));
+    value_line(lang + "/biome.txt", 10 * (biome[1] - 1) + 2, biome2, sizeof(biome2));
+    print_line(lang + "/text.txt", 11);
     printf("1 - %c / 2 - %c : ", biome1, biome2);
     scanf("%d", &choice);
     if (choice == 1){
