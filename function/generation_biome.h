@@ -54,7 +54,6 @@ typedef struct
     float difficulty_biome;  // Coefficient de difficulté (entre 0.80 et 3.00)
     Temperature temperature; // Type de température (affecte les stats)
     Meteo meteo;             // Type de météo (joue sur les stats)
-    char **monstre_presence; // Liste de chaînes de caractères
 
 } Biome;
 

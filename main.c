@@ -10,7 +10,9 @@ const int NB_FLOOR = 10;
 int main()
 {
     char language = intro();
-    int biome = choose_random_biome();
+    int floor = 0;
+    int *biome[2];
+    int biome_chosen = random_number(1, 5);
 
     if (language == 'f' || language == 'F')
     {   
@@ -18,22 +20,22 @@ int main()
         player_init("fr/intro-FR.txt");
 
 
-        for (int floor = 1 ; floor < NB_FLOOR ; floor++){
-            biome = ongoing_floor(language, biome, floor);
+        for (floor = 1 ; floor < NB_FLOOR ; floor++){
+            ongoing_floor(language, biome_chosen, floor);
         }
 
-        final_floor("%c/final.txt", language);
+        final_floor(language);
     }
     else if (language == 'e' || language == 'E')
     {
         language = 'en';
         player_init("en/intro-EN.txt");
 
-        for (int floor = 1 ; floor < NB_FLOOR ; floor++){
-            biome = ongoing_floor(language, biome, floor);
+        for (floor = 1 ; floor < NB_FLOOR ; floor++){
+            ongoing_floor(language, biome_chosen, floor);
         }
 
-        final_floor("%c/final.txt", language);
+        final_floor(language);
     }
 
     return 0;
