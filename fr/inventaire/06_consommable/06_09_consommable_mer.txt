@@ -1,29 +1,79 @@
 eau de mer
-2 1 1 1 3 1
+2
+1
+1
+1
+3
+1
 
 poisson marin
-6 2 2 1 3 1
+6
+2
+2
+1
+3
+1
 
 algue marine
-4 1 1 1 3 1
+4
+1
+1
+1
+3
+1
 
 crabe comestible
-5 2 2 2 3 2
+5
+2
+2
+2
+3
+2
 
 coquillage
-3 1 1 1 2 1
+3
+1
+1
+1
+2
+1
 
 sel marin
-2 1 1 1 2 1
+2
+1
+1
+1
+2
+1
 
 soupe de poisson
-6 2 2 2 3 2
+6
+2
+2
+2
+3
+2
 
 thé d'algue
-3 1 1 1 5 2
+3
+1
+1
+1
+5
+2
 
 énergie marine
-5 3 3 3 6 3
+5
+3
+3
+3
+6
+3
 
 potion de respiration sous-marine
-4 2 4 2 3 3
+4
+2
+4
+2
+3
+3

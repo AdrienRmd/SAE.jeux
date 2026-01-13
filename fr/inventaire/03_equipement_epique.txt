@@ -1,83 +1,223 @@
 Casque du Commandant Vaillant
-20 0 30 0 0 0
+20
+0
+30
+0
+0
+0
 
 Plastron du Guerrier Courageux
-25 5 28 5 5 5
+25
+5
+28
+5
+5
+5
 
 Jambières du Cavalier Rapide
-22 5 25 10 8 5
+22
+5
+25
+10
+8
+5
 
 Bottes de l'Explorateur Intrépide
-20 5 23 15 12 5
+20
+5
+23
+15
+12
+5
 
 Gants du Combattant Agile
-18 12 18 12 12 5
+18
+12
+18
+12
+12
+5
 
 Amulette de la Vitesse Éclair
-18 18 18 18 35 18
+18
+18
+18
+18
+35
+18
 
 Amulette de la Santé Robuste
-35 5 18 5 5 18
+35
+5
+18
+5
+5
+18
 
 Amulette de la Force Puissante
-18 35 5 5 5 18
+18
+35
+5
+5
+5
+18
 
 Amulette de l'Esquive Rapide
-18 5 18 35 18 18
+18
+5
+18
+35
+18
+18
 
 Amulette de la Défense Solide
-20 5 35 5 5 18
+20
+5
+35
+5
+5
+18
 
 Amulette de la Chance Exceptionnelle
-18 18 18 18 18 35
+18
+18
+18
+18
+18
+35
 
 Épée du Chevalier Bravoure
-18 35 5 5 18 5
+18
+35
+5
+5
+18
+5
 
 Épée Longue du Guerrier Noble
-18 38 5 5 18 5
+18
+38
+5
+5
+18
+5
 
 Bouclier du Protecteur Vaillant
-22 5 30 5 5 5
+22
+5
+30
+5
+5
+5
 
 Bouclier Moyen du Défenseur Courageux
-25 5 35 5 5 5
+25
+5
+35
+5
+5
+5
 
 Bouclier Lourd du Gardien Robuste
-28 5 38 5 5 5
+28
+5
+38
+5
+5
+5
 
 Arc de l'Archer Expert
-18 30 5 15 20 5
+18
+30
+5
+15
+20
+5
 
 Arc Long du Chasseur Habile
-18 35 5 15 20 5
+18
+35
+5
+15
+20
+5
 
 Arbalète du Tireur Précis
-18 30 5 5 18 5
+18
+30
+5
+5
+18
+5
 
 Fronde du Lanceur Agile
-18 28 5 15 20 5
+18
+28
+5
+15
+20
+5
 
 Dague du Voleur Rapide
-18 30 5 20 25 5
+18
+30
+5
+20
+25
+5
 
 Hachette du Bûcheron Expérimenté
-18 30 5 15 20 5
+18
+30
+5
+15
+20
+5
 
 Marteau du Soldat Puissant
-18 35 5 5 18 5
+18
+35
+5
+5
+18
+5
 
 Épieu du Chasseur Talentueux
-18 30 5 15 20 5
+18
+30
+5
+15
+20
+5
 
 Lance du Guerrier Vaillant
-18 35 5 15 20 5
+18
+35
+5
+15
+20
+5
 
 Bâton du Mage Initié
-18 28 5 15 20 5
+18
+28
+5
+15
+20
+5
 
 Couteau du Lanceur Adroit
-18 30 5 20 25 5
+18
+30
+5
+20
+25
+5
 
 Javelot du Athlète Exceptionnel
-18 30 5 15 20 5
+18
+30
+5
+15
+20
+5

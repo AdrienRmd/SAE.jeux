@@ -1,83 +1,223 @@
 Casque de la Conscience Divine
-30 10 55 10 10 10
+30
+10
+55
+10
+10
+10
 
 Plastron de l'Âme Ancienne
-45 15 50 15 15 15
+45
+15
+50
+15
+15
+15
 
 Jambières du Vent Sacré
-40 15 45 25 20 15
+40
+15
+45
+25
+20
+15
 
 Bottes du Téléporteur Éthéré
-35 15 40 30 25 15
+35
+15
+40
+30
+25
+15
 
 Gants du Prêtre Titan
-30 25 35 25 25 15
+30
+25
+35
+25
+25
+15
 
 Amulette de la Vitesse Quantique
-30 25 30 25 55 25
+30
+25
+30
+25
+55
+25
 
 Amulette de la Vitalité Primordiale
-55 15 30 15 15 25
+55
+15
+30
+15
+15
+25
 
 Amulette de la Force Colossale
-30 55 15 15 15 25
+30
+55
+15
+15
+15
+25
 
 Amulette de l'Esquive Dimensionnelle
-30 15 30 55 25 25
+30
+15
+30
+55
+25
+25
 
 Amulette de la Protection Absolue
-35 15 55 15 15 25
+35
+15
+55
+15
+15
+25
 
 Amulette de la Fortune Cosmique
-30 25 30 25 25 55
+30
+25
+30
+25
+25
+55
 
 Épée Excalibur Éveillée
-30 55 15 15 25 15
+30
+55
+15
+15
+25
+15
 
 Épée Longue du Guerrier Légendaire
-30 58 15 15 25 15
+30
+58
+15
+15
+25
+15
 
 Bouclier du Gardien Angélique
-38 15 50 15 15 15
+38
+15
+50
+15
+15
+15
 
 Bouclier Moyen du Défenseur Sacré
-42 15 55 15 15 15
+42
+15
+55
+15
+15
+15
 
 Bouclier Lourd du Colosse Invulnérable
-45 15 58 15 15 15
+45
+15
+58
+15
+15
+15
 
 Arc de l'Archer Divin
-30 50 15 25 30 15
+30
+50
+15
+25
+30
+15
 
 Arc Long du Chasseur Céleste
-30 55 15 25 30 15
+30
+55
+15
+25
+30
+15
 
 Arbalète du Tireur d'Élite Mythique
-30 50 15 15 25 15
+30
+50
+15
+15
+25
+15
 
 Fronde du Messager des Dieux
-30 48 15 25 30 15
+30
+48
+15
+25
+30
+15
 
 Dague de l'Assassin Ombreux
-30 50 15 30 35 15
+30
+50
+15
+30
+35
+15
 
 Hachette du Bûcheron Titan
-30 50 15 25 30 15
+30
+50
+15
+25
+30
+15
 
 Marteau de Guerre du Forgeron Divin
-30 55 15 15 25 15
+30
+55
+15
+15
+25
+15
 
 Épieu du Chasseur de Dragons
-30 50 15 25 30 15
+30
+50
+15
+25
+30
+15
 
 Lance du Paladin Sacré
-30 55 15 25 30 15
+30
+55
+15
+25
+30
+15
 
 Bâton de Combat du Mage Ancien
-30 48 15 25 30 15
+30
+48
+15
+25
+30
+15
 
 Couteau de Lancer du Prédateur Stellar
-30 50 15 30 35 15
+30
+50
+15
+30
+35
+15
 
 Javelot du Champion Olympien
-30 50 15 25 30 15
+30
+50
+15
+25
+30
+15

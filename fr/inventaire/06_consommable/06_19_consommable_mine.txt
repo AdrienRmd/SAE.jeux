@@ -1,29 +1,79 @@
 pierre de mine
-3 2 2 2 3 2
+3
+2
+2
+2
+3
+2
 
 eau minérale
-3 1 1 1 5 1
+3
+1
+1
+1
+5
+1
 
 champignon de mine
-4 2 2 2 3 2
+4
+2
+2
+2
+3
+2
 
 racine de profondeur
-4 2 2 2 3 2
+4
+2
+2
+2
+3
+2
 
 insecte de mine
-4 2 2 2 3 2
+4
+2
+2
+2
+3
+2
 
 soupe de mineur
-5 2 2 2 3 2
+5
+2
+2
+2
+3
+2
 
 thé de minerai
-3 1 1 1 5 2
+3
+1
+1
+1
+5
+2
 
 énergie de mine
-5 3 3 3 6 3
+5
+3
+3
+3
+6
+3
 
 potion de vision dans la terre
-4 2 4 2 3 3
+4
+2
+4
+2
+3
+3
 
 cristal de résonance
-6 3 3 3 4 4
+6
+3
+3
+3
+4
+4
