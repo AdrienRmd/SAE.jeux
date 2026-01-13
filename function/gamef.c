@@ -23,7 +23,7 @@ void player_init(char *filename)
     {
         print_line(filename, i + 2);
         scanf("%c", choice);
-        change_line("player/base_info.txt", i, choice);
+        change_line("player/player_info.txt", i, choice);
     }
 
     print_line(filename, 8);
@@ -73,16 +73,16 @@ int choose_biome(int *biome, char lang){
 }
 
 /*void battle(Player player, Monster monster, int lang){
-    while (player.pv > 0 && monster.pv > 0){
+    while (player.hp > 0 && monster.hp > 0){
         if (player.spe > monster.spe){
             combat_action(player, monster, lang);
-            if (monster.pv > 0){
+            if (monster.hp > 0){
                 monster_attack(player, monster, lang);
             }
         }
         else{
             monster_attack(player, monster, lang);
-            if (player.pv > 0){
+            if (player.hp > 0){
                 combat_action(player, monster, lang);
             }
         }
