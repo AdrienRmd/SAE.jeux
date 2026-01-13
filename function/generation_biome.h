@@ -50,10 +50,13 @@ typedef struct
 // lieu générique
 typedef struct
 {
-    char *description;       // Description détaillée
-    float difficulty_biome;  // Coefficient de difficulté (entre 0.80 et 3.00)
-    Temperature temperature; // Type de température (affecte les stats)
-    Meteo meteo;             // Type de météo (joue sur les stats)
+    int id_biome;                    // Identifiant unique du biome
+    char *description;               // Description détaillée
+    float difficulty_biome;          // Coefficient de difficulté (entre 0.80 et 3.00)
+    Temperature minimum_temperature; // Type de température (affecte les stats)
+    Temperature maximum_temperature; // Type de température (affecte les stats)
+    Meteo minimum_meteo;             // Type de météo (joue sur les stats)
+    Meteo maximum_meteo;             // Type de météo (joue sur les stats)
 
 } Biome;
 

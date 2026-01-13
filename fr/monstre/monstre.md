@@ -1,4 +1,4 @@
-typedef struct
+typedef structgit status
 {
     int id;         // Global unique ID (1, 2, 3, 4...)
     char name[40];  // Monster name
