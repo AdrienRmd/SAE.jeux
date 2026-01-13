@@ -8,7 +8,6 @@ Plaine
 1
 2
 3
-
 2
 Désert
 1.20
@@ -19,7 +18,6 @@ Désert
 4
 5
 6
-
 3
 Champ de fleur
 0.90
@@ -30,7 +28,6 @@ Champ de fleur
 7
 8
 9
-
 4
 Prairie
 0.85
@@ -41,7 +38,6 @@ Prairie
 10
 11
 12
-
 5
 Banquise
 1.50
@@ -52,7 +48,6 @@ Banquise
 13
 14
 15
-
 6
 Lac
 1.00
@@ -63,7 +58,6 @@ Lac
 16
 17
 18
-
 7
 Marais
 1.10
@@ -74,7 +68,6 @@ Marais
 19
 20
 21
-
 8
 Canyon
 1.30
@@ -85,7 +78,6 @@ Canyon
 22
 23
 24
-
 9
 Jungle
 1.40
@@ -96,7 +88,6 @@ Jungle
 25
 26
 27
-
 10
 Mer
 1.25
@@ -107,7 +98,6 @@ Mer
 28
 29
 30
-
 11
 Prairie volcanique
 2.00
@@ -118,7 +108,6 @@ Prairie volcanique
 31
 32
 33
-
 12
 Forêt noire
 1.80
@@ -129,7 +118,6 @@ Forêt noire
 34
 35
 36
-
 13
 Prairie démoniaque
 2.50
@@ -140,7 +128,6 @@ Prairie démoniaque
 37
 38
 39
-
 14
 Marais sombres
 2.20
@@ -151,7 +138,6 @@ Marais sombres
 40
 41
 42
-
 15
 Montagne
 1.90
@@ -162,7 +148,6 @@ Montagne
 43
 44
 45
-
 16
 Volcan
 2.80
@@ -173,7 +158,6 @@ Volcan
 46
 47
 48
-
 17
 Forêt
 1.15
@@ -184,7 +168,6 @@ Forêt
 49
 50
 51
-
 18
 Grotte
 1.60
@@ -195,7 +178,6 @@ Grotte
 52
 53
 54
-
 19
 Village
 0.95
@@ -206,7 +188,6 @@ Village
 55
 56
 57
-
 20
 Mine
 1.70
@@ -217,7 +198,6 @@ Mine
 58
 59
 60
-
 21
 Salle coffre
 1.00
@@ -228,7 +208,6 @@ Salle coffre
 0
 0
 0
-
 22
 Marché
 0.90
@@ -238,7 +217,6 @@ Marché
 2
 0
 0
-
 23
 Ruines
 1.35
@@ -249,7 +227,6 @@ Ruines
 0
 0
 0
-
 24
 Casino
 0.85
@@ -260,7 +237,6 @@ Casino
 0
 0
 0
-
 25
 Salle coffre légendaire
 3.00
