@@ -5,7 +5,7 @@ typedef struct
 {
     char name[20];
     char race[10];
-    int pv;
+    int hp;
     int att;
     int def;
     int dodge;
