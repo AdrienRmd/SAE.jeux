@@ -5,7 +5,7 @@
 
 void choose_random_biome(int floor, int *biome);
 
-int choose_biome(int *biome, char lang);
+int choose_biome(int *biome);
 
 char intro();
 
