@@ -5,23 +5,24 @@
 #include <time.h>
 #include "function/gamef.h"
 
-const NB_FLOOR = 10;
+const int NB_FLOOR = 10;
 
 int main()
 {
     char language = intro();
-
+    int biome = choose_random_biome();
 
     if (language == 'f' || language == 'F')
     {   
         language = 'fr';
         player_init("fr/intro-FR.txt");
 
-        for (int floor = 1 ; floor < NB_FLOOR ; floor++){
 
+        for (int floor = 1 ; floor < NB_FLOOR ; floor++){
+            biome = ongoing_floor(language, biome, floor);
         }
 
-        etage_final("%c/final.txt", language);
+        final_floor("%c/final.txt", language);
     }
     else if (language == 'e' || language == 'E')
     {
@@ -29,10 +30,10 @@ int main()
         player_init("en/intro-EN.txt");
 
         for (int floor = 1 ; floor < NB_FLOOR ; floor++){
-
+            biome = ongoing_floor(language, biome, floor);
         }
 
-        etage_final("%c/final.txt", language);
+        final_floor("%c/final.txt", language);
     }
 
     return 0;

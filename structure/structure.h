@@ -20,6 +20,7 @@ typedef struct
 
 typedef struct 
 {
+    int id;
     char name[20];
     int pv;
     int att;
@@ -27,7 +28,7 @@ typedef struct
     int dodge;
     int spe;
     int luck;
-    char *table_loot[];
+    int *table_loot[][];
 } Monster;
 
 #endif

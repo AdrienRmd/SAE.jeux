@@ -16,6 +16,7 @@ crocodile du lac
 1
 // loot: 01_equipement_rare.txt (rareté: rare)
 
+<<<<<<< HEAD
 serpent d'eau douce
 16
 8
@@ -34,6 +35,8 @@ aigle pêcheur
 3
 // loot: 02_equipement_tres_rare.txt (rareté: très rare)
 
+=======
+>>>>>>> d16b499b0b32f343b124d0dd75b2127583608fbe
 esprit du lac
 20
 9
