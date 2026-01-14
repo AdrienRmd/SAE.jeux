@@ -11,6 +11,7 @@ Chaque objet possède 6 statistiques :
 
 ## Exemple de format
 ```
+ID
 Nom de l'objet
 PV
 ATT
