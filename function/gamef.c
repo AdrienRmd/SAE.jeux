@@ -5,7 +5,6 @@
 #include <time.h>
 #include <sys/stat.h>
 #include "gamef.h"
-#include "monster_generation.h"
 
 /*
  * intro
@@ -187,20 +186,10 @@ int choose_biome(int *biome, const char *lang){
     }
 }
 
-void player_attack(Player player, Monster monster, const char *lang){
-    if (random_number(1, 100) <= monster.dodge){
-        printf("DODGE");
-    }
-    else {
-        monster.hp = monster.hp - player.att;
-    }
-    
-}
-
 /*void battle(Player player, Monster monster, int lang){
     while (player.hp > 0 && monster.hp > 0){
         if (player.spe > monster.spe){
-            player_attack(player, monster, lang);
+            combat_action(player, monster, lang);
             if (monster.hp > 0){
                 monster_attack(player, monster, lang);
             }
@@ -208,7 +197,7 @@ void player_attack(Player player, Monster monster, const char *lang){
         else{
             monster_attack(player, monster, lang);
             if (player.hp > 0){
-                player_attack(player, monster, lang);
+                combat_action(player, monster, lang);
             }
         }
     }

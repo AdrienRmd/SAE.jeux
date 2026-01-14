@@ -7,5 +7,3 @@ game difficulty (1 - easy, 2 - medium, 3 - hard) :
 
 Welcome, %s. Your adventure in Neo-Terra begins now.
 You have chosen to be a %s %s. May your destiny guide you through the ruins of the old world.
-
-What biome do you want to explore ?
