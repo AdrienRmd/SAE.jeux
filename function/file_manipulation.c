@@ -6,6 +6,16 @@
 #include "other.h"
 #include <sys/stat.h>
 
+/*
+ * value_line
+ * Read a specific line from `filename` into `buffer_destination`.
+ * Parameters:
+ *  - filename: path to the file to read
+ *  - line: 1-based line number to retrieve
+ *  - buffer_destination: destination buffer to copy the line into
+ *  - length: size of the destination buffer
+ * Returns: 1 on success (line found), 0 on failure (file missing or line not found)
+ */
 int value_line(const char *filename, int line, char *buffer_destination, int length)
 {
     FILE *file = fopen(filename, "r");
@@ -36,6 +46,13 @@ int value_line(const char *filename, int line, char *buffer_destination, int len
     return 0;
 }
 
+/*
+ * print_line
+ * Print a specific line from `filename` to stdout.
+ * Parameters:
+ *  - filename: path to the file to read
+ *  - line: 1-based line number to print
+ */
 void print_line(const char *filename, int line)
 {
     char buffer[256];
@@ -43,6 +60,17 @@ void print_line(const char *filename, int line)
     printf("%s", buffer);
 }
 
+/*
+ * change_line
+ * Replace the content of a specific line in `filename` with `text`.
+ * This function creates a temporary file, writes all lines copying from
+ * the original file but replacing the target line, then renames the temp
+ * file to the original filename.
+ * Parameters:
+ *  - filename: path to the file to modify
+ *  - line: 1-based line number to replace
+ *  - text: new text to write at the specified line
+ */
 void change_line(const char *filename, int line, const char *text)
 {
     FILE *f_source, *f_temp;
