@@ -8,5 +8,5 @@ difficulté du jeu (1 - facile, 2 - moyen, 3 - difficile) :
 Bienvenue, %s. Votre aventure dans Neo-Terra commence maintenant.\n
 Vous avez choisi d'être un %s %s. Que votre destin vous guide dans les ruines de l'ancien monde.\n
 
-What biome do tou want to explore ?
+Quel biome voulez-vous explorer ?
 
