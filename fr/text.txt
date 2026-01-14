@@ -5,15 +5,16 @@ Quelle est votre race (1 - humain, 2 - nain, 3 - elfe) ?
 Quelle classe choisissez-vous (1 - combattant, 2 - voleur, 3 - archer) ? 
 difficulté du jeu (1 - facile, 2 - moyen, 3 - difficile) :
 
-Bienvenue, %s. Votre aventure dans Neo-Terra commence maintenant.\n
-Vous avez choisi d'être un %s %s. Que votre destin vous guide dans les ruines de l'ancien monde.\n
+Bienvenue, votre aventure dans Neo-Terra commence maintenant.\n
+Que votre destin vous guide dans les ruines de l'ancien monde.\n
 
 Quel biome voulez-vous explorer ?
 
-Vous attaquez le %s.
-Vous lui infligez %d dégâts.
-Le %s vous attaque.
-Il vous inflige %d dégâts.
+Vous l'attaquez.
+Vous lui infligez 
+Il esquive...
+Il vous attaque.
+Il vous inflige %d 
 ESQUIVE !
 
 

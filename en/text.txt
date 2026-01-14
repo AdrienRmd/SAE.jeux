@@ -5,13 +5,14 @@ What's your race (1 - human, 2 - dwarf, 3 - elf) ?
 What class do you choose (1 - fighter, 2 - rogue, 3 - archer) ?
 game difficulty (1 - easy, 2 - medium, 3 - hard) :
 
-Welcome, %s. Your adventure in Neo-Terra begins now.
-You have chosen to be a %s %s. May your destiny guide you through the ruins of the old world.
+Welcome, your adventure in Neo-Terra begins now.\n
+May your destiny guide you through the ruins of the old world.\n
 
 Which biome do you want to explore ?
 
-You attack the %s.
-You damage him by %d.
-The %s attack you.
-It damage you by %d.
+You attack it.
+You damage him by 
+It dodges...
+It attacks you.
+It damages you by 
 DODGE !

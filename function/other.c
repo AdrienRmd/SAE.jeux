@@ -4,6 +4,21 @@
 #include <string.h>
 #include <time.h>
 
+int be_int(char *str)
+{
+    if (str == NULL)
+        return 0;
+    return atoi(str);
+}
+
+char *int_to_string(int num)
+{
+    char *str = (char *)malloc(20 * sizeof(char));
+    if (str != NULL)
+        sprintf(str, "%d", num);
+    return str;
+}
+
 int random_number(int minimum, int maximum)
 { // automatiquement la graine aléatoire (srand(time(NULL))).
     static int initialized = 0;
