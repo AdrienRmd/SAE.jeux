@@ -11,3 +11,8 @@ Luck
 Level
 Exp
 Money
+IdHelmet
+IdChestplate
+IdPants
+IdBoots
+IdWeapon

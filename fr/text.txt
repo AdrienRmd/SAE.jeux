@@ -17,7 +17,43 @@ Il vous attaque.
 Il vous inflige %d 
 ESQUIVE !
 
+Le gel mordant de l'apocalypse glace vos os, chaque souffle se transforme en cristal de désespoir.
+0.75
+Un froid persistant s'infiltre dans vos vêtements, rappelant constant de la mort qui vous entoure.
+0.90
+Une brise fraîche porte les échos des âmes perdues, glissant sur votre peau comme un dernier adieu.
+0.95
+Une accalmie trompeuse dans ce monde brisé, où même la tiédeur cache des menaces invisibles.
+1
+La chaleur étouffante rappelle les braises de la civilisation effondrée, brûlant vos espoirs.
+0.95
+L'air brûlant déforme l'horizon, chaque inspiration est un rappel des enfers que l'humanité a créés.
+0.90
+Les flammes de la damnation dansent autour de vous, consumant ce qui reste de votre humanité.
+0.75
 
+Le soleil cruel brille sur un monde mort, illuminant les ruines comme des tombes sans fin.
+1
+Des nuages grisâtres traînent dans le ciel, portant les larmes d'un monde qui a tout perdu.
+1
+La pluie acide tombe sans pitié, érodant les derniers vestiges d'une civilisation oubliée.
+0.95
+Un brouillard épais dévore les horizons, cachant les dangers qui guettent dans l'obscurité.
+0.90
+Les éclairs déchirent le ciel comme des cicatrices, chaque tonnerre est le cri de la Terre mourante.
+0.85
+Le vent hurle à travers les ruines, portant les murmures des milliers d'âmes disparues.
+0.85
+La neige tombe silencieusement, un linceul blanc qui recouvre les péchés de l'humanité.
+0.80
+La tempête fait rage, une furie divine qui pun ce monde brisé de sa colère infinie.
+0.75
+Le sable dévastateur s'élève comme une vague, ensevelissant les espoirs sous des dunes de désespoir.
+0.75
+La blizzard aveugle transforme le monde en enfer blanc, où chaque pas pourrait être le dernier.
+0.70
+Le blizzard déchaîné est le souffle glacial de l'apocalypse, gelant les cœurs autant que les corps.
+0.70
 
 
 
