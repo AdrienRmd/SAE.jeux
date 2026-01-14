@@ -15,14 +15,6 @@ typedef enum
     brulant = 7     // Coefficient 0.75 pour les stats
 } Temperature;
 
-// recolte
-typedef struct
-{
-    char *name;     // Nom des ressources
-    float quantite; // Taux de récolte (entre 1 et 4)
-    float purete;   // Rareté des ressources (coefficient entre 0.70 et 1.50) taux te recolte
-} Recolte;
-
 // Weather enum for biomes
 typedef enum
 {
