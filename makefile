@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -g
-EXEC = the_final_dawn
+EXEC = neo_terra
 OBJ = main.o function/file_manipulation.o function/other.o function/gamef.o
 
 all: $(EXEC)
