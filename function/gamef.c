@@ -186,10 +186,14 @@ int choose_biome(int *biome, const char *lang){
     }
 }
 
+void player_attack(Player player, Monster monster, const char *lang){
+    monster.hp = monster.hp - 
+}
+
 /*void battle(Player player, Monster monster, int lang){
     while (player.hp > 0 && monster.hp > 0){
         if (player.spe > monster.spe){
-            combat_action(player, monster, lang);
+            player_attack(player, monster, lang);
             if (monster.hp > 0){
                 monster_attack(player, monster, lang);
             }
@@ -197,7 +201,7 @@ int choose_biome(int *biome, const char *lang){
         else{
             monster_attack(player, monster, lang);
             if (player.hp > 0){
-                combat_action(player, monster, lang);
+                player_attack(player, monster, lang);
             }
         }
     }
