@@ -1,6 +1,6 @@
 #ifndef MONSTER_GENERATION_H
 #define MONSTER_GENERATION_H
-#include "function/file_manipulation.h"
+#include "file_manipulation.h"
 
 #include <stdbool.h>
 #include <stdio.h>
@@ -48,17 +48,17 @@ void stat_monster_generation(Monster *monster, char langue_selectionne, int id_m
         // Extraction des données depuis la ligne lue
         int id;
         char name[40];
-        int pv, att, def, dodge, spe, luck, rarity, table_loot;
+        int hp, att, def, dodge, spe, luck, rarity, table_loot;
 
         int parsed = sscanf(buffer, "%d;%39[^;];%d;%d;%d;%d;%d;%d;%d;%d",
-                            &id, name, &pv, &att, &def, &dodge, &spe, &luck, &rarity, &table_loot);
+                            &id, name, &hp, &att, &def, &dodge, &spe, &luck, &rarity, &table_loot);
 
         // recupere les stat du monstre avec l'id correspondant
         if (parsed == 10 && id == id_monster) // Check if parsing succeeded and ID matches
         {
             monster->id = id;
             snprintf(monster->name, sizeof(monster->name), "%s", name);
-            monster->pv = pv;
+            monster->hp = hp;
             monster->att = att;
             monster->def = def;
             monster->dodge = dodge;

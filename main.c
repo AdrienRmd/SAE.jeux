@@ -11,12 +11,24 @@ const int NB_FLOOR = 10;
 int main()
 {
     char language = intro();
-    int floor = 0;
+    int floor = 1;
     int biome[2];
+    char lang[3];
+
+    if (language == 'f' || language == 'F'){
+        strcpy(lang, "fr");
+    }
+    else{
+        strcpy(lang, "en");
+    }
+
+    char filepath[100];
+    sprintf(filepath, "%s/text.txt", lang);
+    player_init(filepath);
 
     //Test choix biome
     choose_random_biome(floor, biome);
-    printf("%d",choose_biome(biome, "fr"));
+    printf("%d",choose_biome(biome, lang));
 
     //int biome_chosen = random_number(1, 5);
     

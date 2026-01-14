@@ -54,7 +54,7 @@ void player_init(char *filename)
     for (int i = 1; i <= 4; i++)
     {
         print_line(filename, i + 2);
-        scanf("%c", choice);
+        scanf("%s", choice);
         change_line("player/player_info.txt", i, choice);
     }
     change_line("player/player_info.txt", 5, "10");
@@ -226,7 +226,7 @@ void monster_attack(Player player, Monster monster, const char *lang){
 }
 
 
-void battle(Player player, Monster monster, int lang){
+void battle(Player player, Monster monster, const char *lang){
     while (player.hp > 0 && monster.hp > 0){
         if (player.spe > monster.spe){
             player_attack(player, monster, lang);
