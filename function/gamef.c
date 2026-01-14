@@ -190,13 +190,18 @@ int choose_biome(int *biome, const char *lang){
 void player_attack(Player player, Monster monster, const char *lang){
     if (random_number(1, 100) <= monster.dodge){
         char filepath[100];
-        sprintf(filepath, "%s/biomes/biome.txt", lang);
+        sprintf(filepath, "%s/text.txt", lang);
         print_line(filepath, 15);
     }
     else {
         int damage = player.att - monster.def;
         char *damage_str = int_to_string(damage);
-        strcat(damage_str, )
+        strcat(damage_str, " HP");
+        char filepath[100];
+        sprintf(filepath, "%s/text.txt", lang);
+        print_line(filepath, 13);
+        print_line(filepath, 14);
+        
     }
 }
 

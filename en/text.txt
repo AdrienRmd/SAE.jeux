@@ -10,9 +10,9 @@ May your destiny guide you through the ruins of the old world.\n
 
 Which biome do you want to explore ?
 
-You attack it.
+You attack it.\n
 You damage him by 
-It dodges...
-It attacks you.
+It dodges...\n
+It attacks you.\n
 It damages you by 
-DODGE !
+DODGE !\n
