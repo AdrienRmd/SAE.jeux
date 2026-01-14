@@ -25,6 +25,12 @@ void player_init(char *filename)
         scanf("%c", choice);
         change_line("player/player_info.txt", i, choice);
     }
+    change_line("player/player_info.txt", 5, 10);
+    for (int i = 6 ; i < 12 ; i++){
+        change_line("player/player_info", i, 1);
+    }
+    change_line("player/player_info.txt", 12, 0);
+    change_line("player/player_info.txt", 13, 0);
 
     print_line(filename, 8);
     print_line(filename, 9);

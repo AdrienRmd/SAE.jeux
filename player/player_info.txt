@@ -8,6 +8,6 @@ Defense
 Dodge
 Speed
 Luck
-Exp
 Level
+Exp
 Money
