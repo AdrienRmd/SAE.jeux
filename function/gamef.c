@@ -201,7 +201,8 @@ void player_attack(Player player, Monster monster, const char *lang){
         sprintf(filepath, "%s/text.txt", lang);
         print_line(filepath, 13);
         print_line(filepath, 14);
-        
+        printf("%s\n", damage_str);
+        monster.pv -= damage;
     }
 }
 
