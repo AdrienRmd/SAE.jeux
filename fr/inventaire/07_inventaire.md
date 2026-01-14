@@ -2,6 +2,7 @@
 
 ## Format des statistiques
 Chaque objet possède 6 statistiques :
+- **ID** : ID item
 - **PV** : Points de Vie
 - **ATT** : Attaque
 - **DEF** : Défense
@@ -11,6 +12,7 @@ Chaque objet possède 6 statistiques :
 
 ## Exemple de format
 ```
+ID
 Nom de l'objet
 PV
 ATT
@@ -73,6 +75,7 @@ Tous les consommables ont des statistiques maximum de 10 :
 
 ## Objet spécial : Désaltérant Intense
 Apparaît dans tous les biomes avec des statistiques cohérentes :
+- **ID** : ID
 - **PV** : 5
 - **ATT** : 2
 - **DEF** : 3

@@ -19,7 +19,6 @@ typedef struct {
     int spe;        // Special/speed
     int luck;       // Luck stat
     int rarity;     // 0=common, 1=rare, 2=very rare, 3=epic, 4=legendary, 5=mythic
-    int table_loot; // Keep for backward compatibility
 } Monster;
 ```
 

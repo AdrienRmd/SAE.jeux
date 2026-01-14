@@ -1,0 +1,432 @@
+1
+Casque Simple
+3
+1
+8
+1
+1
+1
+
+1
+Plastron Ordinaire
+5
+2
+7
+1
+1
+1
+
+3
+Jambières Standard
+4
+1
+6
+2
+1
+1
+
+4
+Bottes Basiques
+3
+1
+5
+3
+2
+1
+
+5
+Amulette de Vitesse
+2
+2
+2
+2
+8
+2
+
+6
+Épée de Fer
+2
+8
+1
+1
+2
+1
+
+7
+Arc Simple
+2
+7
+1
+2
+3
+1
+
+8
+Dague
+2
+7
+1
+3
+4
+1
+
+9
+Casque du Gardien Novice
+7
+3
+15
+3
+3
+3
+
+10
+Plastron du Lutteur Débutant
+12
+5
+13
+3
+3
+3
+
+11
+Jambières du Marcheur Actif
+10
+3
+12
+6
+3
+3
+
+12
+Bottes du Voyageur Ordinaire
+8
+3
+11
+8
+6
+3
+
+13
+Amulette de la Vitesse Correcte
+6
+6
+6
+6
+15
+6
+
+14
+Épée du Soldat Débutant
+6
+15
+3
+3
+6
+3
+
+15
+Arc de l'Archer Apprenti
+6
+13
+3
+6
+9
+3
+
+16
+Dague du Voleur Novice
+6
+13
+3
+9
+12
+3
+
+17
+Casque du Soldat Expérimenté
+12
+5
+25
+5
+5
+5
+
+18
+Plastron du Combattant Solide
+20
+8
+22
+5
+5
+5
+
+19
+Jambières du Marcheur Endurant
+17
+5
+20
+10
+5
+5
+
+20
+Bottes du Voyageur Rapide
+15
+5
+18
+13
+10
+5
+
+21
+Amulette de la Vitesse Améliorée
+12
+12
+12
+12
+25
+12
+
+22
+Épée du Guerrier Habile
+12
+25
+5
+5
+12
+5
+
+23
+Arc de l'Archer Talentueux
+12
+22
+5
+10
+15
+5
+
+24
+Dague du Voleur Adroit
+12
+22
+5
+15
+20
+5
+
+25
+Casque du Commandant Vaillant
+20
+0
+30
+0
+0
+0
+
+26
+Plastron du Guerrier Courageux
+25
+5
+28
+5
+5
+5
+
+27
+Jambières du Cavalier Rapide
+22
+5
+25
+10
+8
+5
+
+28
+Bottes de l'Explorateur Intrépide
+20
+5
+23
+15
+12
+5
+
+29
+Amulette de la Vitesse Éclair
+18
+18
+18
+18
+35
+18
+
+30
+Épée du Chevalier Bravoure
+18
+35
+5
+5
+18
+5
+
+31
+Arc de l'Archer Expert
+18
+30
+5
+15
+20
+5
+
+32
+Dague du Voleur Rapide
+18
+30
+5
+20
+25
+5
+
+33
+Casque d'Aegis l'Immortel
+25
+5
+45
+5
+5
+5
+
+34
+Plastron du Titan Déchu
+35
+10
+40
+10
+10
+10
+
+35
+Jambières de la Tempête Galactique
+30
+10
+35
+20
+15
+10
+
+36
+Bottes du Voyageur Dimensionnel
+25
+10
+30
+25
+20
+10
+
+37
+Amulette de la Vitesse Suprême
+20
+20
+20
+20
+45
+20
+
+
+38
+Épée Excalibur Renaissance
+20
+45
+10
+10
+20
+10
+
+39
+Arc de l'Archer Stellar
+20
+40
+10
+20
+25
+10
+
+40
+Dague de l'Assassin Spectral
+20
+40
+10
+25
+30
+10
+
+41
+Casque de la Conscience Divine
+30
+10
+55
+10
+10
+10
+
+42
+Plastron de l'Âme Ancienne
+45
+15
+50
+15
+15
+15
+
+43
+Jambières du Vent Sacré
+40
+15
+45
+25
+20
+15
+
+44
+Bottes du Téléporteur Éthéré
+35
+15
+40
+30
+25
+15
+
+45
+Amulette de la Vitesse Quantique
+30
+25
+30
+25
+55
+25
+
+46
+Épée Excalibur Éveillée
+30
+55
+15
+15
+25
+15
+
+47
+Arc de l'Archer Divin
+30
+50
+15
+25
+30
+15
+
+48
+Dague de l'Assassin Ombreux
+30
+50
+15
+30
+35
+15
