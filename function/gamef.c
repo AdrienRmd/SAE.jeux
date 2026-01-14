@@ -6,6 +6,12 @@
 #include <sys/stat.h>
 #include "gamef.h"
 
+/*
+ * intro
+ * Print the intro text (first line of intro.txt) and read a single
+ * character representing the chosen language from stdin.
+ * Returns: the selected language as a `char`.
+ */
 char intro()
 {
     print_line("intro.txt", 1);
@@ -14,7 +20,32 @@ char intro()
     return language;
 }
 
+/*
+ * add_stat
+ * Read an integer value from `line` in `filename`, add `increment` to it,
+ * and write the updated value back to the same line.
+ * Parameters:
+ *  - filename: path to the file containing the stat
+ *  - line: line number to read and update
+ *  - increment: amount to add to the parsed integer
+ */
+void add_stat(char *filename, int line, int increment){
+    char stat_str[12], buffer[128];
+    value_line(filename, line, buffer, sizeof(buffer));
+    int stat = atoi(buffer) + increment;
+    snprintf(stat_str, sizeof(stat_str), "%d", stat);
+    change_line(filename, line, stat_str);
+}
 
+
+/*
+ * player_init
+ * Initialize player data by prompting for choices (reads lines from the
+ * provided `filename`), writes initial stats into `player/player_info.txt`,
+ * and applies class/race-based stat adjustments.
+ * Parameters:
+ *  - filename: path to the file that contains interactive prompts
+ */
 void player_init(char *filename)
 {
     print_line(filename, 1);
@@ -25,21 +56,61 @@ void player_init(char *filename)
         scanf("%c", choice);
         change_line("player/player_info.txt", i, choice);
     }
+    change_line("player/player_info.txt", 5, "10");
+    for (int i = 6 ; i < 12 ; i++){
+        change_line("player/player_info.txt", i, "5");
+    }
+    change_line("player/player_info.txt", 12, "0");
+    change_line("player/player_info.txt", 13, "0");
+
+    char buffer[128];
+    value_line("player/player_info.txt", 2, buffer, sizeof(buffer));
+    if (strcmp(buffer, "2") == 0){
+        change_line("player/player_info.txt", 6, "7");
+        change_line("player/player_info.txt", 7, "7");
+        change_line("player/player_info.txt", 8, "3");
+        change_line("player/player_info.txt", 9, "3");
+    }
+    else if (strcmp(buffer, "3") == 0){
+        change_line("player/player_info.txt", 6, "3");
+        change_line("player/player_info.txt", 7, "3");
+        change_line("player/player_info.txt", 8, "7");
+        change_line("player/player_info.txt", 9, "7");
+    }
+
+    value_line("player/player_info.txt", 3, buffer, sizeof(buffer));
+
+    if (strcmp(buffer, "1") == 0){
+        add_stat("player/player_info.txt", 6, 2);
+        add_stat("player/player_info.txt", 7, 2);
+    }
+    else if (strcmp(buffer, "2") == 0){
+        add_stat("player/player_info.txt", 8, 2);
+        add_stat("player/player_info.txt", 9, 2);
+    }
+    else{
+        add_stat("player/player_info.txt", 6, 2);
+        add_stat("player/player_info.txt", 9, 2);
+    }
 
     print_line(filename, 8);
     print_line(filename, 9);
 }
 
+/*
+ * choose_random_biome
+ * Fill `biome` array with two distinct random biome IDs based on `floor`.
+ * Parameters:
+ *  - floor: current dungeon floor (affects biome ranges)
+ *  - biome: output array of size >=2 to receive two biome IDs
+ */
 void choose_random_biome(int floor, int *biome){
 
     int random;
+    biome[0] = 0;
 
     for (int i = 0 ; i < 2 ; i++){
-        if (random_number(0, 9) == 0 && biome[0] < 21){
-            random = random_number(21, 25);
-        }
-
-        else if (floor == 1 || floor == 2){
+        if (floor == 1 || floor == 2){
             random = random_number(1, 5);
         }
         else if (floor == 3 || floor == 4){
@@ -53,16 +124,60 @@ void choose_random_biome(int floor, int *biome){
         }
         biome[i] = random;
     }
+    while (biome[0] == biome[1]){
+        if (floor == 1 || floor == 2){
+            random = random_number(1, 5);
+        }
+        else if (floor == 3 || floor == 4){
+            random = random_number(6, 10);
+        }
+        else if (floor == 5 || floor == 6){
+            random = random_number(11, 15);
+        }
+        else {
+            random = random_number(16, 20);
+        }
+        biome[1] = random;
+    }
+    
 }
 
-int choose_biome(int *biome){
+/*
+ * choose_biome
+ * Present two biome names (loaded from language-specific biome file) to
+ * the player and prompt for a choice. Returns the selected biome ID.
+ * Parameters:
+ *  - biome: array containing two biome IDs
+ *  - lang: path prefix for localization (used to locate biome file)
+ * Returns: the chosen biome ID (one of biome[0] or biome[1])
+ */
+int choose_biome(int *biome, const char *lang){
 
-    int choice;
-    int biome1 = 10 * (biome[0] - 1) + 2;
-    int biome2 = 10 * (biome[1] - 1) + 2;
+    int choice = -1;
+    char filepath[100];
+    char biome1[100], biome2[100];
+    
+    // Clear input buffer
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+    
+    sprintf(filepath, "%s/biomes/biome.txt", lang);
+    value_line(filepath, 10 * (biome[0] - 1) + 2, biome1, sizeof(biome1));
+    value_line(filepath, 10 * (biome[1] - 1) + 2, biome2, sizeof(biome2));
     printf("Quel biome voulez-vous explorer ?\n");
-    printf("1 - %d / 2 - %d : ", biome1, biome2);
-    scanf("%d", &choice);
+    
+    while (choice != 1 && choice != 2) {
+        printf("1 - %s / 2 - %s : ", biome1, biome2);
+        fflush(stdout);
+        int result = scanf("%d", &choice);
+        while (getchar() != '\n');
+        
+        if (result != 1 || (choice != 1 && choice != 2)) {
+            printf("Choix invalide. Veuillez entrer 1 ou 2.\n");
+            choice = -1;
+        }
+    }
+    
     if (choice == 1){
         return biome[0];
     }

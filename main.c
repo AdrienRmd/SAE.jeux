@@ -16,7 +16,7 @@ int main()
 
     //Test choix biome
     choose_random_biome(floor, biome);
-    printf("%d",choose_biome(biome));
+    printf("%d",choose_biome(biome, "fr"));
 
     //int biome_chosen = random_number(1, 5);
     
