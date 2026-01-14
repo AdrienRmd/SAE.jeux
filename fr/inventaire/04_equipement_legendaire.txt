@@ -1,3 +1,4 @@
+1
 Casque d'Aegis l'Immortel
 25
 5
@@ -6,6 +7,7 @@ Casque d'Aegis l'Immortel
 5
 5
 
+2
 Plastron du Titan Déchu
 35
 10
@@ -14,6 +16,7 @@ Plastron du Titan Déchu
 10
 10
 
+3
 Jambières de la Tempête Galactique
 30
 10
@@ -22,6 +25,7 @@ Jambières de la Tempête Galactique
 15
 10
 
+4
 Bottes du Voyageur Dimensionnel
 25
 10
@@ -30,14 +34,7 @@ Bottes du Voyageur Dimensionnel
 20
 10
 
-Gants du Maître Élémentaire
-20
-20
-25
-20
-20
-10
-
+5
 Amulette de la Vitesse Suprême
 20
 20
@@ -46,46 +43,8 @@ Amulette de la Vitesse Suprême
 45
 20
 
-Amulette de la Vitalité Éternelle
-45
-10
-20
-10
-10
-20
 
-Amulette de la Force Titanesque
-20
-45
-10
-10
-10
-20
-
-Amulette de l'Esquive Parfaite
-20
-10
-20
-45
-20
-20
-
-Amulette de la Protection Absolue
-25
-10
-45
-10
-10
-20
-
-Amulette de la Fortune Légendaire
-20
-20
-20
-20
-20
-45
-
+6
 Épée Excalibur Renaissance
 20
 45
@@ -94,38 +53,7 @@ Amulette de la Fortune Légendaire
 20
 10
 
-Épée Longue du Héros Immortel
-20
-48
-10
-10
-20
-10
-
-Bouclier du Gardien Céleste
-28
-10
-40
-10
-10
-10
-
-Bouclier Moyen du Défenseur Légendaire
-32
-10
-45
-10
-10
-10
-
-Bouclier Lourd du Colosse Invincible
-35
-10
-48
-10
-10
-10
-
+7
 Arc de l'Archer Stellar
 20
 40
@@ -134,90 +62,11 @@ Arc de l'Archer Stellar
 25
 10
 
-Arc Long du Chasseur Mythique
-20
-45
-10
-20
-25
-10
-
-Arbalète du Tireur d'Élite Légendaire
-20
-40
-10
-10
-20
-10
-
-Fronde du Messager Divin
-20
-38
-10
-20
-25
-10
-
+8
 Dague de l'Assassin Spectral
 20
 40
 10
 25
 30
-10
-
-Hachette du Bûcheron Titan
-20
-40
-10
-20
-25
-10
-
-Marteau de Guerre du Forgeron Divin
-20
-45
-10
-10
-20
-10
-
-Épieu du Chasseur de Monstres
-20
-40
-10
-20
-25
-10
-
-Lance du Paladin Sacré
-20
-45
-10
-20
-25
-10
-
-Bâton de Combat du Mage Ancien
-20
-38
-10
-20
-25
-10
-
-Couteau de Lancer du Prédateur Stellar
-20
-40
-10
-25
-30
-10
-
-Javelot du Champion Éternel
-20
-40
-10
-20
-25
 10

@@ -1,3 +1,4 @@
+1
 Casque du Soldat Expérimenté
 12
 5
@@ -6,6 +7,7 @@ Casque du Soldat Expérimenté
 5
 5
 
+2
 Plastron du Combattant Solide
 20
 8
@@ -14,6 +16,7 @@ Plastron du Combattant Solide
 5
 5
 
+3
 Jambières du Marcheur Endurant
 17
 5
@@ -22,6 +25,7 @@ Jambières du Marcheur Endurant
 5
 5
 
+4
 Bottes du Voyageur Rapide
 15
 5
@@ -30,14 +34,7 @@ Bottes du Voyageur Rapide
 10
 5
 
-Gants du Lutteur Fort
-12
-12
-15
-12
-10
 5
-
 Amulette de la Vitesse Améliorée
 12
 12
@@ -46,46 +43,7 @@ Amulette de la Vitesse Améliorée
 25
 12
 
-Amulette de la Santé Renforcée
-25
-5
-12
-5
-5
-12
-
-Amulette de la Force Supérieure
-12
-25
-5
-5
-5
-12
-
-Amulette de l'Esquive Efficace
-12
-5
-12
-25
-12
-12
-
-Amulette de la Défense Renforcée
-13
-5
-25
-5
-5
-12
-
-Amulette de la Chance Supérieure
-12
-12
-12
-12
-12
-25
-
+6
 Épée du Guerrier Habile
 12
 25
@@ -94,38 +52,7 @@ Amulette de la Chance Supérieure
 12
 5
 
-Épée Longue du Combattant Expérimenté
-12
-27
-5
-5
-12
-5
-
-Bouclier du Défenseur Compétent
-15
-5
-22
-5
-5
-5
-
-Bouclier Moyen du Protecteur Efficace
-17
-5
-25
-5
-5
-5
-
-Bouclier Lourd du Gardien Solide
-20
-5
-27
-5
-5
-5
-
+7
 Arc de l'Archer Talentueux
 12
 22
@@ -134,90 +61,11 @@ Arc de l'Archer Talentueux
 15
 5
 
-Arc Long du Chasseur Expérimenté
-12
-25
-5
-10
-15
-5
-
-Arbalète du Tireur Compétent
-12
-22
-5
-5
-12
-5
-
-Fronde du Lanceur Précis
-12
-20
-5
-10
-15
-5
-
+8
 Dague du Voleur Adroit
 12
 22
 5
 15
 20
-5
-
-Hachette du Bûcheron Compétent
-12
-22
-5
-10
-15
-5
-
-Marteau du Combattant Robuste
-12
-25
-5
-5
-12
-5
-
-Épieu du Chasseur Habile
-12
-22
-5
-10
-15
-5
-
-Lance du Guerrier Expérimenté
-12
-25
-5
-10
-15
-5
-
-Bâton du Mage Apprenti
-12
-20
-5
-10
-15
-5
-
-Couteau du Lanceur Précis
-12
-22
-5
-15
-20
-5
-
-Javelot du Athlète Talentueux
-12
-22
-5
-10
-15
 5
