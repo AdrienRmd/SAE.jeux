@@ -9,3 +9,9 @@ Welcome, %s. Your adventure in Neo-Terra begins now.
 You have chosen to be a %s %s. May your destiny guide you through the ruins of the old world.
 
 Which biome do you want to explore ?
+
+You attack the %s.
+You damage him by %d.
+The %s attack you.
+It damage you by %d.
+DODGE !

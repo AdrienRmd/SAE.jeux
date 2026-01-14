@@ -10,3 +10,10 @@ Vous avez choisi d'être un %s %s. Que votre destin vous guide dans les ruines d
 
 Quel biome voulez-vous explorer ?
 
+Vous attaquez le %s.
+Vous lui infligez %d dégâts.
+Le %s vous attaque.
+Il vous inflige %d dégâts.
+ESQUIVE !
+
+
