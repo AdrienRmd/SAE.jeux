@@ -19,7 +19,7 @@ typedef struct
 {
     int id;        // Global unique ID (1, 2, 3, 4...)
     char name[40]; // Monster name
-    int pv;        // Health points
+    int hp;        // Health points
     int att;       // Attack power
     int def;       // Defense value
     int dodge;     // Dodge chance

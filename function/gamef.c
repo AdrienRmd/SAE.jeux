@@ -206,8 +206,27 @@ void player_attack(Player player, Monster monster, const char *lang){
     }
 }
 
+void monster_attack(Player player, Monster monster, const char *lang){
+    if (random_number(1, 100) <= player.dodge){
+        char filepath[100];
+        sprintf(filepath, "%s/text.txt", lang);
+        print_line(filepath, 18);
+    }
+    else {
+        int damage = monster.att - player.def;
+        char *damage_str = int_to_string(damage);
+        strcat(damage_str, " HP");
+        char filepath[100];
+        sprintf(filepath, "%s/text.txt", lang);
+        print_line(filepath, 16);
+        print_line(filepath, 17);
+        printf("%s\n", damage_str);
+        player.hp -= damage;
+    }
+}
 
-/*void battle(Player player, Monster monster, int lang){
+
+void battle(Player player, Monster monster, int lang){
     while (player.hp > 0 && monster.hp > 0){
         if (player.spe > monster.spe){
             player_attack(player, monster, lang);
@@ -222,4 +241,4 @@ void player_attack(Player player, Monster monster, const char *lang){
             }
         }
     }
-}*/
+}
