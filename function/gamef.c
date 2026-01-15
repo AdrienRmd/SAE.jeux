@@ -19,7 +19,8 @@
 void sleep_ms(int milliseconds)
 {
     clock_t start_time = clock();
-    while (clock() < start_time + milliseconds * CLOCKS_PER_SEC / 1000);
+    while (clock() < start_time + milliseconds * CLOCKS_PER_SEC / 1000)
+        ;
 }
 
 /*
@@ -453,7 +454,7 @@ void set_biome(Biome *biome, int biome_id, const char *language)
 
     sprintf(filename, "%s/biomes/biome.txt", language);
 
-    // Search for the monster by checking each block of 9 lines
+    // Search for the biome by checking each block of 9 lines
     while (!found && current_line < 1000)
     {
         // Try to read ID from current position
