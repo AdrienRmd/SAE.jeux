@@ -116,9 +116,6 @@ void player_init(char *filename)
     }
 
     change_line("player/player_info.txt", 21, "1");
-
-    print_line(filename, 8);
-    print_line(filename, 9);
 }
 
 /*
