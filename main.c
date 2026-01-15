@@ -10,7 +10,8 @@ const int NB_FLOOR = 10;
 
 int main()
 {
-    char lang[3] = intro();
+    char lang[3];
+    strcpy(lang, intro());
     int floor = 1;
     int biome[2], choosen_biome;
 
@@ -21,9 +22,7 @@ int main()
     choose_random_biome(floor, biome);
     choosen_biome = choose_biome(biome, lang);
 
-    free(biome);
-
-    for (floor ; floor < NB_FLOOR ; floor++){
+    for (floor = 1 ; floor < NB_FLOOR ; floor++){
         choosen_biome = ongoing_floor(lang, choosen_biome, floor);
     }
     

@@ -341,7 +341,7 @@ void stat_monster_generation(Monster *monster, char langue_selectionne, int id_m
 
 int ongoing_floor(const char *lang, int biome_id, int floor){
     Monster *monster;
-    Biome biome;
+    Biome *biome;
     int monster_id;
 
     
