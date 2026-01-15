@@ -36,10 +36,14 @@ int choosing(const char *string, int nb_choice)
     do
     {
         printf("%s", string);
-        scanf("%d", &choosed);
-        if (choosed > 0 && choosed <= nb_choice)
+        if (scanf("%d", &choosed) != 1)
         {
             while(getchar()!='\n');
+            continue;
+        }
+        while(getchar()!='\n');
+        if (choosed > 0 && choosed <= nb_choice)
+        {
             return choosed;
         }
     } while (1);
