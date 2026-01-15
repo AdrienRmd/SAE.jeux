@@ -1,18 +1,127 @@
+$$\   $$\                          $$$$$$$$\                                     
+$$$\  $$ |                         \__$$  __|                                    
+$$$$\ $$ | $$$$$$\   $$$$$$\          $$ | $$$$$$\   $$$$$$\   $$$$$$\  $$$$$$\  
+$$ $$\$$ |$$  __$$\ $$  __$$\ $$$$$$\ $$ |$$  __$$\ $$  __$$\ $$  __$$\ \____$$\ 
+$$ \$$$$ |$$$$$$$$ |$$ /  $$ |\______|$$ |$$$$$$$$ |$$ |  \__|$$ |  \__|$$$$$$$ |
+$$ |\$$$ |$$   ____|$$ |  $$ |        $$ |$$   ____|$$ |      $$ |     $$  __$$ |
+$$ | \$$ |\$$$$$$$\ \$$$$$$  |        $$ |\$$$$$$$\ $$ |      $$ |     \$$$$$$$ |
+\__|  \__| \_______| \______/         \__| \_______|\__|      \__|      \_______|
+
+
+You wake up in a new world, a world ravaged by an unknown catastrophe.
+Outside, the sky is ash grey and there is a smell of dust that burns your lungs. 
+You hear distant noises of mutant creatures wandering a few kilometres away.
+A few metres away, you see a ruined staircase leading to the depths of this world. 
+
 Welcome to the post-apocalyptic world of Neo-Terra
 
 What is your name in the game, survivor? : 
-What's your race (1 - human, 2 - dwarf, 3 - elf) ?
-What class do you choose (1 - fighter, 2 - rogue, 3 - archer) ?
-game difficulty (1 - easy, 2 - medium, 3 - hard) :
+What is your race (1 - human, 2 - dwarf, 3 - elf)?
+Which class do you choose (1 - fighter, 2 - thief, 3 - archer)? 
+Game difficulty (1 - easy, 2 - medium, 3 - difficult):
 
-Welcome, your adventure in Neo-Terra begins now.\n
-May your destiny guide you through the ruins of the old world.\n
+Welcome, your adventure in Neo-Terra begins now.
+May your destiny guide you through the ruins of the old world.
 
-Which biome do you want to explore ?
+Invalid choice
 
-You attack it.\n
-You damage him by 
-It dodges...\n
-It attacks you.\n
-It damages you by 
-DODGE !\n
+Which biome do you want to explore?
+
+You attack it.
+You inflict 
+It dodges...
+It attacks you.
+It inflicts 
+DODGE!
+
+A monster is attacking you! It's a 
+Do you still want to fight on this floor? (1 - Yes / 2 - No)
+
+This world now seems devoid of any form of life...
+
+Would you like to continue the game you started?
+
+The biting cold of the apocalypse chills you to the bone, each breath turning to crystal with despair.
+0.75
+A persistent chill seeps through your clothes, a constant reminder of the death that surrounds you.
+0.90
+A cool breeze carries the echoes of lost souls, gliding over your skin like a final farewell.
+0.95
+A deceptive lull in this broken world, where even the warmth hides invisible threats.
+1
+The stifling heat recalls the embers of a collapsed civilisation, burning your hopes.
+0.95
+The scorching air distorts the horizon, each breath a reminder of the hell humanity has created.
+0.90
+The flames of damnation dance around you, consuming what remains of your humanity.
+0.75
+
+The cruel sun shines down on a dead world, illuminating ruins like endless graves.
+1
+Grey clouds linger in the sky, carrying the tears of a world that has lost everything.
+1
+Acid rain falls mercilessly, eroding the last vestiges of a forgotten civilisation.
+0.95
+Thick fog devours the horizon, hiding the dangers that lurk in the darkness.
+0.90
+Lightning tears through the sky like scars, each clap of thunder the cry of a dying Earth.
+0.85
+The wind howls through the ruins, carrying the whispers of thousands of lost souls.
+0.85
+Snow falls silently, a white shroud covering the sins of humanity.
+0.80
+The storm rages, a divine fury punishing this broken world with its infinite wrath.
+0.75
+Devastating sand rises like a wave, burying hopes beneath dunes of despair.
+0.75
+The blinding blizzard transforms the world into a white hell, where every step could be your last.
+0.70
+The raging blizzard is the icy breath of the apocalypse, freezing hearts as well as bodies.
+0.70
+
+
+
+
+<
+
+  /$$$$$$   /$$$$$$  /$$      /$$ /$$$$$$$$        /$$$$$$  /$$    /$$ /$$$$$$$$ /$$$$$$$ 
+ /$$__  $$ /$$__  $$| $$$    /$$$| $$_____/       /$$__  $$| $$   | $$| $$_____/| $$__  $$
+| $$  \__/| $$  \ $$| $$$$  /$$$$| $$            | $$  \ $$| $$   | $$| $$      | $$  \ $$
+| $$ /$$$$| $$$$$$$$| $$ $$/$$ $$| $$$$$         | $$  | $$|  $$ / $$/| $$$$$   | $$$$$$$/
+| $$|_  $$| $$__  $$| $$  $$$| $$| $$__/         | $$  | $$ \  $$ $$/ | $$__/   | $$__  $$
+| $$  \ $$| $$  | $$| $$\  $ | $$| $$            | $$  | $$  \  $$$/  | $$      | $$  \ $$
+|  $$$$$$/| $$  | $$| $$ \/  | $$| $$$$$$$$      |  $$$$$$/   \  $/   | $$$$$$$$| $$  | $$
+ \______/ |__/  |__/|__/     |__/|________/       \______/     \_/    |________/|__/  |__/
+                                                                                                                                                                          
+                                                                                          
+
+                                  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓            
+                                ▒▒        ░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓      
+                            ██▓▓    ░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒██    
+                          ▓▓      ░░░░░░░░░░░░░░▒▒▒▒▒▒░░░░▒▒▒▒▓▓  
+                        ▓▓    ░░░░░░░░░░░░░░░░░░▒▒▒▒░░░░░░▒▒▒▒▓▓  
+                      ██      ░░░░░░░░░░░░░░▒▒▒▒▒▒░░░░░░░░▒▒▒▒▒▒▓▓
+                      ▓▓  ░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒░░░░░░░░░░▒▒▒▒▓▓
+                    ▓▓    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓
+                    ▓▓    ░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░▒▒▓▓
+                  ██    ▓▓▓▓▓▓░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓
+                  ▓▓  ██▓▓▓▓▓▓██░░░░▒▒▒▒▓▓██████▓▓▓▓▒▒░░▒▒▒▒▒▒▒▒▓▓
+                  ░░  ▓▓░░▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒████████▓▓▓▓▒▒░░▒▒▒▒▒▒▒▒▓▓
+                  ▓▓  ▓▓▓▓██████░░▒▒▒▒▒▒██████████▓▓▒▒░░░░▒▒▒▒▒▒▓▓    
+                  ▓▓░░▓▓▓▓██████▒▒▒▒▒▒▒▒██████████▓▓░░░░░░▒▒▒▒▒▒▓▓    
+                  ▓▓  ▓▓▓▓████▓▓░░░░▒▒▒▒▓▓████████▓▓░░░░░░▒▒▒▒▒▒▓▓    
+                  ▓▓    ▓▓▓▓▓▓░░░░░░░░▒▒░░▓▓▓▓▓▓▓▓░░░░░░▒▒▒▒▒▒▒▒▓▓    
+                  ▓▓        ░░░░▒▒░░▒▒░░░░▒▒░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▓▓    
+                    ██    ░░░░░░▓▓░░▓▓░░▒▒░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▓▓      
+                    ▓▓    ░░░░░░▓▓░░▓▓░░▒▒▒▒▒▒░░░░░░░░▒▒▒▒░░░░▓▓      
+                      ▓▓  ░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓░░░░░░░░░░░░▓▓    
+                      ▓▓  ░░░░░░░░░░░░▒▒▒▒▒▒▒▒▓▓▓▓░░░░░░░░▒▒░░    
+                      ▓▓  ░░░░░░░░░░░░▒▒░░░░▒▒▓▓  ▓▓▓▓▓▓▓▓        
+                      ▓▓  ░░▓▓░░░░▓▓░░▒▒▓▓░░▒▒▓▓                  
+                      ▓▓░░░░▓▓░░░░▓▓░░░░▓▓░░▒▒▓▓                  
+                        ▓▓██  ▓▓██  ▓▓██  ▓▓██                        
+
+>
+
+
+
