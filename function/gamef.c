@@ -58,14 +58,14 @@ void player_init(char *filename)
     }
     
     char choice[20];
-    print_line(filename, 8);
+    print_line(filename, 18);
     scanf("%s", choice);
     change_line("player/player_info.txt", 1, choice);
     printf("\n");
     for (int i = 2; i <= 4; i++)
     {
         char string[100];
-        value_line(filename, i + 7, string, sizeof(string));
+        value_line(filename, i + 17, string, sizeof(string));
         int choice_int = choosing(string, 3);
         change_line("player/player_info.txt", i, int_to_string(choice_int));
     }
