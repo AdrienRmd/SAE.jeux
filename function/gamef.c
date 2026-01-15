@@ -461,11 +461,18 @@ void generation_biome(Biome *biome, int id_biome, char *lang)
     fclose(file); // fermer le fichier
 }
 
-int ongoing_floor(const char *lang, int biome_id, int floor)
-{
-    Monster *monster;
-    Biome biome;
-    int monster_id;
+int get_monster_id(int biome_id, const char *lang){
+    char filepath[100], buffer[10];
+    sprintf(filepath, "%s/monstre/monster.txt", lang);
+    value_line(filepath, 30 * (biome_id - 1) + 1 + random_number(0,2) * 10, buffer, sizeof(buffer));
+    return atoi(buffer);
+}
 
-    stat_monster_generation(monster, lang, monster_id);
+int ongoing_floor(const char *lang, int biome_id, int floor){
+    Monster *monster;
+    Biome *biome;
+    
+    generation_biome(biome, biome_id, lang);
+
+    stat_monster_generation(monster, lang, get_monster_id(biome_id, lang));
 }
