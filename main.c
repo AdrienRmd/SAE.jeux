@@ -14,15 +14,35 @@ int main()
     strcpy(lang, intro());
     int floor = 1;
     int biome[2], choosen_biome;
-
     char filepath[100];
     sprintf(filepath, "%s/text.txt", lang);
-    player_init(filepath);
+    char save[10];
+    value_line("player/player_info.txt", 21, save, sizeof(save));
+
+    if (strcmp(save, "0")){
+        char string[50];
+        value_line(filepath, 42, string, sizeof(string));
+        if(choosing(string, 2)){
+            char buffer[10];
+            value_line("player/player_info.txt", 20, buffer, sizeof(buffer));
+            int starting_floor = atoi(buffer);
+        }
+        else{
+            player_init(filepath);
+            int starting_floor = 1;
+        }
+    }
+    else{
+        player_init(filepath);
+        int starting_floor = 1;
+    }
+
+    
 
     choose_random_biome(floor, biome);
     choosen_biome = choose_biome(biome, lang);
 
-    for (floor = 1; floor < NB_FLOOR; floor++)
+    for (floor = starting_floor; floor < NB_FLOOR; floor++)
     {
         choosen_biome = ongoing_floor(lang, choosen_biome, floor);
     }
