@@ -8,6 +8,19 @@
 #include "monster_generation.h"
 #include "other.h"
 #include "generation_biome.h"
+#include <time.h>
+
+/*
+ * sleep_ms
+ * Pause program execution for specified milliseconds
+ * Parameters:
+ *  - milliseconds: time to wait in milliseconds
+ */
+void sleep_ms(int milliseconds)
+{
+    clock_t start_time = clock();
+    while (clock() < start_time + milliseconds * CLOCKS_PER_SEC / 1000);
+}
 
 /*
  * intro
@@ -310,17 +323,21 @@ void battle(Player *player, Monster *monster, const char *lang)
     {
         if (player->spe > monster->spe)
         {
+            sleep_ms(1000);
             player_attack(player, monster, lang);
             if (monster->hp > 0)
             {
+                sleep_ms(1000);
                 monster_attack(player, monster, lang);
             }
         }
         else
         {
+            sleep_ms(1000);
             monster_attack(player, monster, lang);
             if (player->hp > 0)
             {
+                sleep_ms(1000);
                 player_attack(player, monster, lang);
             }
         }
@@ -427,7 +444,7 @@ void set_monster(Monster *monster, const char *language, int monster_id)
     }
 }
 
-void set_biome(Biome *biome, const char *language, int biome_id)
+void set_biome(Biome *biome, int biome_id, const char *language)
 {
     char biome_buffer[128];
     char filename[256];
@@ -453,7 +470,7 @@ void set_biome(Biome *biome, const char *language, int biome_id)
                 // Load the remaining 8 lines of biome data
 
                 value_line(filename, current_line + 1, biome_buffer, sizeof(biome_buffer));
-                biome->description = atoi(biome_buffer);
+                strcpy(biome->description, biome_buffer);
 
                 value_line(filename, current_line + 2, biome_buffer, sizeof(biome_buffer));
                 biome->difficulty_biome = atoi(biome_buffer);
@@ -491,14 +508,14 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
 
     set_player(&player);
 
-    /*generation_biome(&biome, biome_id, lang);
-
-    sprintf(filepath, "%s/map.txt", lang);
-    afficher_biome(biome.id_biome, filepath);*/
+    set_biome(&biome, biome_id, lang);
+    char filepath_map[100];
+    sprintf(filepath_map, "%s/map.txt", lang);
+    afficher_biome(biome.id_biome, filepath_map);
 
     char filepath[100];
     sprintf(filepath, "%s/text.txt", lang);
-    // stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
+    set_monster(&monster, lang, get_monster_id(biome_id, lang));
     char string[100];
     value_line(filepath, 38, string, sizeof(string));
     battle(&player, &monster, lang);

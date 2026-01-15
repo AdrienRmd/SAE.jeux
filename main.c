@@ -10,11 +10,12 @@ const int NB_FLOOR = 10;
 
 int main()
 {
-    char lang[3];
-    strcpy(lang, intro());
+    char lang[3], filepath[100];
+    strncpy(lang, intro(), sizeof(lang) - 1);
+    lang[sizeof(lang) - 1] = '\0';
     int floor = 1;
-    int biome[2], choosen_biome;
-    char filepath[100];
+    int biome[2], chosen_biome;
+    snprintf(filepath, sizeof(filepath), "%s/text.txt", lang);
     sprintf(filepath, "%s/text.txt", lang);
     char save[10];
     value_line("player/player_info.txt", 21, save, sizeof(save));
@@ -41,11 +42,11 @@ int main()
     
 
     choose_random_biome(floor, biome);
-    choosen_biome = choose_biome(biome, lang);
+    chosen_biome = choose_biome(biome, lang);
 
     for (floor = starting_floor; floor < NB_FLOOR; floor++)
     {
-        choosen_biome = ongoing_floor(lang, choosen_biome, floor);
+        chosen_biome = ongoing_floor(lang, chosen_biome, floor);
     }
 
     // final_boss();
