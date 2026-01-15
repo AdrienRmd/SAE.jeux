@@ -380,7 +380,7 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
 
     char filepath[100];
     sprintf(filepath, "%s/text.txt", lang);
-    stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
+    //stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
     char string[100];
     value_line(filepath, 38, string, sizeof(string));
     battle(&player, &monster, lang);
@@ -394,7 +394,7 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
     else if (choosing(string, 2) == 1)
     {
         set_player(&player);
-        stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
+        //stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
         battle(&player, &monster, lang);
         if (player.hp <= 0)
         {
@@ -403,8 +403,7 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
         }
         else if (choosing(string, 2) == 1)
         {
-            set_player(&player);
-            stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
+            //stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
             battle(&player, &monster, lang);
             if (player.hp <= 0)
             {
