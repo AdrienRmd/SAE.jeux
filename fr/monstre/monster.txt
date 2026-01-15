@@ -37,7 +37,6 @@ scorpion du désert
 2
 2
 2
-0
 
 5
 serpent à sonnette
@@ -88,7 +87,6 @@ esprit du jardin
 4
 3
 2
-1
 
 10
 bison sauvage
@@ -409,8 +407,6 @@ liche des marais
 3
 3
 4
-
-
 
 42
 seigneur de la décomposition

@@ -29,6 +29,6 @@ typedef struct
 } Monster;
 
 // Function to load monster stats based on selected language and monster ID
-
+void set_monster(Monster *monster, const char *language, int monster_id);
 
 #endif

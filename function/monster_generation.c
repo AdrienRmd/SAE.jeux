@@ -1,0 +1,108 @@
+/**
+ * @file monster_generation.c
+ * @brief Implementation of monster generation and loading functions
+ * @author [Author Name]
+ * @date 2026-01-15
+ *
+ * This file contains functions for loading monster data from text files
+ * based on language selection and monster ID.
+ */
+
+#include "monster_generation.h"
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ * @brief Load monster stats from file based on language and monster ID
+ * @param monster Pointer to Monster structure to fill with data
+ * @param language Language code ("fr" or "en")
+ * @param monster_id ID of the monster to load (0-based)
+ *
+ * This function reads monster data from the appropriate language file
+ * and populates the Monster structure with the loaded values.
+ * Each monster occupies 9 lines in the file:
+ * 1: ID, 2: Name, 3: HP, 4: Attack, 5: Defense, 6: Dodge, 7: Special, 8: Luck, 9: Rarity
+ *
+ * Note: Since monster IDs may not be sequential, the function searches through
+ * the file to find the correct monster by ID.
+ */
+void set_monster(Monster *monster, const char *language, int monster_id)
+{
+    char monster_buffer[128];
+    char filename[256];
+    int current_line = 1;
+    int found = 0;
+
+    // Build the appropriate file path based on language
+    if (strcmp(language, "en") == 0)
+    {
+        strcpy(filename, "en/monster/monster.txt");
+    }
+    else
+    {
+        // Default to French
+        strcpy(filename, "fr/monstre/monster.txt");
+    }
+
+    // Search for the monster by checking each block of 9 lines
+    while (!found && current_line < 1000)
+    {
+        // Try to read ID from current position
+        if (value_line(filename, current_line, monster_buffer, sizeof(monster_buffer)))
+        {
+            int found_id = atoi(monster_buffer);
+
+            if (found_id == monster_id)
+            {
+                // Found the correct monster, load its data
+                found = 1;
+                monster->id = monster_id;
+
+                // Load the remaining 8 lines of monster data
+                value_line(filename, current_line + 1, monster_buffer, sizeof(monster_buffer));
+                strcpy(monster->name, monster_buffer);
+
+                value_line(filename, current_line + 2, monster_buffer, sizeof(monster_buffer));
+                monster->hp = atoi(monster_buffer);
+
+                value_line(filename, current_line + 3, monster_buffer, sizeof(monster_buffer));
+                monster->att = atoi(monster_buffer);
+
+                value_line(filename, current_line + 4, monster_buffer, sizeof(monster_buffer));
+                monster->def = atoi(monster_buffer);
+
+                value_line(filename, current_line + 5, monster_buffer, sizeof(monster_buffer));
+                monster->dodge = atoi(monster_buffer);
+
+                value_line(filename, current_line + 6, monster_buffer, sizeof(monster_buffer));
+                monster->spe = atoi(monster_buffer);
+
+                value_line(filename, current_line + 7, monster_buffer, sizeof(monster_buffer));
+                monster->luck = atoi(monster_buffer);
+
+                value_line(filename, current_line + 8, monster_buffer, sizeof(monster_buffer));
+                monster->rarity = atoi(monster_buffer);
+            }
+            else
+            {
+                // Move to next monster (skip 9 lines, but check for empty line)
+                current_line += 9;
+
+                // Check if next line is empty (line number 10, 20, 30, etc.)
+                char temp_buffer[128];
+                if (value_line(filename, current_line, temp_buffer, sizeof(temp_buffer)))
+                {
+                    if (strlen(temp_buffer) == 0)
+                    {
+                        current_line++; // Skip the empty line
+                    }
+                }
+            }
+        }
+        else
+        {
+            // Can't read from file, break
+            break;
+        }
+    }
+}
