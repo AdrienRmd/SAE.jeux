@@ -14,12 +14,14 @@
  * character representing the chosen language from stdin.
  * Returns: the selected language as a `char`.
  */
-char intro()
+char *intro()
 {
-    print_line("intro.txt", 1);
-    char language;
-    scanf("%c", &language);
-    return language;
+    char string[100];
+    value_line("intro.txt", 1, string, sizeof(string));
+    if (choosing(string, 2) == 1){
+        return "fr";
+    }
+    return "en";
 }
 
 /*
@@ -199,6 +201,16 @@ int choose_biome(int *biome, const char *lang){
     }
 }
 
+/*
+ * player_attack
+ * Execute a player attack against a monster. Checks for monster dodge chance,
+ * calculates damage if attack hits, displays appropriate messages, and reduces
+ * monster HP.
+ * Parameters:
+ *  - player: the Player struct containing attack stats
+ *  - monster: the Monster struct being attacked
+ *  - lang: path prefix for localization (used to locate text file)
+ */
 void player_attack(Player player, Monster monster, const char *lang){
     if (random_number(1, 100) <= monster.dodge){
         char filepath[100];
@@ -218,6 +230,16 @@ void player_attack(Player player, Monster monster, const char *lang){
     }
 }
 
+/*
+ * monster_attack
+ * Execute a monster attack against the player. Checks for player dodge chance,
+ * calculates damage if attack hits, displays appropriate messages, and reduces
+ * player HP.
+ * Parameters:
+ *  - player: the Player struct being attacked
+ *  - monster: the Monster struct containing attack stats
+ *  - lang: path prefix for localization (used to locate text file)
+ */
 void monster_attack(Player player, Monster monster, const char *lang){
     if (random_number(1, 100) <= player.dodge){
         char filepath[100];
@@ -238,6 +260,16 @@ void monster_attack(Player player, Monster monster, const char *lang){
 }
 
 
+/*
+ * battle
+ * Execute a turn-based battle between player and monster. Determines attack
+ * order based on speed stat and continues until either the player or monster
+ * reaches 0 HP.
+ * Parameters:
+ *  - player: the Player struct participating in battle
+ *  - monster: the Monster struct participating in battle
+ *  - lang: path prefix for localization (passed to attack functions)
+ */
 void battle(Player player, Monster monster, const char *lang){
     while (player.hp > 0 && monster.hp > 0){
         if (player.spe > monster.spe){

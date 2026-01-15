@@ -18,10 +18,12 @@ Bienvenue dans le monde post-apocalyptique de Neo-Terra
 Quel est votre nom dans le jeu, survivant ? : 
 Quelle est votre race (1 - humain, 2 - nain, 3 - elfe) ?
 Quelle classe choisissez-vous (1 - combattant, 2 - voleur, 3 - archer) ? 
-difficulté du jeu (1 - facile, 2 - moyen, 3 - difficile) :
+Difficulté du jeu (1 - facile, 2 - moyen, 3 - difficile) :
 
 Bienvenue, votre aventure dans Neo-Terra commence maintenant.
 Que votre destin vous guide dans les ruines de l'ancien monde.
+
+Choix invalide
 
 Quel biome voulez-vous explorer ?
 
