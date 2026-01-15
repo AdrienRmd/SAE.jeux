@@ -11,9 +11,9 @@
 
 /*
  * intro
- * Print the intro text (first line of intro.txt) and read a single
- * character representing the chosen language from stdin.
- * Returns: the selected language as a `char`.
+ * Print intro text (first line of intro.txt) and read a single
+ * character representing chosen language from stdin.
+ * Returns: selected language as a `char`.
  */
 char *intro()
 {
@@ -29,11 +29,11 @@ char *intro()
 /*
  * add_stat
  * Read an integer value from `line` in `filename`, add `increment` to it,
- * and write the updated value back to the same line.
+ * and write updated value back to same line.
  * Parameters:
- *  - filename: path to the file containing the stat
+ *  - filename: path to file containing stat
  *  - line: line number to read and update
- *  - increment: amount to add to the parsed integer
+ *  - increment: amount to add to parsed integer
  */
 void add_stat(char *filename, int line, int increment)
 {
@@ -46,11 +46,11 @@ void add_stat(char *filename, int line, int increment)
 
 /*
  * player_init
- * Initialize player data by prompting for choices (reads lines from the
+ * Initialize player data by prompting for choices (reads lines from
  * provided `filename`), writes initial stats into `player/player_info.txt`,
  * and applies class/race-based stat adjustments.
  * Parameters:
- *  - filename: path to the file that contains interactive prompts
+ *  - filename: path to file that contains interactive prompts
  */
 void player_init(char *filename)
 {
@@ -179,11 +179,11 @@ void choose_random_biome(int floor, int *biome)
 /*
  * choose_biome
  * Present two biome names (loaded from language-specific biome file) to
- * the player and prompt for a choice. Returns the selected biome ID.
+ * player and prompt for a choice. Returns selected biome ID.
  * Parameters:
  *  - biome: array containing two biome IDs
  *  - lang: path prefix for localization (used to locate biome file)
- * Returns: the chosen biome ID (one of biome[0] or biome[1])
+ * Returns: chosen biome ID (one of biome[0] or biome[1])
  */
 int choose_biome(int *biome, const char *lang)
 {
@@ -233,8 +233,8 @@ int choose_biome(int *biome, const char *lang)
  * calculates damage if attack hits, displays appropriate messages, and reduces
  * monster HP.
  * Parameters:
- *  - player: the Player struct containing attack stats
- *  - monster: the Monster struct being attacked
+ *  - player: Player struct containing attack stats
+ *  - monster: Monster struct being attacked
  *  - lang: path prefix for localization (used to locate text file)
  */
 void player_attack(Player player, Monster monster, const char *lang)
@@ -261,12 +261,12 @@ void player_attack(Player player, Monster monster, const char *lang)
 
 /*
  * monster_attack
- * Execute a monster attack against the player. Checks for player dodge chance,
+ * Execute a monster attack against a player. Checks for player dodge chance,
  * calculates damage if attack hits, displays appropriate messages, and reduces
  * player HP.
  * Parameters:
- *  - player: the Player struct being attacked
- *  - monster: the Monster struct containing attack stats
+ *  - player: Player struct being attacked
+ *  - monster: Monster struct containing attack stats
  *  - lang: path prefix for localization (used to locate text file)
  */
 void monster_attack(Player player, Monster monster, const char *lang)
@@ -294,11 +294,11 @@ void monster_attack(Player player, Monster monster, const char *lang)
 /*
  * battle
  * Execute a turn-based battle between player and monster. Determines attack
- * order based on speed stat and continues until either the player or monster
+ * order based on speed stat and continues until either player or monster
  * reaches 0 HP.
  * Parameters:
- *  - player: the Player struct participating in battle
- *  - monster: the Monster struct participating in battle
+ *  - player: Player struct participating in battle
+ *  - monster: Monster struct participating in battle
  *  - lang: path prefix for localization (passed to attack functions)
  */
 void battle(Player player, Monster monster, const char *lang)
@@ -389,80 +389,6 @@ void stat_monster_generation(Monster *monster, const char *langue_selectionne, i
         // ID non trouvé après avoir parcouru le fichier
         printf("impossible de trouver le monstre avec l'ID %d\n", id_monster);
     }
-}
-
-int generation_temperature(int minimum_temperature, int maximum_temperature)
-{
-    return random_number(minimum_temperature, maximum_temperature);
-};
-
-void generation_biome(Biome *biome, int id_biome, const char *lang)
-// la fonction retourne un biome
-{
-    FILE *file;
-    char line[256];
-    char buffer[256];
-    int current_line = 1;
-
-    // si la langue est francais ou anglais
-    // ouvrir le fichier biome.txt correspondant
-    // et lire les informations du biome
-    char filepath[100];
-    sprintf(filepath, "%s/biomes/biome.txt", lang);
-    file = fopen(filepath, "r");
-
-    // verifier si le fichier a bien ete ouvert
-    if (file == NULL)
-    {
-        printf("Error: Cannot open biome file\n");
-        return;
-    }
-
-    // Calculate the line number where the biome ID should be found
-    int target_line = (id_biome - 1) * 10 + 1;
-
-    // Read lines until we reach the target line
-    while (current_line < target_line && fgets(line, sizeof(line), file))
-    {
-        current_line++;
-    }
-
-    // If we found the target line, read the biome data
-    if (current_line == target_line && fgets(line, sizeof(line), file))
-    {
-        // Read the ID line (should match id_biome)
-        value_line(filepath, current_line, buffer, sizeof(buffer));
-        int found_id = atoi(buffer);
-
-        if (found_id == id_biome)
-        {
-            // remplir la struc biome avec les informations du fichier
-            biome->id_biome = id_biome;
-
-            // Read description (next line)
-            value_line(filepath, current_line + 1, buffer, sizeof(buffer));
-            buffer[strcspn(buffer, "\n")] = '\0'; // Remove newline
-            biome->description = strdup(buffer);
-
-            // Read difficulty
-            value_line(filepath, current_line + 2, buffer, sizeof(buffer));
-            biome->difficulty_biome = atof(buffer);
-
-            // Read temperatures
-            value_line(filepath, current_line + 3, buffer, sizeof(buffer));
-            biome->minimum_temperature = atoi(buffer);
-            value_line(filepath, current_line + 4, buffer, sizeof(buffer));
-            biome->maximum_temperature = atoi(buffer);
-
-            // Read weather
-            value_line(filepath, current_line + 5, buffer, sizeof(buffer));
-            biome->minimum_meteo = atoi(buffer);
-            value_line(filepath, current_line + 6, buffer, sizeof(buffer));
-            biome->maximum_meteo = atoi(buffer);
-        }
-    }
-
-    fclose(file); // fermer le fichier
 }
 
 int get_monster_id(int biome_id, const char *lang)

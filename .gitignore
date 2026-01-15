@@ -6,3 +6,13 @@ amelioration_intro_FR.md
 
 # Ignore all PDF files (optional)
 *.pdf
+
+# Ignore compiled files
+*.o
+*.exe
+*.out
+
+# Ignore build directories
+output/
+build/
+dist/
