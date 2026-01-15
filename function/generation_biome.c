@@ -129,3 +129,7 @@ void generation_biome(Biome *biome, int id_biome, char *lang)
 
     fclose(file); // fermer le fichier
 }
+
+void afficher_biome(int id_biome, char fichier[]{
+
+                                  })
