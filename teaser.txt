@@ -1,4 +1,4 @@
-Okay, so you woke up in a weird spot, right? No clue who you are or why you're even there. Well, welcome to Neo-Terra!
+You woke up in a weird spot, right? No clue who you are or why you're even there. Well, welcome to Neo-Terra!
 
 Your main job? Stay alive! You gotta make your way through ten tough levels, going through all kinds of places. Passing by green fields, creepy forests and even volcanoes.
 
@@ -6,6 +6,6 @@ Watch out, since there are strong monsters everywhere. Time to fight! Beat them,
 
 And you're going to need that strength since a Big Boss is waiting on the last level. You feel that he's the strongest around.
 
-Take care! You only have one life and if you loose, you have to retry by the beginning...
+Take care! You only have one life and if you lose, you have to retry by the beginning...
 
 So, feeling up to the challenge? Grab your sword and let's go! Your story begins now in Neo-Terra.

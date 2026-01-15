@@ -10,17 +10,9 @@ const int NB_FLOOR = 10;
 
 int main()
 {
-    char language = intro();
+    char lang[3] = intro();
     int floor = 1;
     int biome[2];
-    char lang[3];
-
-    if (language == 'f' || language == 'F'){
-        strcpy(lang, "fr");
-    }
-    else{
-        strcpy(lang, "en");
-    }
 
     char filepath[100];
     sprintf(filepath, "%s/text.txt", lang);
