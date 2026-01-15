@@ -82,19 +82,19 @@ void generation_biome(Biome *biome, int id_biome, char description, float diffic
     while (fgets(line, sizeof(line), file))
     {
         // verifier si la ligne correspond a l'id_biome
-        if (numero_ligne == id_biome - 1)
+        if (numero_ligne == id_biome)
         {
             // remplir la struc biome avec les informations du fichier
             biome->id_biome = id_biome;
             fgets(line, sizeof(line), file);
 
-            biome->description = strdup(line);
+            biome->description = strdup(line); // strdup pour allouer de la memoire et copier la chaine
             fgets(line, sizeof(line), file);
 
-            biome->difficulty_biome = atof(line);
+            biome->difficulty_biome = atof(line); // atof pour convertir en float
             fgets(line, sizeof(line), file);
 
-            biome->minimum_temperature = atoi(line);
+            biome->minimum_temperature = atoi(line); // atoi pour convertir en int
             fgets(line, sizeof(line), file);
 
             biome->maximum_temperature = atoi(line);
@@ -108,6 +108,7 @@ void generation_biome(Biome *biome, int id_biome, char description, float diffic
             break;
         }
 
+        // passer a l'id_biome suivant
         numero_ligne = numero_ligne + 10;
     }
 }
