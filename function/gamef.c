@@ -341,7 +341,7 @@ void afficher_biome(int id_biome, const char *filepath)
 }
 
 
-void stat_monster_generation(Monster *monster, char langue_selectionne, int id_monster)
+void stat_monster_generation(Monster *monster, const char *langue_selectionne, int id_monster)
 {
     int verification_id = 0;
     int numero_ligne = 1; // Start at line 1
@@ -396,7 +396,7 @@ int generation_temperature(int minimum_temperature, int maximum_temperature)
     return random_number(minimum_temperature, maximum_temperature);
 };
 
-void generation_biome(Biome *biome, int id_biome, char *lang)
+void generation_biome(Biome *biome, int id_biome, const char *lang)
 // la fonction retourne un biome
 {
 
@@ -502,7 +502,7 @@ int ongoing_floor(const char *lang, int biome_id, int floor){
     battle(*player, *monster, lang);
 
     if (player->hp <= 0){
-        print_lose();
+        //print_lose();
         change_line("player/player_info.txt", 21, 0);
     }
     else if (choosing(string, 2) == 1){

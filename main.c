@@ -10,7 +10,8 @@ const int NB_FLOOR = 10;
 
 int main()
 {
-    char lang[3] = intro();
+    char lang[3];
+    strcpy(lang, intro());
     int floor = 1;
     int biome[2], choosen_biome;
 
@@ -23,9 +24,11 @@ int main()
 
     free(biome);
 
-    for (floor ; floor < NB_FLOOR ; floor++){
+    for (floor = 1 ; floor < NB_FLOOR ; floor++){
         choosen_biome = ongoing_floor(lang, choosen_biome, floor);
     }
     
+    //final_boss();
+
     return 0;
 }

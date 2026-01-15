@@ -14,13 +14,13 @@ void choose_random_biome(int floor, int *biome);
 
 int choose_biome(int *biome, const char *lang);
 
-char intro();
+char *intro();
 
 void player_init(char *filename);
 
 void add_stat(char *filename, int line, int increment);
 
-void battle(Player player, Monster monster, int lang);
+void battle(Player player, Monster monster, const char *lang);
 
 int ongoing_floor(const char *lang, int biome, int floor);
 

@@ -39,12 +39,13 @@ int choosing(const char *string, int nb_choice)
         scanf("%d", &choosed);
         if (choosed > 0 && choosed <= nb_choice)
         {
+            while(getchar()!='\n');
             return choosed;
         }
     } while (1);
 }
 
-void print_loose(char filepath[])
+/*void print_loose(char filepath[])
 {
     int pointeur_debut = id_biome * 2 - 1;
     int pointeur_fin = id_biome * 2;
@@ -55,4 +56,4 @@ void print_loose(char filepath[])
         print_line(filepath, ligne);
         printf("\n");
     }
-}
+}*/
