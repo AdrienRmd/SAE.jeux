@@ -421,7 +421,7 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
     Biome biome;
     Player player;
 
-    // Initialize player stats from file
+    set_player(&player);
     
 
     /*generation_biome(&biome, biome_id, lang);
