@@ -411,7 +411,7 @@ void generation_biome(Biome *biome, int id_biome, char *lang)
     {
 
         int id_numero_ligne;
-        id_numero_ligne = value_line_return(filepath, numero_ligne, line, sizeof(line)); // lire l'id de la ligne courante
+        id_numero_ligne = value_line_return(filepath, line, numero_ligne, sizeof(numero_ligne)); // lire l'id de la ligne courante
 
         // verifier si la ligne correspond a l'id_biome (les IDs sont aux lignes 1, 11, 21...)
         if (id_numero_ligne == id_biome)
