@@ -391,6 +391,22 @@ void stat_monster_generation(Monster *monster, const char *langue_selectionne, i
     }
 }
 
+void set_player(Player *player){
+    char player_buffer[128];
+    value_line("player/player_info.txt", 1, player_buffer, sizeof(player_buffer));
+    strcpy(player->name, player_buffer);
+    value_line("player/player_info.txt", 5, player_buffer, sizeof(player_buffer));
+    player->hp = atoi(player_buffer);
+    value_line("player/player_info.txt", 6, player_buffer, sizeof(player_buffer));
+    player->att = atoi(player_buffer);
+    value_line("player/player_info.txt", 7, player_buffer, sizeof(player_buffer));
+    player->def = atoi(player_buffer);
+    value_line("player/player_info.txt", 8, player_buffer, sizeof(player_buffer));
+    player->spe = atoi(player_buffer);
+    value_line("player/player_info.txt", 9, player_buffer, sizeof(player_buffer));
+    player->dodge = atoi(player_buffer);
+}
+
 int get_monster_id(int biome_id, const char *lang)
 {
     char filepath[100], buffer[10];
@@ -406,25 +422,14 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
     Player player;
 
     // Initialize player stats from file
-    char player_buffer[128];
-    value_line("player/player_info.txt", 1, player_buffer, sizeof(player_buffer));
-    strcpy(player.name, player_buffer);
-    value_line("player/player_info.txt", 5, player_buffer, sizeof(player_buffer));
-    player.hp = atoi(player_buffer);
-    value_line("player/player_info.txt", 6, player_buffer, sizeof(player_buffer));
-    player.att = atoi(player_buffer);
-    value_line("player/player_info.txt", 7, player_buffer, sizeof(player_buffer));
-    player.def = atoi(player_buffer);
-    value_line("player/player_info.txt", 8, player_buffer, sizeof(player_buffer));
-    player.spe = atoi(player_buffer);
-    value_line("player/player_info.txt", 9, player_buffer, sizeof(player_buffer));
-    player.dodge = atoi(player_buffer);
+    
 
-    generation_biome(&biome, biome_id, lang);
-    char filepath[100];
+    /*generation_biome(&biome, biome_id, lang);
+    
     sprintf(filepath, "%s/map.txt", lang);
-    afficher_biome(biome.id_biome, filepath);
+    afficher_biome(biome.id_biome, filepath);*/
 
+    char filepath[100];
     sprintf(filepath, "%s/text.txt", lang);
     stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
     char string[100];
