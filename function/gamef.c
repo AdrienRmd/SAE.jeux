@@ -60,7 +60,7 @@ void player_init(char *filename)
         scanf("%s", choice);
         change_line("player/player_info.txt", i, choice);
     }
-    change_line("player/player_info.txt", 5, "10");
+    change_line("player/player_info.txt", 5, "100");
     for (int i = 6 ; i < 12 ; i++){
         change_line("player/player_info.txt", i, "5");
     }
