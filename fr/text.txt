@@ -1,5 +1,32 @@
 Bienvenue dans le monde post-apocalyptique de Neo-Terra\n
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Quel est votre nom dans le jeu, survivant ? : 
 Quelle est votre race (1 - humain, 2 - nain, 3 - elfe) ?
 Quelle classe choisissez-vous (1 - combattant, 2 - voleur, 3 - archer) ? 
