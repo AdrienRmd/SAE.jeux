@@ -28,12 +28,6 @@ int main()
     }
 
     // final_boss();
-    for (floor = 1; floor < NB_FLOOR; floor++)
-    {
-        choosen_biome = ongoing_floor(lang, choosen_biome, floor);
-    }
-
-    // final_boss();
 
     return 0;
 }

@@ -20,7 +20,7 @@ void player_init(char *filename);
 
 void add_stat(char *filename, int line, int increment);
 
-void battle(Player player, Monster monster, const char *lang);
+void battle(Player *player, Monster *monster, const char *lang);
 
 int ongoing_floor(const char *lang, int biome, int floor);
 

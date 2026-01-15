@@ -237,9 +237,9 @@ int choose_biome(int *biome, const char *lang)
  *  - monster: Monster struct being attacked
  *  - lang: path prefix for localization (used to locate text file)
  */
-void player_attack(Player player, Monster monster, const char *lang)
+void player_attack(Player *player, Monster *monster, const char *lang)
 {
-    if (random_number(1, 100) <= monster.dodge)
+    if (random_number(1, 100) <= monster->dodge)
     {
         char filepath[100];
         sprintf(filepath, "%s/text.txt", lang);
@@ -247,7 +247,7 @@ void player_attack(Player player, Monster monster, const char *lang)
     }
     else
     {
-        int damage = player.att - monster.def;
+        int damage = player->att - monster->def;
         char *damage_str = int_to_string(damage);
         strcat(damage_str, " HP");
         char filepath[100];
@@ -255,7 +255,8 @@ void player_attack(Player player, Monster monster, const char *lang)
         print_line(filepath, 13);
         print_line(filepath, 14);
         printf("%s\n", damage_str);
-        monster.hp -= damage;
+        monster->hp -= damage;
+        add_stat("player/player_info.txt", 5, -damage);
     }
 }
 
@@ -269,9 +270,9 @@ void player_attack(Player player, Monster monster, const char *lang)
  *  - monster: Monster struct containing attack stats
  *  - lang: path prefix for localization (used to locate text file)
  */
-void monster_attack(Player player, Monster monster, const char *lang)
+void monster_attack(Player *player, Monster *monster, const char *lang)
 {
-    if (random_number(1, 100) <= player.dodge)
+    if (random_number(1, 100) <= player->dodge)
     {
         char filepath[100];
         sprintf(filepath, "%s/text.txt", lang);
@@ -279,7 +280,7 @@ void monster_attack(Player player, Monster monster, const char *lang)
     }
     else
     {
-        int damage = monster.att - player.def;
+        int damage = monster->att - player->def;
         char *damage_str = int_to_string(damage);
         strcat(damage_str, " HP");
         char filepath[100];
@@ -287,7 +288,8 @@ void monster_attack(Player player, Monster monster, const char *lang)
         print_line(filepath, 16);
         print_line(filepath, 17);
         printf("%s\n", damage_str);
-        player.hp -= damage;
+        player->hp -= damage;
+        add_stat("player/player_info.txt", 5, -damage);
     }
 }
 
@@ -301,18 +303,18 @@ void monster_attack(Player player, Monster monster, const char *lang)
  *  - monster: Monster struct participating in battle
  *  - lang: path prefix for localization (passed to attack functions)
  */
-void battle(Player player, Monster monster, const char *lang)
+void battle(Player *player, Monster *monster, const char *lang)
 {
     char filepath[100];
     sprintf(filepath, "%s/text.txt", lang);
     print_line(filepath, 37);
-    printf("%s\n", monster.name);
-    while (player.hp > 0 && monster.hp > 0)
+    printf("%s\n", monster->name);
+    while (player->hp > 0 && monster->hp > 0)
     {
-        if (player.spe > monster.spe)
+        if (player->spe > monster->spe)
         {
             player_attack(player, monster, lang);
-            if (monster.hp > 0)
+            if (monster->hp > 0)
             {
                 monster_attack(player, monster, lang);
             }
@@ -320,7 +322,7 @@ void battle(Player player, Monster monster, const char *lang)
         else
         {
             monster_attack(player, monster, lang);
-            if (player.hp > 0)
+            if (player->hp > 0)
             {
                 player_attack(player, monster, lang);
             }
@@ -434,21 +436,34 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
     stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
     char string[100];
     value_line(filepath, 38, string, sizeof(string));
-    battle(player, monster, lang);
+    battle(&player, &monster, lang);
 
     if (player.hp <= 0)
     {
         // print_lose();
         change_line("player/player_info.txt", 21, "0");
+        return -1;
     }
     else if (choosing(string, 2) == 1)
     {
+        set_player(&player);
         stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
-        battle(player, monster, lang);
-        if (choosing(string, 2) == 1)
+        battle(&player, &monster, lang);
+        if (player.hp <= 0)
         {
+            change_line("player/player_info.txt", 21, "0");
+            return -1;
+        }
+        else if (choosing(string, 2) == 1)
+        {
+            set_player(&player);
             stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
-            battle(player, monster, lang);
+            battle(&player, &monster, lang);
+            if (player.hp <= 0)
+            {
+                change_line("player/player_info.txt", 21, "0");
+                return -1;
+            }
             print_line(filepath, 40);
         }
     }
