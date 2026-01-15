@@ -33,16 +33,7 @@ void set_monster(Monster *monster, const char *language, int monster_id)
     int current_line = 1;
     int found = 0;
 
-    // Build the appropriate file path based on language
-    if (strcmp(language, "en") == 0)
-    {
-        strcpy(filename, "en/monster/monster.txt");
-    }
-    else
-    {
-        // Default to French
-        strcpy(filename, "fr/monstre/monster.txt");
-    }
+    sprintf(filename, "%s/monstre/monster.txt", language);
 
     // Search for the monster by checking each block of 9 lines
     while (!found && current_line < 1000)
