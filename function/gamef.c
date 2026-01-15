@@ -299,8 +299,11 @@ void monster_attack(Player player, Monster monster, const char *lang)
  *  - monster: the Monster struct participating in battle
  *  - lang: path prefix for localization (passed to attack functions)
  */
-void battle(Player player, Monster monster, const char *lang)
-{
+void battle(Player player, Monster monster, const char *lang){
+    char filepath[100];
+    sprintf(filepath, "%s/text.txt", lang);
+    print_line(filepath, 37);
+    printf("%s\n", monster.name);
     while (player.hp > 0 && monster.hp > 0)
     {
         if (player.spe > monster.spe)
@@ -321,6 +324,20 @@ void battle(Player player, Monster monster, const char *lang)
         }
     }
 }
+
+void afficher_biome(int id_biome, const char *filepath)
+{
+    int pointeur_debut = id_biome * 2 - 1;
+    int pointeur_fin = id_biome * 2;
+    int ligne;
+
+    for (ligne = pointeur_debut; ligne <= pointeur_fin; ligne++)
+    {
+        print_line(filepath, ligne);
+        printf("\n");
+    }
+}
+
 
 void stat_monster_generation(Monster *monster, char langue_selectionne, int id_monster)
 {
@@ -471,8 +488,26 @@ int get_monster_id(int biome_id, const char *lang){
 int ongoing_floor(const char *lang, int biome_id, int floor){
     Monster *monster;
     Biome *biome;
+    Player *player;
     
     generation_biome(biome, biome_id, lang);
+    char filepath[100];
+    sprintf(filepath, "%s/map.txt", lang);
+    afficher_biome(biome->id_biome, filepath);
+    free(filepath);
+    char filepath[100];
+    sprintf(filepath, "%s/text.txt", lang);
+
+    battle(*player, *monster, lang);
+
+    if (player->hp <= 0){
+        print_lose();
+        change_line("player/player_info.txt", 21, 0);
+    }
+    else if (choosing(filepath, 2) == 1){
+
+    }
+    
 
     stat_monster_generation(monster, lang, get_monster_id(biome_id, lang));
 }
