@@ -10,7 +10,7 @@
 #define RARITY_COMMON 0
 #define RARITY_RARE 1
 #define RARITY_VERY_RARE 2
-#define RARITY_EPIC 3
+#define RARITY_EPIC 3biome_buffer
 #define RARITY_LEGENDARY 4
 #define RARITY_MYTHIC 5
 

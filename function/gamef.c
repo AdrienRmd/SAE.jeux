@@ -340,7 +340,8 @@ void afficher_biome(int id_biome, const char *filepath)
     }
 }
 
-void set_player(Player *player){
+void set_player(Player *player)
+{
     char player_buffer[128];
     value_line("player/player_info.txt", 1, player_buffer, sizeof(player_buffer));
     strcpy(player->name, player_buffer);
@@ -426,6 +427,62 @@ void set_monster(Monster *monster, const char *language, int monster_id)
     }
 }
 
+void set_biome(Biome *biome, const char *language, int biome_id)
+{
+    char biome_buffer[128];
+    char filename[256];
+    int current_line = 1;
+    int found = 0;
+
+    sprintf(filename, "%s/biomes/biome.txt", language);
+
+    // Search for the monster by checking each block of 9 lines
+    while (!found && current_line < 1000)
+    {
+        // Try to read ID from current position
+        if (value_line(filename, current_line, biome_buffer, sizeof(biome_buffer)))
+        {
+            int found_id = atoi(biome_buffer);
+
+            if (found_id == biome_id)
+            {
+                // Found the correct biome, load its data
+                found = 1;
+                biome->id_biome = biome_id;
+
+                // Load the remaining 8 lines of biome data
+
+                value_line(filename, current_line + 1, biome_buffer, sizeof(biome_buffer));
+                biome->description = atoi(biome_buffer);
+
+                value_line(filename, current_line + 2, biome_buffer, sizeof(biome_buffer));
+                biome->difficulty_biome = atoi(biome_buffer);
+
+                value_line(filename, current_line + 3, biome_buffer, sizeof(biome_buffer));
+                biome->minimum_temperature = atoi(biome_buffer);
+
+                value_line(filename, current_line + 4, biome_buffer, sizeof(biome_buffer));
+                biome->maximum_temperature = atoi(biome_buffer);
+
+                value_line(filename, current_line + 5, biome_buffer, sizeof(biome_buffer));
+                biome->minimum_meteo = atoi(biome_buffer);
+
+                value_line(filename, current_line + 6, biome_buffer, sizeof(biome_buffer));
+                biome->maximum_meteo = atoi(biome_buffer);
+            }
+            else
+            {
+                // Move to next biome (skip 9 lines, but check for empty line)
+                current_line += 10;
+            }
+        }
+        else
+        {
+            // Can't read from file, break
+            break;
+        }
+    }
+}
 int ongoing_floor(const char *lang, int biome_id, int floor)
 {
     Monster monster;
@@ -433,16 +490,15 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
     Player player;
 
     set_player(&player);
-    
 
     /*generation_biome(&biome, biome_id, lang);
-    
+
     sprintf(filepath, "%s/map.txt", lang);
     afficher_biome(biome.id_biome, filepath);*/
 
     char filepath[100];
     sprintf(filepath, "%s/text.txt", lang);
-    //stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
+    // stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
     char string[100];
     value_line(filepath, 38, string, sizeof(string));
     battle(&player, &monster, lang);
@@ -456,7 +512,7 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
     else if (choosing(string, 2) == 1)
     {
         set_player(&player);
-        //stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
+        // stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
         battle(&player, &monster, lang);
         if (player.hp <= 0)
         {
@@ -465,7 +521,7 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
         }
         else if (choosing(string, 2) == 1)
         {
-            //stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
+            // stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
             battle(&player, &monster, lang);
             if (player.hp <= 0)
             {
