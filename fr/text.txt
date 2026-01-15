@@ -37,6 +37,8 @@ ESQUIVE !
 Un monstre vous attaque ! C'est un 
 Voulez-vous encore combattre à cet étage ? (1 - Oui / 2 - Non)
 
+Ce monde semble maintenant dénué de tout sorte de forme de vie...
+
 Le gel mordant de l'apocalypse glace vos os, chaque souffle se transforme en cristal de désespoir.
 0.75
 Un froid persistant s'infiltre dans vos vêtements, rappelant constant de la mort qui vous entoure.

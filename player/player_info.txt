@@ -18,4 +18,4 @@ IdPants
 IdBoots
 IdWeapon
 Floor
-Lose
+Ingame ?

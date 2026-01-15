@@ -115,6 +115,8 @@ void player_init(char *filename)
         add_stat("player/player_info.txt", 9, 2);
     }
 
+    change_line("player/player_info.txt", 21, "1");
+
     print_line(filename, 8);
     print_line(filename, 9);
 }
@@ -347,13 +349,10 @@ void stat_monster_generation(Monster *monster, char langue_selectionne, int id_m
     // Check les line 1, 11, 21, 31, etc.
     while (verification_id != 1 && numero_ligne <= 1000)
     {
-        char buffer[40];
+        char buffer[40], filepath[100];
+        sprintf(filepath, "%s/monstre/monster.txt", langue_selectionne);
 
-        // selection le nom par rapport a la langue
-        if (langue_selectionne == 'F')
-            value_line("../fr/monstre/monster.txt", numero_ligne, buffer, sizeof(buffer));
-        else
-            value_line("../en/monster/monster.txt", numero_ligne, buffer, sizeof(buffer));
+        value_line(filepath, numero_ligne, buffer, sizeof(buffer));
 
         // Extraction des données depuis la ligne lue
         int id;
@@ -497,17 +496,31 @@ int ongoing_floor(const char *lang, int biome_id, int floor){
     free(filepath);
     char filepath[100];
     sprintf(filepath, "%s/text.txt", lang);
-
+    stat_monster_generation(monster, lang, get_monster_id(biome_id, lang));
+    char string[100];
+    value_line(filepath, 38, string, sizeof(string));
     battle(*player, *monster, lang);
 
     if (player->hp <= 0){
         print_lose();
         change_line("player/player_info.txt", 21, 0);
     }
-    else if (choosing(filepath, 2) == 1){
-
+    else if (choosing(string, 2) == 1){
+        stat_monster_generation(monster, lang, get_monster_id(biome_id, lang));
+        battle(*player, *monster, lang);
+        if (choosing(string, 2) == 1){
+            stat_monster_generation(monster, lang, get_monster_id(biome_id, lang));
+            battle(*player, *monster, lang);
+            print_line(filepath, 40);
+        }
     }
-    
+    if (floor < 9){
+        int biomes[2];
+        choose_random_biome(floor, biomes);
+        return choose_biome(biomes, lang);
+    }  
 
-    stat_monster_generation(monster, lang, get_monster_id(biome_id, lang));
+    return 0;
+
+    
 }
