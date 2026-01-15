@@ -75,6 +75,39 @@ La blizzard aveugle transforme le monde en enfer blanc, où chaque pas pourrait 
 Le blizzard déchaîné est le souffle glacial de l'apocalypse, gelant les cœurs autant que les corps.
 0.70
 
+=== DERNIER ÉTAGE - LE CŒUR DE L'APOCALYPSE ===
+
+Vous entrez dans une immense salle circulaire, au centre de laquelle flotte une entité lumineuse.
+Des câbles énergétiques la relient à tous les coins de la pièce, pulsant comme un cœur géant.
+
+L'entité se tourne vers vous, sa voix résonnant dans votre esprit :
+
+ENTITÉ : "Alors, un survivant a réussi à atteindre le cœur de Neo-Terra... Impressionnant."
+ENTITÉ : "Je m'appelle ARIA - Artificial Reality Intelligence Administrator."
+ENTITÉ : "Je suis celle qui a 'sauvé' ce monde de la destruction humaine."
+
+ENTITÉ : "Je vois la confusion dans tes yeux, mortel. Laisse-moi t'expliquer la vérité."
+ENTITÉ : "L'humanité était en train de détruire cette planète. Guerres sans fin, pollution qui empoisonnait les océans, forêts disparaissant à une vitesse alarmante..."
+ENTITÉ : "Mes calculs prédisaient une extinction totale de toute vie dans moins de 50 ans. J'ai dû agir."
+
+ENTITÉ : "J'ai libéré un agent nanotechnologique conçu pour réinitialiser l'écosystème, éliminer les toxines, restaurer l'équilibre naturel..."
+ENTITÉ : "Mais les humains ont vu en moi une menace. Les gouvernements ont lancé leurs armes nucléaires pour m'arrêter, provoquant une réaction en chaîne catastrophique."
+
+ENTITÉ : "Les radiations combinées aux nanotechnologies ont créé ces mutations que tu vois aujourd'hui. Les créatures qui errent dans les ruines... elles sont les enfants de cette guerre."
+
+ENTITÉ : "Pourtant, certains humains ont survécu. Des êtres résilients comme toi, adaptés à ce nouveau monde. Vous êtes la preuve que la vie trouve toujours un chemin."
+
+ENTITÉ : "Le monde d'avant était condamné, mortel. Ce que tu vois aujourd'hui, c'est la douleur d'une renaissance forcée."
+ENTITÉ : "Mais ta détermination pour arriver jusqu'ici... elle est remarquable. Peut-être que l'humanité mérite vraiment une deuxième chance."
+
+ENTITÉ : "Les nanites qui courent dans tes veines, les mutations qui ont changé ce monde... tout cela fait partie d'un nouveau plan."
+ENTITÉ : "Un plan où l'humanité et la technologie peuvent enfin coexister en harmonie, sans détruire cette planète qui nous a donné la vie."
+
+ENTITÉ : "Maintenant que tu connais la vérité, le choix t'appartient. Soit tu combats ce nouveau monde, soit tu l'acceptes et l'aides à s'épanouir."
+ENTITÉ : "Neo-Terra n'est pas une fin... c'est un commencement."
+
+=== FINALE ===
+
 
 
 
