@@ -18,6 +18,7 @@ int main()
     sprintf(filepath, "%s/text.txt", lang);
     char save[10];
     value_line("player/player_info.txt", 21, save, sizeof(save));
+    int starting_floor = 1;
 
     if (strcmp(save, "0")){
         char string[50];
@@ -25,16 +26,16 @@ int main()
         if(choosing(string, 2)){
             char buffer[10];
             value_line("player/player_info.txt", 20, buffer, sizeof(buffer));
-            int starting_floor = atoi(buffer);
+            starting_floor = atoi(buffer);
         }
         else{
             player_init(filepath);
-            int starting_floor = 1;
+            starting_floor = 1;
         }
     }
     else{
         player_init(filepath);
-        int starting_floor = 1;
+        starting_floor = 1;
     }
 
     

@@ -55,17 +55,7 @@ void set_monster(Monster *monster, const char *language, int monster_id)
             else
             {
                 // Move to next monster (skip 9 lines, but check for empty line)
-                current_line += 9;
-
-                // Check if next line is empty (line number 10, 20, 30, etc.)
-                char temp_buffer[128];
-                if (value_line(filename, current_line, temp_buffer, sizeof(temp_buffer)))
-                {
-                    if (strlen(temp_buffer) == 0)
-                    {
-                        current_line++; // Skip the empty line
-                    }
-                }
+                current_line += 10;
             }
         }
         else
