@@ -8,7 +8,7 @@
 #include "monster_generation.h"
 #include "other.h"
 #include "generation_biome.h"
-#include <time.h>
+
 
 /*
  * sleep_ms
@@ -26,7 +26,7 @@ void sleep_ms(int milliseconds)
  * intro
  * Print intro text (first line of intro.txt) and read a single
  * character representing chosen language from stdin.
- * Returns: selected language as a `char`.
+ * Returns: selected language as a `char *`.
  */
 char *intro()
 {
@@ -75,7 +75,7 @@ void player_init(char *filename)
 
     char choice[20];
     print_line(filename, 18);
-    scanf("%s", choice);
+    scanf("%19s", choice);
     change_line("player/player_info.txt", 1, choice);
     printf("\n");
     for (int i = 2; i <= 4; i++)
@@ -142,7 +142,7 @@ void choose_random_biome(int floor, int *biome)
 {
 
     int random;
-    biome[0] = 0;
+
 
     for (int i = 0; i < 2; i++)
     {
@@ -201,16 +201,22 @@ int choose_biome(int *biome, const char *lang)
     int choice = -1;
     char filepath[100];
     char biome1[100], biome2[100];
+    char prompt[100];
 
     // Clear input buffer
     int c;
     while ((c = getchar()) != '\n' && c != EOF)
         ;
 
+    /* Load localized prompt for biome selection */
+    sprintf(filepath, "%s/biomes/biome_prompt.txt", lang);
+    value_line(filepath, 1, prompt, sizeof(prompt));
+
+    /* Load localized biome names */
     sprintf(filepath, "%s/biomes/biome.txt", lang);
     value_line(filepath, 10 * (biome[0] - 1) + 2, biome1, sizeof(biome1));
     value_line(filepath, 10 * (biome[1] - 1) + 2, biome2, sizeof(biome2));
-    printf("Quel biome voulez-vous explorer ?\n");
+    printf("%s\n", prompt);
 
     while (choice != 1 && choice != 2)
     {
@@ -222,7 +228,13 @@ int choose_biome(int *biome, const char *lang)
 
         if (result != 1 || (choice != 1 && choice != 2))
         {
-            printf("Choix invalide. Veuillez entrer 1 ou 2.\n");
+            if (strcmp(lang, "en")){
+                printf("Choix invalide. Veuillez entrer 1 ou 2.\n");
+            }
+            else{
+                printf("Invalid choice. Please input 1 or 2.\n");
+            }
+            
             choice = -1;
         }
     }
@@ -245,12 +257,16 @@ int choose_biome(int *biome, const char *lang)
  * Parameters:
  *  - player: Player struct containing attack stats
  *  - monster: Monster struct being attacked
- *  - lang: path prefix for localization (used to locate text file)
+        int damage = player->att - monster->def;
+        if (damage < 1)
+        {
+            damage = 1;
+        }
  */
 void player_attack(Player *player, Monster *monster, const char *lang)
 {
-    if (random_number(1, 100) <= monster->dodge)
-    {
+    if (random_number(1, 100) <= monster->dodge){
+
         char filepath[100];
         sprintf(filepath, "%s/text.txt", lang);
         print_line(filepath, 15);
@@ -528,7 +544,6 @@ int ongoing_floor(const char *lang, int biome_id, int floor)
     }
     else if (choosing(string, 2) == 1)
     {
-        set_player(&player);
         // stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
         battle(&player, &monster, lang);
         if (player.hp <= 0)
