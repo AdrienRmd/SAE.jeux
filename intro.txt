@@ -1,1 +1,1 @@
-Choisir la langue (fr) / Select language (en) : 
+Choisir la langue / Select language (fr : 1 / en : 2) : 
