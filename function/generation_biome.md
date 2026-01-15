@@ -53,6 +53,7 @@ Ce module gère la génération et la gestion des biomes dans The Final Dawn. Il
  * including biomes, buildings, and special areas.
  */
 typedef struct {
+    int id_biome
     char* description;           // Detailed description of the location
     Temperature temperature;      // Temperature type (affects player stats)
     Meteo meteo;              // Weather type (impacts player stats)
