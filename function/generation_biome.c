@@ -46,48 +46,51 @@ int generation_temperature(int minimum_temperature, int maximum_temperature)
     return random_number(minimum_temperature, maximum_temperature);
 };
 
-int generation_temperature(int minimum_temperature, int maximum_temperature)
+void generation_biome(Biome *biome, int id_biome, char *lang)
+// la fonction retourne un biome
 {
-    return random_number(minimum_temperature, maximum_temperature);
-};
 
-void generation_biome(Biome *biome, int id_biome, char description, float difficulty_biome,
-                      Temperature minimum_temperature, Temperature maximum_temperature,
-                      Meteo minimum_meteo, Meteo maximum_meteo, char *lang)
-{
     int temperature, meteo;
     FILE *file;
     char line[50];
     int numero_ligne = 1;
+    float difficulty_biome;
 
     // genere les valeurs aléatoires pour la temperature et la meteo
-    temperature = generation_temperature(minimum_temperature, maximum_temperature);
-    meteo = generation_meteo(minimum_meteo, maximum_meteo);
 
     // si la langue est francais ou anglais
     // ouvrir le fichier biome.txt correspondant
     // et lire les informations du biome
-    if (lang == "FR")
+    if (strcmp(lang, "fr") == 0)
     {
         // chemin du fichier biome en francais
         file = fopen("fr/biomes/biome.txt", "r");
     }
     else
     {
-        // chemin du fichier biome en anglais-6
+        // chemin du fichier biome en anglais
         file = fopen("en/biomes/biome.txt", "r");
     }
 
-    // lire le fichier ligne par ligne jusqu'a trouver l'id_biome correspondant }
-    while (fgets(line, sizeof(line), file))
+    // verifier si le fichier a bien ete ouvert
+    if (file == NULL)
     {
-        // verifier si la ligne correspond a l'id_biome
+        printf("Error: Cannot open biome file\n");
+        return;
+    }
+
+    // lire le fichier ligne par ligne jusqu'a trouver l'id_biome correspondant
+    while (fgets(line, sizeof(line), file)) // la condition s'arrete a la fin du fichier
+    {
+        // verifier si la ligne correspond a l'id_biome (les IDs sont aux lignes 1, 11, 21...)
         if (numero_ligne == id_biome)
         {
             // remplir la struc biome avec les informations du fichier
             biome->id_biome = id_biome;
-            fgets(line, sizeof(line), file);
+            fgets(line, sizeof(line), file); // lire la description
 
+            // supprimer le retour a la ligne
+            line[strcspn(line, "\n")] = '\0';  // strcspn trouve la position du premier '\n' et le remplace par '\0'
             biome->description = strdup(line); // strdup pour allouer de la memoire et copier la chaine
             fgets(line, sizeof(line), file);
 
@@ -108,9 +111,21 @@ void generation_biome(Biome *biome, int id_biome, char description, float diffic
             break;
         }
 
-        // passer a l'id_biome suivant
+        // passer a la ligne suivante en sautant de 10 en 10
         numero_ligne = numero_ligne + 10;
-    }
-}
 
-// la fonction retourne un biome
+        // si on a depasse l'id recherche, on sort de la boucle
+        if (numero_ligne > id_biome)
+        {
+            break;
+        }
+
+        // avancer dans le fichier jusqu'a la prochaine ligne d'ID
+        for (int i = 0; i < 9 && fgets(line, sizeof(line), file); i++)
+        {
+            // sauter les 9 lignes suivantes
+        }
+    }
+
+    fclose(file); // fermer le fichier
+}

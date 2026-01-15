@@ -49,7 +49,6 @@ typedef struct
     Temperature maximum_temperature; // Type de température (affecte les stats)
     Meteo minimum_meteo;             // Type de météo (joue sur les stats)
     Meteo maximum_meteo;             // Type de météo (joue sur les stats)
-
 } Biome;
 
 // marchand
