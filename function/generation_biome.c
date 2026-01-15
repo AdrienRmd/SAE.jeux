@@ -46,15 +46,3 @@ int generation_temperature(int minimum_temperature, int maximum_temperature)
     return random_number(minimum_temperature, maximum_temperature);
 };
 
-void afficher_biome(int id_biome, char filepath[])
-{
-    int pointeur_debut = id_biome * 2 - 1;
-    int pointeur_fin = id_biome * 2;
-    int ligne;
-
-    for (ligne = pointeur_debut; ligne <= pointeur_fin; ligne++)
-    {
-        print_line(filepath, ligne);
-        printf("\n");
-    }
-}
