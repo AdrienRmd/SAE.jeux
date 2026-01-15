@@ -52,18 +52,16 @@ void add_stat(char *filename, int line, int increment){
  */
 void player_init(char *filename)
 {
-    for (int i = 1 ; i <= 4 ; i++){
+    for (int i = 1 ; i <= 17 ; i++){
         print_line(filename, i);
         printf("\n");
     }
-    printf("\n");
-    print_line(filename, 6);
-    printf("\n");
     
     char choice[20];
     print_line(filename, 8);
     scanf("%s", choice);
     change_line("player/player_info.txt", 1, choice);
+    printf("\n");
     for (int i = 2; i <= 4; i++)
     {
         char string[100];
