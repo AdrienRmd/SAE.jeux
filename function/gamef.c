@@ -6,6 +6,7 @@
 #include <sys/stat.h>
 #include "gamef.h"
 #include "monster_generation.h"
+#include "other.h"
 
 /*
  * intro
@@ -49,16 +50,24 @@ void add_stat(char *filename, int line, int increment){
  */
 void player_init(char *filename)
 {
-    print_line(filename, 1);
+    for (int i = 1 ; i <= 4 ; i++){
+        print_line(filename, i);
+        printf("\n");
+    }
+    printf("\n");
+    print_line(filename, 6);
+    printf("\n");
+    
     char choice[20];
-    print_line(filename, 3);
+    print_line(filename, 8);
     scanf("%s", choice);
     change_line("player/player_info.txt", 1, choice);
     for (int i = 2; i <= 4; i++)
     {
-        print_line(filename, i + 2);
-        scanf("%s", choice);
-        change_line("player/player_info.txt", i, choice);
+        char string[100];
+        value_line(filename, i + 7, string, sizeof(string));
+        int choice_int = choosing(string, 3);
+        change_line("player/player_info.txt", i, int_to_string(choice_int));
     }
     change_line("player/player_info.txt", 5, "100");
     for (int i = 6 ; i < 12 ; i++){
