@@ -30,14 +30,29 @@ int random_number(int minimum, int maximum)
     return minimum + rand() % (maximum - minimum + 1);
 }
 
-int choosing(const char *string, int nb_choice){
+int choosing(const char *string, int nb_choice)
+{
     int choosed = -1;
-    do{
+    do
+    {
         printf("%s", string);
         scanf("%d", &choosed);
-        if (choosed > 0 && choosed <= nb_choice){
+        if (choosed > 0 && choosed <= nb_choice)
+        {
             return choosed;
         }
+    } while (1);
+}
+
+void print_loose(char filepath[])
+{
+    int pointeur_debut = id_biome * 2 - 1;
+    int pointeur_fin = id_biome * 2;
+    int ligne;
+
+    for (ligne = pointeur_debut; ligne <= pointeur_fin; ligne++)
+    {
+        print_line(filepath, ligne);
+        printf("\n");
     }
-    while (1);
 }
