@@ -301,7 +301,8 @@ void monster_attack(Player player, Monster monster, const char *lang)
  *  - monster: the Monster struct participating in battle
  *  - lang: path prefix for localization (passed to attack functions)
  */
-void battle(Player player, Monster monster, const char *lang){
+void battle(Player player, Monster monster, const char *lang)
+{
     char filepath[100];
     sprintf(filepath, "%s/text.txt", lang);
     print_line(filepath, 37);
@@ -339,7 +340,6 @@ void afficher_biome(int id_biome, const char *filepath)
         printf("\n");
     }
 }
-
 
 void stat_monster_generation(Monster *monster, const char *langue_selectionne, int id_monster)
 {
@@ -399,14 +399,10 @@ int generation_temperature(int minimum_temperature, int maximum_temperature)
 void generation_biome(Biome *biome, int id_biome, const char *lang)
 // la fonction retourne un biome
 {
-
-    int temperature, meteo;
     FILE *file;
-    char line[50];
-    int numero_ligne = 1;
-    float difficulty_biome;
-
-    // genere les valeurs aléatoires pour la temperature et la meteo
+    char line[256];
+    char buffer[256];
+    int current_line = 1;
 
     // si la langue est francais ou anglais
     // ouvrir le fichier biome.txt correspondant
@@ -422,105 +418,115 @@ void generation_biome(Biome *biome, int id_biome, const char *lang)
         return;
     }
 
-    // lire le fichier ligne par ligne jusqu'a trouver l'id_biome correspondant
-    while (fgets(line, sizeof(line), file)) // la condition s'arrete a la fin du fichier
+    // Calculate the line number where the biome ID should be found
+    int target_line = (id_biome - 1) * 10 + 1;
+
+    // Read lines until we reach the target line
+    while (current_line < target_line && fgets(line, sizeof(line), file))
     {
+        current_line++;
+    }
 
-        int id_numero_ligne;
-        id_numero_ligne = value_line_return(filepath, line, numero_ligne, sizeof(numero_ligne)); // lire l'id de la ligne courante
+    // If we found the target line, read the biome data
+    if (current_line == target_line && fgets(line, sizeof(line), file))
+    {
+        // Read the ID line (should match id_biome)
+        value_line(filepath, current_line, buffer, sizeof(buffer));
+        int found_id = atoi(buffer);
 
-        // verifier si la ligne correspond a l'id_biome (les IDs sont aux lignes 1, 11, 21...)
-        if (id_numero_ligne == id_biome)
+        if (found_id == id_biome)
         {
             // remplir la struc biome avec les informations du fichier
             biome->id_biome = id_biome;
-            fgets(line, sizeof(line), file); // lire la description
 
-            // supprimer le retour a la ligne
-            line[strcspn(line, "\n")] = '\0';  // strcspn trouve la position du premier '\n' et le remplace par '\0'
-            biome->description = strdup(line); // strdup pour allouer de la memoire et copier la chaine
-            fgets(line, sizeof(line), file);
+            // Read description (next line)
+            value_line(filepath, current_line + 1, buffer, sizeof(buffer));
+            buffer[strcspn(buffer, "\n")] = '\0'; // Remove newline
+            biome->description = strdup(buffer);
 
-            biome->difficulty_biome = atof(line); // atof pour convertir en float
-            fgets(line, sizeof(line), file);
+            // Read difficulty
+            value_line(filepath, current_line + 2, buffer, sizeof(buffer));
+            biome->difficulty_biome = atof(buffer);
 
-            biome->minimum_temperature = atoi(line); // atoi pour convertir en int
-            fgets(line, sizeof(line), file);
+            // Read temperatures
+            value_line(filepath, current_line + 3, buffer, sizeof(buffer));
+            biome->minimum_temperature = atoi(buffer);
+            value_line(filepath, current_line + 4, buffer, sizeof(buffer));
+            biome->maximum_temperature = atoi(buffer);
 
-            biome->maximum_temperature = atoi(line);
-            fgets(line, sizeof(line), file);
-
-            biome->minimum_meteo = atoi(line);
-            fgets(line, sizeof(line), file);
-
-            biome->maximum_meteo = atoi(line);
-
-            break;
-        }
-
-        // passer a la ligne suivante en sautant de 10 en 10
-        numero_ligne = numero_ligne + 10;
-
-        // si on a depasse l'id recherche, on sort de la boucle
-        if (numero_ligne > id_biome)
-        {
-            break;
-        }
-
-        // avancer dans le fichier jusqu'a la prochaine ligne d'ID
-        for (int i = 0; i < 9 && fgets(line, sizeof(line), file); i++)
-        {
-            // sauter les 9 lignes suivantes
+            // Read weather
+            value_line(filepath, current_line + 5, buffer, sizeof(buffer));
+            biome->minimum_meteo = atoi(buffer);
+            value_line(filepath, current_line + 6, buffer, sizeof(buffer));
+            biome->maximum_meteo = atoi(buffer);
         }
     }
 
     fclose(file); // fermer le fichier
 }
 
-int get_monster_id(int biome_id, const char *lang){
+int get_monster_id(int biome_id, const char *lang)
+{
     char filepath[100], buffer[10];
     sprintf(filepath, "%s/monstre/monster.txt", lang);
-    value_line(filepath, 30 * (biome_id - 1) + 1 + random_number(0,2) * 10, buffer, sizeof(buffer));
+    value_line(filepath, 30 * (biome_id - 1) + 1 + random_number(0, 2) * 10, buffer, sizeof(buffer));
     return atoi(buffer);
 }
 
-int ongoing_floor(const char *lang, int biome_id, int floor){
-    Monster *monster;
-    Biome *biome;
-    Player *player;
-    
-    generation_biome(biome, biome_id, lang);
+int ongoing_floor(const char *lang, int biome_id, int floor)
+{
+    Monster monster;
+    Biome biome;
+    Player player;
+
+    // Initialize player stats from file
+    char player_buffer[128];
+    value_line("player/player_info.txt", 1, player_buffer, sizeof(player_buffer));
+    strcpy(player.name, player_buffer);
+    value_line("player/player_info.txt", 5, player_buffer, sizeof(player_buffer));
+    player.hp = atoi(player_buffer);
+    value_line("player/player_info.txt", 6, player_buffer, sizeof(player_buffer));
+    player.att = atoi(player_buffer);
+    value_line("player/player_info.txt", 7, player_buffer, sizeof(player_buffer));
+    player.def = atoi(player_buffer);
+    value_line("player/player_info.txt", 8, player_buffer, sizeof(player_buffer));
+    player.spe = atoi(player_buffer);
+    value_line("player/player_info.txt", 9, player_buffer, sizeof(player_buffer));
+    player.dodge = atoi(player_buffer);
+
+    generation_biome(&biome, biome_id, lang);
     char filepath[100];
     sprintf(filepath, "%s/map.txt", lang);
-    afficher_biome(biome->id_biome, filepath);
-    free(filepath);
-    char filepath[100];
+    afficher_biome(biome.id_biome, filepath);
+
     sprintf(filepath, "%s/text.txt", lang);
-    stat_monster_generation(monster, lang, get_monster_id(biome_id, lang));
+    stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
     char string[100];
     value_line(filepath, 38, string, sizeof(string));
-    battle(*player, *monster, lang);
+    battle(player, monster, lang);
 
-    if (player->hp <= 0){
-        //print_lose();
-        change_line("player/player_info.txt", 21, 0);
+    if (player.hp <= 0)
+    {
+        // print_lose();
+        change_line("player/player_info.txt", 21, "0");
     }
-    else if (choosing(string, 2) == 1){
-        stat_monster_generation(monster, lang, get_monster_id(biome_id, lang));
-        battle(*player, *monster, lang);
-        if (choosing(string, 2) == 1){
-            stat_monster_generation(monster, lang, get_monster_id(biome_id, lang));
-            battle(*player, *monster, lang);
+    else if (choosing(string, 2) == 1)
+    {
+        stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
+        battle(player, monster, lang);
+        if (choosing(string, 2) == 1)
+        {
+            stat_monster_generation(&monster, lang, get_monster_id(biome_id, lang));
+            battle(player, monster, lang);
             print_line(filepath, 40);
         }
     }
-    if (floor < 9){
+    if (floor < 9)
+    {
         int biomes[2];
         choose_random_biome(floor, biomes);
         return choose_biome(biomes, lang);
-    }  
+    }
 
     return 0;
-
-    
 }

@@ -16,3 +16,5 @@ IdChestplate
 IdPants
 IdBoots
 IdWeapon
+Floor
+Ingame
