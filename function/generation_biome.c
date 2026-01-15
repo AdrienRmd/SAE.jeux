@@ -51,23 +51,22 @@ int generation_temperature(int minimum_temperature, int maximum_temperature)
     return random_number(minimum_temperature, maximum_temperature);
 };
 
-void generation_biome(Biome *biome, int id_biome, char description, float difficulty_biome,
-                      Temperature minimum_temperature, Temperature maximum_temperature,
-                      Meteo minimum_meteo, Meteo maximum_meteo, char *lang)
+void generation_biome(Biome *biome, int id_biome, char *lang)
+// la fonction retourne un biome
 {
+
     int temperature, meteo;
     FILE *file;
     char line[50];
     int numero_ligne = 1;
+    float difficulty_biome;
 
     // genere les valeurs aléatoires pour la temperature et la meteo
-    temperature = generation_temperature(minimum_temperature, maximum_temperature);
-    meteo = generation_meteo(minimum_meteo, maximum_meteo);
 
     // si la langue est francais ou anglais
     // ouvrir le fichier biome.txt correspondant
     // et lire les informations du biome
-    if (lang == "FR")
+    if (lang == "fr")
     {
         // chemin du fichier biome en francais
         file = fopen("fr/biomes/biome.txt", "r");
@@ -84,9 +83,10 @@ void generation_biome(Biome *biome, int id_biome, char description, float diffic
         // verifier si la ligne correspond a l'id_biome
         if (numero_ligne == id_biome)
         {
+
             // remplir la struc biome avec les informations du fichier
             biome->id_biome = id_biome;
-            fgets(line, sizeof(line), file);
+            fgets(line, sizeof(line), file); // fgets pour lire la ligne suivante
 
             biome->description = strdup(line); // strdup pour allouer de la memoire et copier la chaine
             fgets(line, sizeof(line), file);
@@ -112,5 +112,3 @@ void generation_biome(Biome *biome, int id_biome, char description, float diffic
         numero_ligne = numero_ligne + 10;
     }
 }
-
-// la fonction retourne un biome
