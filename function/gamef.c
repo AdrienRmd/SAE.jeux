@@ -51,7 +51,10 @@ void player_init(char *filename)
 {
     print_line(filename, 1);
     char choice[20];
-    for (int i = 1; i <= 4; i++)
+    print_line(filename, 3);
+    scanf("%s", choice);
+    change_line("player/player_info.txt", 1, choice);
+    for (int i = 2; i <= 4; i++)
     {
         print_line(filename, i + 2);
         scanf("%s", choice);
