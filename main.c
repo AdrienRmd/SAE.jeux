@@ -21,8 +21,10 @@ int main()
     choose_random_biome(floor, biome);
     choosen_biome = choose_biome(biome, lang);
 
+    free(biome);
+
     for (floor ; floor < NB_FLOOR ; floor++){
-        ongoing_floor(lang, choosen_biome, floor);
+        choosen_biome = ongoing_floor(lang, choosen_biome, floor);
     }
     
     return 0;

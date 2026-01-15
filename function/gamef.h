@@ -8,6 +8,7 @@
 #include "file_manipulation.h"
 #include "../structure/structure.h"
 #include "other.h"
+#include "monster_generation.h"
 
 void choose_random_biome(int floor, int *biome);
 
@@ -19,9 +20,9 @@ void player_init(char *filename);
 
 void add_stat(char *filename, int line, int increment);
 
-/*void battle(Player player, Monster monster, int lang);*/
+void battle(Player player, Monster monster, int lang);
 
-void ongoing_floor(const char *lang, int biome, int floor);
+int ongoing_floor(const char *lang, int biome, int floor);
 
 void final_floor(const char *lang);
 

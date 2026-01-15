@@ -39,5 +39,5 @@ int choosing(const char *string, int nb_choice){
             return choosed;
         }
     }
-    while (0 != 1);
+    while (1);
 }
