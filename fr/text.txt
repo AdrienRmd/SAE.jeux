@@ -10,12 +10,12 @@ Que votre destin vous guide dans les ruines de l'ancien monde.\n
 
 Quel biome voulez-vous explorer ?
 
-Vous l'attaquez.
+Vous l'attaquez.\n
 Vous lui infligez 
-Il esquive...
-Il vous attaque.
-Il vous inflige %d 
-ESQUIVE !
+Il esquive...\n
+Il vous attaque.\n
+Il vous inflige 
+ESQUIVE !\n
 
 Le gel mordant de l'apocalypse glace vos os, chaque souffle se transforme en cristal de désespoir.
 0.75

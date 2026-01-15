@@ -21,8 +21,8 @@ void add_stat(char *filename, int line, int increment);
 
 /*void battle(Player player, Monster monster, int lang);*/
 
-void ongoing_floor(char lang, int biome, int floor);
+void ongoing_floor(const char *lang, int biome, int floor);
 
-void final_floor(char lang);
+void final_floor(const char *lang);
 
 #endif
