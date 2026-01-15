@@ -61,17 +61,10 @@ void generation_biome(Biome *biome, int id_biome, char *lang)
     // si la langue est francais ou anglais
     // ouvrir le fichier biome.txt correspondant
     // et lire les informations du biome
-    if (strcmp(lang, "fr") == 0)
-    {
-        // chemin du fichier biome en francais
-        file = fopen("fr/biomes/biome.txt", "r");
-    }
-    else
-    {
-        // chemin du fichier biome en anglais
-        file = fopen("en/biomes/biome.txt", "r");
-    }
-
+    char filepath[100];
+    sprintf(filepath, "%s/biomes/biome.txt", lang);
+    file = fopen(filepath, "r");
+    
     // verifier si le fichier a bien ete ouvert
     if (file == NULL)
     {

@@ -344,5 +344,6 @@ int ongoing_floor(const char *lang, int biome_id, int floor){
     Biome biome;
     int monster_id;
 
+    
     stat_monster_generation(monster, lang, monster_id);
 }
