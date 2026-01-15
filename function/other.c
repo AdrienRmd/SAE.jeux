@@ -30,7 +30,7 @@ int random_number(int minimum, int maximum)
     return minimum + rand() % (maximum - minimum + 1);
 }
 
-int choice(const char *string, int nb_choice){
+int choosing(const char *string, int nb_choice){
     int choosed = -1;
     do{
         printf("%s", string);
