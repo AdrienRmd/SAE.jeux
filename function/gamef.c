@@ -9,7 +9,6 @@
 #include "other.h"
 #include "generation_biome.h"
 
-
 /*
  * sleep_ms
  * Pause program execution for specified milliseconds
@@ -144,7 +143,6 @@ void choose_random_biome(int floor, int *biome)
 
     int random;
 
-
     for (int i = 0; i < 2; i++)
     {
         if (floor == 1 || floor == 2)
@@ -229,13 +227,15 @@ int choose_biome(int *biome, const char *lang)
 
         if (result != 1 || (choice != 1 && choice != 2))
         {
-            if (strcmp(lang, "en")){
-                printf("Choix invalide. Veuillez entrer 1 ou 2.\n");
+            if (strcmp(lang, "en"))
+            {
+                printf("Invalid choice. Please enter 1 or 2.\n");
             }
-            else{
+            else
+            {
                 printf("Invalid choice. Please input 1 or 2.\n");
             }
-            
+
             choice = -1;
         }
     }
@@ -266,7 +266,8 @@ int choose_biome(int *biome, const char *lang)
  */
 void player_attack(Player *player, Monster *monster, const char *lang)
 {
-    if (random_number(1, 100) <= monster->dodge){
+    if (random_number(1, 100) <= monster->dodge)
+    {
 
         char filepath[100];
         sprintf(filepath, "%s/text.txt", lang);
