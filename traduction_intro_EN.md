@@ -50,3 +50,9 @@ Pour une gestion multilingue efficace, votre code C devrait :
 4. **Fournir des valeurs par défaut** si une clé est manquante
 
 Cette traduction maintient l'immersion et la cohérence tout en s'adaptant naturellement à la langue anglaise.
+
+## Translation Status Update
+- ✅ All code comments have been translated to English
+- ✅ Error messages in gamef.c have been localized
+- ✅ User-facing error messages now support both languages
+- 🔄 Resource files (fr/en) maintain language-specific content

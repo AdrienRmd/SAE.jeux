@@ -1,5 +1,8 @@
 # Système de Monstres - The Final Dawn
 
+## English Abstract
+Technical documentation for monster system including data structures, rarity classification, and combat mechanics. Complete implementation details in French.
+
 ## Structure des Données
 
 ```c

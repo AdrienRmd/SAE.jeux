@@ -1,5 +1,8 @@
 # Système de statistiques d'inventaire
 
+## English Abstract
+This document describes the inventory statistics system with item rarity tiers and stat distributions. Full technical documentation in French for development team.
+
 ## Format des statistiques
 Chaque objet possède 6 statistiques :
 - **ID** : ID item

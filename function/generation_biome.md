@@ -1,5 +1,8 @@
 # Documentation du Module de Génération de Biomes
 
+## English Abstract
+Technical documentation for biome generation module, including algorithms, data structures, and integration with game system. Full implementation details in French.
+
 ## Overview
 
 Ce module gère la génération et la gestion des biomes dans The Final Dawn. Il fournit les structures de données et fonctions nécessaires pour créer des environnements de jeu variés et équilibrés.

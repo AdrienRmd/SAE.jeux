@@ -1,5 +1,8 @@
 # Documentation des Biomes - The Final Dawn
 
+## English Abstract
+This document describes biome system implementation in The Final Dawn, including 25 distinct environments with their climate characteristics, difficulty levels, and associated monsters. The full documentation is in French as it serves as a technical reference for the French development team.
+
 ## Overview
 
 Ce document décrit le système de biomes implémenté dans The Final Dawn, comprenant 25 environnements distincts avec leurs caractéristiques climatiques, niveaux de difficulté et monstres associés.
