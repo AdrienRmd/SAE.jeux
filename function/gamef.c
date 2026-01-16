@@ -65,7 +65,7 @@ void add_stat(char *filename, int line, int increment)
  */
 void player_init(char *filename)
 {
-    for (int i = 1; i <= 17; i++)
+    for (int i = 18; i <= 21; i++)
     {
         print_line(filename, i);
         printf("\n");
