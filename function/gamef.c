@@ -5,9 +5,7 @@
 #include <time.h>
 #include <sys/stat.h>
 #include "gamef.h"
-#include "monster_generation.h"
 #include "other.h"
-#include "generation_biome.h"
 
 /*
  * sleep_ms
