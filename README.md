@@ -13,7 +13,8 @@ Neo-Terra is a post-apocalyptic text-based role-playing game developed in C as p
 - **Progressive Difficulty**: Floor-based progression system
 
 ## Authors
-[Add author names here]
+Senicourt Florian
+Remond Adrien
 
 ## Compilation and Execution
 ```bash
