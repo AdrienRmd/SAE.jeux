@@ -16,7 +16,6 @@ int main()
     int floor = 1;
     int biome[2], chosen_biome;
     snprintf(filepath, sizeof(filepath), "%s/text.txt", lang);
-    sprintf(filepath, "%s/text.txt", lang);
     char save[10];
     value_line("player/player_info.txt", 21, save, sizeof(save));
     int starting_floor = 1;

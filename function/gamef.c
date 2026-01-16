@@ -227,9 +227,8 @@ int choose_biome(int *biome, const char *lang)
 
         if (result != 1 || (choice != 1 && choice != 2))
         {
-            if (strcmp(lang, "en"))
-            {
-                printf("Invalid choice. Please enter 1 or 2.\n");
+            if (strcmp(lang, "en") != 0){
+                printf("Choix invalide. Veuillez entrer 1 ou 2.\n");
             }
             else
             {
@@ -380,14 +379,19 @@ void set_player(Player *player)
     char player_buffer[128];
     value_line("player/player_info.txt", 1, player_buffer, sizeof(player_buffer));
     strcpy(player->name, player_buffer);
+    
     value_line("player/player_info.txt", 5, player_buffer, sizeof(player_buffer));
     player->hp = atoi(player_buffer);
+    
     value_line("player/player_info.txt", 6, player_buffer, sizeof(player_buffer));
     player->att = atoi(player_buffer);
+    
     value_line("player/player_info.txt", 7, player_buffer, sizeof(player_buffer));
     player->def = atoi(player_buffer);
+    
     value_line("player/player_info.txt", 8, player_buffer, sizeof(player_buffer));
     player->spe = atoi(player_buffer);
+    
     value_line("player/player_info.txt", 9, player_buffer, sizeof(player_buffer));
     player->dodge = atoi(player_buffer);
 }
