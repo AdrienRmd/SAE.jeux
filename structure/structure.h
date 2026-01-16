@@ -1,6 +1,12 @@
 #ifndef STRUCTURE_H
 #define STRUCTURE_H
 
+/*
+ * Player
+ * Structure representing the player character with all stats and attributes.
+ * Contains name, race, job/class, HP, combat stats (attack, defense, dodge,
+ * speed, luck), experience, level, money, and difficulty multiplier.
+ */
 typedef struct
 {
     char name[20];
@@ -20,6 +26,11 @@ typedef struct
 
 // AJOUTER CES STRUCTURES :
 
+/*
+ * Monster
+ * Structure representing a monster/enemy with its combat stats and attributes.
+ * Contains ID, name, HP, attack, defense, dodge, speed, luck, and rarity level.
+ */
 typedef struct
 {
     int id;
@@ -33,6 +44,11 @@ typedef struct
     int rarity;
 } Monster;
 
+/*
+ * Temperature
+ * Enumeration representing temperature levels from very cold to burning.
+ * Used to define temperature ranges for biomes.
+ */
 typedef enum
 {
     tres_froid = 1,
@@ -44,6 +60,11 @@ typedef enum
     brulant = 7
 } Temperature;
 
+/*
+ * Meteo
+ * Enumeration representing weather conditions from sunny to blizzard.
+ * Used to define weather patterns for biomes.
+ */
 typedef enum
 {
     ensoleille = 1,
@@ -59,6 +80,11 @@ typedef enum
     blizzard = 11
 } Meteo;
 
+/*
+ * Biome
+ * Structure representing a biome/environment with its characteristics.
+ * Contains ID, description, difficulty level, and temperature/weather ranges.
+ */
 typedef struct
 {
     int id_biome;

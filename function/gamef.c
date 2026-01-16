@@ -359,6 +359,14 @@ void battle(Player *player, Monster *monster, const char *lang)
     }
 }
 
+/*
+ * afficher_biome
+ * Display biome description by printing two lines from file corresponding
+ * to the biome ID.
+ * Parameters:
+ *  - id_biome: ID of the biome to display
+ *  - filepath: path to the file containing biome descriptions
+ */
 void afficher_biome(int id_biome, const char *filepath)
 {
     int pointeur_debut = id_biome * 2 - 1;
@@ -372,6 +380,12 @@ void afficher_biome(int id_biome, const char *filepath)
     }
 }
 
+/*
+ * set_player
+ * Load player data from player_info.txt into a Player struct.
+ * Parameters:
+ *  - player: pointer to Player struct to populate with data from file
+ */
 void set_player(Player *player)
 {
     char player_buffer[128];
@@ -394,6 +408,14 @@ void set_player(Player *player)
     player->dodge = atoi(player_buffer);
 }
 
+/*
+ * get_monster_id
+ * Get a random monster ID associated with the given biome.
+ * Parameters:
+ *  - biome_id: ID of the biome to get monster from
+ *  - lang: path prefix for localization (used to locate monster file)
+ * Returns: randomly selected monster ID from biome's monster pool
+ */
 int get_monster_id(int biome_id, const char *lang)
 {
     char filepath[100], buffer[10];
@@ -402,6 +424,15 @@ int get_monster_id(int biome_id, const char *lang)
     return atoi(buffer);
 }
 
+/*
+ * set_monster
+ * Load monster data from file into a Monster struct based on monster ID.
+ * Searches through monster file to find matching ID and populates struct.
+ * Parameters:
+ *  - monster: pointer to Monster struct to populate
+ *  - language: path prefix for localization (used to locate monster file)
+ *  - monster_id: ID of the monster to load
+ */
 void set_monster(Monster *monster, const char *language, int monster_id)
 {
     char monster_buffer[128];
@@ -464,6 +495,15 @@ void set_monster(Monster *monster, const char *language, int monster_id)
     }
 }
 
+/*
+ * set_biome
+ * Load biome data from file into a Biome struct based on biome ID.
+ * Searches through biome file to find matching ID and populates struct.
+ * Parameters:
+ *  - biome: pointer to Biome struct to populate
+ *  - biome_id: ID of the biome to load
+ *  - language: path prefix for localization (used to locate biome file)
+ */
 void set_biome(Biome *biome, int biome_id, const char *language)
 {
     char biome_buffer[128];
@@ -520,6 +560,17 @@ void set_biome(Biome *biome, int biome_id, const char *language)
         }
     }
 }
+
+/*
+ * ongoing_floor
+ * Execute gameplay for a single dungeon floor. Sets up biome, spawns monsters,
+ * initiates battles, and determines if player continues to next floor.
+ * Parameters:
+ *  - lang: path prefix for localization
+ *  - biome_id: ID of the biome for this floor
+ *  - floor: current floor number (affects subsequent biome selection)
+ * Returns: next biome ID to continue, 0 if reaching end, -1 if player dies
+ */
 int ongoing_floor(const char *lang, int biome_id, int floor)
 {
     Monster monster;
