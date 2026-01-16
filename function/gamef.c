@@ -227,14 +227,8 @@ int choose_biome(int *biome, const char *lang)
 
         if (result != 1 || (choice != 1 && choice != 2))
         {
-<<<<<<< HEAD
             if (strcmp(lang, "en") != 0){
                 printf("Choix invalide. Veuillez entrer 1 ou 2.\n");
-=======
-            if (strcmp(lang, "en"))
-            {
-                printf("Invalid choice. Please enter 1 or 2.\n");
->>>>>>> origin/main
             }
             else
             {
