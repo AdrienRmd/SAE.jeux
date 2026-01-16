@@ -78,17 +78,5 @@ typedef struct
 #define RARITY_LEGENDARY 4
 #define RARITY_MYTHIC 5
 
-typedef struct
-{
-    int id;
-    char name[40];
-    int hp;
-    int att;
-    int def;
-    int dodge;
-    int spe;
-    int luck;
-    int rarity;
-} Monster;
 
 #endif
