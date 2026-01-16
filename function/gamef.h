@@ -8,7 +8,6 @@
 #include "file_manipulation.h"
 #include "../structure/structure.h"
 #include "other.h"
-#include "monster_generation.h"
 
 void choose_random_biome(int floor, int *biome);
 
