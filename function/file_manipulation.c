@@ -76,7 +76,7 @@ void change_line(const char *filename, int line, const char *text)
     FILE *f_source, *f_temp;
     char buffer[256];
     int i = 1;
-    char temp_name[] = "temp____.tmp"; // Nom temporaire
+    char temp_name[] = "temp____.tmp"; // Temporary name
 
     f_source = fopen(filename, "r");
     if (f_source == NULL)
@@ -88,7 +88,7 @@ void change_line(const char *filename, int line, const char *text)
     f_temp = fopen(temp_name, "w");
     if (f_temp == NULL)
     {
-        printf("Erreur : Can't create temporary file.\n");
+        printf("Error : Can't create temporary file.\n");
         fclose(f_source);
         return;
     }

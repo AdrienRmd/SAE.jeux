@@ -20,7 +20,7 @@ char *int_to_string(int num)
 }
 
 int random_number(int minimum, int maximum)
-{ // automatiquement la graine aléatoire (srand(time(NULL))).
+{ // automatically the random seed (srand(time(NULL))).
     static int initialized = 0;
     if (!initialized)
     {
@@ -38,10 +38,12 @@ int choosing(const char *string, int nb_choice)
         printf("%s", string);
         if (scanf("%d", &choosed) != 1)
         {
-            while(getchar()!='\n');
+            while (getchar() != '\n')
+                ;
             continue;
         }
-        while(getchar()!='\n');
+        while (getchar() != '\n')
+            ;
         if (choosed > 0 && choosed <= nb_choice)
         {
             return choosed;
@@ -51,13 +53,13 @@ int choosing(const char *string, int nb_choice)
 
 /*void print_loose(char filepath[])
 {
-    int pointeur_debut = id_biome * 2 - 1;
-    int pointeur_fin = id_biome * 2;
-    int ligne;
+    int pointer_start = id_biome * 2 - 1;
+    int pointer_end = id_biome * 2;
+    int line;
 
-    for (ligne = pointeur_debut; ligne <= pointeur_fin; ligne++)
+    for (line = pointer_start; line <= pointer_end; line++)
     {
-        print_line(filepath, ligne);
+        print_line(filepath, line);
         printf("\n");
     }
 }*/

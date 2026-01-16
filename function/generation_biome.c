@@ -1,4 +1,4 @@
-// structure biome generation
+// Biome structure generation
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,41 +8,40 @@
 #include "other.h"
 #include "file_manipulation.h"
 
-// fonction qui genere les biomes avec la struc biome avec la struc Biome
+// Function that generates biomes with the Biome structure
 /*typedef struct
 {
-    int id_biome;                    // Identifiant unique du biome
-    char *description;               // Description détaillée
-    float difficulty_biome;          // Coefficient de difficulté (entre 0.80 et 3.00)
-    Temperature minimum_temperature; // Type de température (affecte les stats)
-    Temperature maximum_temperature; // Type de température (affecte les stats)
-    Meteo minimum_meteo;             // Type de météo (joue sur les stats)
-    Meteo maximum_meteo;             // Type de météo (joue sur les stats)
+    int id_biome;                    // Unique biome identifier
+    char *description;               // Detailed description
+    float difficulty_biome;          // Difficulty coefficient (between 0.80 and 3.00)
+    Temperature minimum_temperature; // Temperature type (affects stats)
+    Temperature maximum_temperature; // Temperature type (affects stats)
+    Meteo minimum_meteo;             // Weather type (affects stats)
+    Meteo maximum_meteo;             // Weather type (affects stats)
 
 } Biome;
 
-Pour la Temperature et la Meteo, on tirera aléatoirement entre le minimum et le maximum
-Id biome est dans le fichier fr/biomes/biome.txt
-id se trouve a la ligne 1, puis la ligne 11, puis la ligne 21, sa va de 10 en 10 dans le fichier txt
+For Temperature and Weather, we will randomly draw between minimum and maximum
+Biome ID is in the file fr/biomes/biome.txt
+ID is found at line 1, then line 11, then line 21, it goes by 10 in the txt file
 
-Quand l'id est correct, sa suit cette structure c'est a dire premier id puis deuxieme ligne description etc
+When the ID is correct, it follows this structure meaning first ID then second line description etc
 
-    int id_biome;                    // Identifiant unique du biome
-    char *description;               // Description détaillée
-    float difficulty_biome;          // Coefficient de difficulté (entre 0.80 et 3.00)
-    Temperature minimum_temperature; // Type de température (affecte les stats)
-    Temperature maximum_temperature; // Type de température (affecte les stats)
-    Meteo minimum_meteo;             // Type de météo (joue sur les stats)
-    Meteo maximum_meteo;             // Type de météo (joue sur les stats)
+    int id_biome;                    // Unique biome identifier
+    char *description;               // Detailed description
+    float difficulty_biome;          // Difficulty coefficient (between 0.80 and 3.00)
+    Temperature minimum_temperature; // Temperature type (affects stats)
+    Temperature maximum_temperature; // Temperature type (affects stats)
+    Meteo minimum_meteo;             // Weather type (affects stats)
+    Meteo maximum_meteo;             // Weather type (affects stats)
 
  */
 
-// ouvrir le fichier biome.txt
-// lire le fichier ligne par ligne jusqu'a trouver l'id_biome
-// remplir la struc biome avec les informations du fichier
+// Open the biome.txt file
+// Read the file line by line until finding the id_biome
+// Fill the biome structure with information from the file
 
 int generation_temperature(int minimum_temperature, int maximum_temperature)
 {
     return random_number(minimum_temperature, maximum_temperature);
 };
-
